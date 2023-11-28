@@ -1,0 +1,50 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Inter";
+  text-align: start;
+}
+
+.p__onama {
+  text-align: center;
+}
+
+#borderline {
+  border-color: #ffca00;
+}
+
+.center {
+  background-color: #ffca00;
+}
+
+/* #custom-image {
+  display: inline;
+  vertical-align: top;
+  margin-left: 50px;
+  margin-top: 20px;
+
+} */
+
+#kurs-card {
+  box-shadow: 2px 2px 15px rgb(26, 26, 26);
+
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+
+}
+
+.dropdown-options {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  padding: 10px;
+  list-style: none;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+

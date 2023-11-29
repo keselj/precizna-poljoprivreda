@@ -11,7 +11,7 @@ import OnamaPage from "./pages/OnamaPage";
 
 function App() {
   return (
-    <Router basename="/precizna-poljoprivreda-2">
+    <Router basename="/precizna-poljoprivreda">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/usluge" element={<UslugePage />} />

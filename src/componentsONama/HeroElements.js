@@ -57,7 +57,6 @@ export const Title = styled.h2`
     font-size: 32px;
   }
 `;
-// background: url(${image1}) no-repeat center center fixed;
 
 export const TwoImagesContainer = styled.div`
   display: flex;
@@ -187,7 +186,7 @@ export const RestOfTeamContainerImages = styled.div`
 export const CardOfTeamMember = styled.div`
 display: flex;
 flex-direction: column;
-height: 490px;
+height: 435px;
 width: 235px;
 margin: 0 20px;
 box-shadow: 0 2px 50px rgba(0, 0, 0, 0.4);

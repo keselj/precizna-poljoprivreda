@@ -4,6 +4,8 @@ import { NavLink } from "react-router-dom";
 import logoBeli from "../../images/Logo/logoBeli.jpg";
 import logoFax from "../../images/Logo/logoFax.jpg";
 import logoCrni from "../../images/Logo/logoCrni.png";
+import logoCrniZeleni from "../../images/Logo/logoCrniZeleni.png";
+import logoFaxZeleni from "../../images/Logo/logoFaxZeleni.png";
 
 export const Nav = styled.nav`
   background: ${({ scrollNav }) => (scrollNav ? "#fff" : "rgb(26, 47, 41);")};
@@ -39,8 +41,8 @@ export const NavLogo = styled(Link)`
   text-decoration: none;
   background: ${({ scrollNavLogo }) =>
     scrollNavLogo
-      ? `url(${logoCrni}) no-repeat center center / contain`
-      : `url(${logoBeli}) no-repeat center center / contain`};
+      ? `url(${logoCrniZeleni}) no-repeat center center / contain`
+      : `url(${logoCrniZeleni}) no-repeat center center / contain`};
   background-color: rgb(26, 47, 41); /* The improved transparency spell */
   background-size: cover;
 
@@ -107,7 +109,7 @@ export const NavLogoFax = styled(LinkRouter)`
   cursor: pointer;
   align-items: center;
   text-decoration: none;
-  background: url(${logoFax}) no-repeat center center;
+  background: url(${logoFaxZeleni}) no-repeat center center;
   background-size: cover;
 
   margin: 10px 30px;

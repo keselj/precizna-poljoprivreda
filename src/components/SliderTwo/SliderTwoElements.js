@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { Row } from "./GlobalElements";
 import Slider from "react-slick";
 
 export const CarouselImage = styled.img`
@@ -105,4 +104,25 @@ export const SpanHeader2 = styled.span`
   flex-direction: column;
   margin-left: 50px;
   font-weight: bold;
+`;
+
+export const Heading = styled.h2`
+  font-size: 25px;
+  letter-spacing: 0.06rem;
+  line-height: 1.06;
+  text-align: start;
+  display: flex;
+  flex-direction: row;
+`;
+
+export const Section = styled.section`
+  margin: auto;
+  width: auto;
+  min-width: auto;
+  max-width: $100%;
+  height: 800px;
+
+  @media screen and (max-width: 768px) {
+    padding: ${({ smPadding }) => (smPadding ? smPadding : "70px 0")};
+  }
 `;

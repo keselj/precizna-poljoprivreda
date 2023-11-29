@@ -25,15 +25,17 @@ const Kurs = () => {
         {displayItemsInSetsOfThree.map((chunk, index) => (
           <KursWrapper key={index}>
             {chunk.map((item) => (
-              <KursCard id="kurs-card">
-                <KursIconWrapper>
-                  <KursIcon src={item.src} alt={item.alt} />
-                </KursIconWrapper>
-                <KursH2PWrapper>
-                  <KursH2>{item.title}</KursH2>
-                  <KursP>{item.description}</KursP>
-                </KursH2PWrapper>
-              </KursCard>
+              <Link to={`/card-page-${item.id}`}>
+                <KursCard id="kurs-card">
+                  <KursIconWrapper>
+                    <KursIcon src={item.src} alt={item.alt} />
+                  </KursIconWrapper>
+                  <KursH2PWrapper>
+                    <KursH2>{item.title}</KursH2>
+                    <KursP>{item.description}</KursP>
+                  </KursH2PWrapper>
+                </KursCard>
+              </Link>
             ))}
           </KursWrapper>
         ))}

@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import Slider from "react-slick";
-import { Row } from "./GlobalElements";
 
 export const KursContainer = styled.div`
   height: 800px;
@@ -52,7 +51,10 @@ export const KursPh1 = styled.p`
   margin: 40px;
 `;
 
-export const ButtonContainer = styled(Row)`
+export const ButtonContainer = styled.div`
+  display: flex;
+  margin: 20px;
+
   & svg {
     margin: 20px;
     cursor: pointer;
@@ -62,11 +64,11 @@ export const ButtonContainer = styled(Row)`
     opacity: 0.7;
     transition: opacity 0.2s ease-in;
   }
+
   @media screen and (max-width: 960px) {
     margin: 0 auto;
   }
 `;
-
 export const SliderContainer = styled.div`
   display: flex;
   flex-direction: row;

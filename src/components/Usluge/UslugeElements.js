@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { Row } from "../Kursevi/GlobalElements";
 import Slider from "react-slick";
 
 export const UslugeContainer = styled.div`
@@ -52,7 +51,10 @@ export const UslugePh1 = styled.p`
   margin: 60px;
 `;
 
-export const ButtonContainer = styled(Row)`
+export const ButtonContainer = styled.div`
+  display: flex;
+  margin: 20px;
+
   & svg {
     margin: 20px;
     cursor: pointer;
@@ -62,6 +64,7 @@ export const ButtonContainer = styled(Row)`
     opacity: 0.7;
     transition: opacity 0.2s ease-in;
   }
+
   @media screen and (max-width: 960px) {
     margin: 0 auto;
   }

@@ -166,11 +166,13 @@ export const uslugeSliderSettings = {
   slidesToShow: 1,
   focusOnselect: false,
   accessability: false,
+  draggable: false,
   responsive: [
     {
       breakpoint: 1280,
       settings: {
         slidesToShow: 2,
+        draggable: false,
       },
     },
 
@@ -178,6 +180,7 @@ export const uslugeSliderSettings = {
       breakpoint: 900,
       settings: {
         slidesToShow: 1,
+        draggable: true,
       },
     },
   ],
@@ -189,11 +192,14 @@ export const uslugeSliderSettingsTwo = {
   slidesToShow: 2,
   focusOnselect: false,
   accessability: false,
+  draggable: false,
+
   responsive: [
     {
       breakpoint: 1280,
       settings: {
         slidesToShow: 1,
+        draggable: false,
       },
     },
 

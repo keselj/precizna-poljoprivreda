@@ -2,7 +2,11 @@ import React, { useState } from "react";
 import { IconContext } from "react-icons";
 
 import { MdKeyboardArrowRight, MdKeyboardArrowLeft } from "react-icons/md";
+import { Button } from "../ButtonElement";
 
+import styled from "styled-components";
+import Slider from "react-slick";
+import { ArrowForward, ArrowRight } from "../HomePage/HomePageElements";
 import {
   UslugeData2,
   UslugeData,
@@ -10,7 +14,6 @@ import {
   uslugeSliderSettings,
 } from "./UslugeData";
 
-import { ArrowForward, ArrowRight } from "../HomePage/HomePageElements";
 import {
   UslugeContainer,
   SliderWrapper,
@@ -36,8 +39,6 @@ import {
   ReviewSliderTwo,
   SliderContainer,
 } from "./UslugeElements";
-
-import { Button } from "../ButtonElement";
 
 const Usluge = () => {
   const [hover, setHover] = useState(false);

@@ -1,13 +1,14 @@
 import React, { useState } from "react";
 import { data, data2 } from "./SliderTwoData";
 import { sliderSettings, sliderSettings2 } from "./SliderTwoData";
-import { Heading, Section } from "./GlobalElements";
 import {
+  Heading,
   ReviewSlider,
   ImageWrapper,
   CarouselImage,
   SpanHeader1,
   SpanHeader2,
+  Section,
 } from "./SliderTwoElements";
 
 const Carousel = () => {
@@ -15,7 +16,7 @@ const Carousel = () => {
   const [sliderRef2, setSliderRef2] = useState(null);
 
   return (
-    <Section margin="auto" maxWidth="100%" height="800px" inverse>
+    <Section inverse>
       <Heading>
         <SpanHeader1>| </SpanHeader1>
         NAŠI PARTNERI

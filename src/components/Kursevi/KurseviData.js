@@ -77,11 +77,14 @@ export const sliderSettings = {
   slidesToShow: 1,
   focusOnselect: false,
   accessability: false,
+  draggable: false,
+
   responsive: [
     {
       breakpoint: 1280,
       settings: {
         slidesToShow: 2,
+        draggable: false,
       },
     },
 
@@ -89,6 +92,7 @@ export const sliderSettings = {
       breakpoint: 900,
       settings: {
         slidesToShow: 1,
+        draggable: true,
       },
     },
   ],
@@ -100,11 +104,14 @@ export const sliderSettingsTwo = {
   slidesToShow: 2,
   focusOnselect: false,
   accessability: false,
+  draggable: false,
+
   responsive: [
     {
       breakpoint: 1280,
       settings: {
         slidesToShow: 1,
+        draggable: false,
       },
     },
 

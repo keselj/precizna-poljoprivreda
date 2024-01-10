@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import {
   KursCard,
   KursWrapper,
@@ -25,17 +24,20 @@ const Kurs = () => {
         {displayItemsInSetsOfThree.map((chunk, index) => (
           <KursWrapper key={index}>
             {chunk.map((item) => (
-              <Link to={`/card-page-${item.id}`}>
-                <KursCard id="kurs-card">
-                  <KursIconWrapper>
-                    <KursIcon src={item.src} alt={item.alt} />
-                  </KursIconWrapper>
-                  <KursH2PWrapper>
-                    <KursH2>{item.title}</KursH2>
-                    <KursP>{item.description}</KursP>
-                  </KursH2PWrapper>
-                </KursCard>
-              </Link>
+              <KursCard
+                id="kurs-card"
+                to={`/kursevi/${item.id}`}
+                key={item.id}
+                state={item}
+              >
+                <KursIconWrapper>
+                  <KursIcon src={item.src} alt={item.alt} />
+                </KursIconWrapper>
+                <KursH2PWrapper>
+                  <KursH2>{item.title}</KursH2>
+                  <KursP>{item.description}</KursP>
+                </KursH2PWrapper>
+              </KursCard>
             ))}
           </KursWrapper>
         ))}

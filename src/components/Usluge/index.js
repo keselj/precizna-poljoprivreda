@@ -1,11 +1,10 @@
 import React, { useState } from "react";
 import { IconContext } from "react-icons";
+import { animateScroll as scroll } from "react-scroll";
 
 import { MdKeyboardArrowRight, MdKeyboardArrowLeft } from "react-icons/md";
 import { Button } from "../ButtonElement";
 
-import styled from "styled-components";
-import Slider from "react-slick";
 import { ArrowForward, ArrowRight } from "../HomePage/HomePageElements";
 import {
   UslugeData2,
@@ -39,6 +38,9 @@ import {
   ReviewSliderTwo,
   SliderContainer,
 } from "./UslugeElements";
+const toggleHome = () => {
+  scroll.scrollToTop();
+};
 
 const Usluge = () => {
   const [hover, setHover] = useState(false);
@@ -79,7 +81,7 @@ const Usluge = () => {
                 </UslugeWrapperTwo>
               ))}
             </ReviewSliderTwo>
-            <ButtonContainer>
+            <ButtonContainer className="strelica-usluge">
               <IconContext.Provider value={{ size: "5rem", color: "#000" }}>
                 <MdKeyboardArrowLeft
                   onClick={() => handleArrowClick2("left")}
@@ -118,7 +120,12 @@ const Usluge = () => {
           Naša ponuda bazira se na implementaciji najnovijih tehnologija u
           poljoprivrednoj proizvodnji.
         </UslugePh1>
-        <Button to="usluge" onMouseEnter={onHover} onMouseLeave={onHover}>
+        <Button
+          to="usluge"
+          onMouseEnter={onHover}
+          onMouseLeave={onHover}
+          onClick={toggleHome}
+        >
           Pregeled svih Usluga {hover ? <ArrowForward /> : <ArrowRight />}
         </Button>
       </WrapperH1P>

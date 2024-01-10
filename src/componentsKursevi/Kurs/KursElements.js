@@ -1,6 +1,5 @@
-import { Link } from "react-scroll";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
-import { NavLink } from "react-router-dom";
 
 export const KursContainer = styled.div`
   margin: 0 auto;
@@ -26,7 +25,7 @@ export const KursWrapper = styled.div`
   }
 `;
 
-export const KursCard = styled(NavLink)`
+export const KursCard = styled(Link)`
   background: white;
   display: flex;
   flex-direction: column;
@@ -65,18 +64,13 @@ export const KursH2 = styled.h2`
   font-size: 22px;
   margin-bottom: 5px;
   color: black;
+  padding: 0 10px;
 `;
 
 export const KursP = styled.p`
-  font-size: 18px;
+  font-size: 15px;
   text-align: start;
   color: black;
-`;
-
-export const KursLink = styled(Link)`
-  font-size: 16px;
-  text-decoration: underline;
-  position: relative;
-  bottom: 0;
-  color: black;
+  padding: 0 10px;
+  line-height: 25px;
 `;

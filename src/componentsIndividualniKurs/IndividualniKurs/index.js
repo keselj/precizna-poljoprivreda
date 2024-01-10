@@ -18,52 +18,26 @@ import {
   DropDownContainer,
 } from "./IndKursElements";
 
+import data from "./IndKursData";
+
 import { Button } from "../../components/ButtonElement";
 
-const IndividualniKurs = ({ courseId }) => {
+const IndividualniKurs = (props) => {
   return (
     <IndividualniKursContainer>
-      <TitileMain>OSNOVE PRECIZNE POLJOPRIVREDE</TitileMain>
+      <TitileMain>{props.title}</TitileMain>
       <FormLeftContainer>
         <LeftContainer>
-          <DurationTitle>OPIS</DurationTitle>
-          <Description>
-            Precizna poljoprivreda kao tehnološki koncept značajno odstupa od
-            tradicionalne poljoprivrede jer se procedure prilagođavaju
-            vremenskom i prostornom domenu, a odluke donose na osnovu pouzdanih
-            prostornih informacija, znanja iz više naučnih disciplina i
-            najsavremenije opreme. Poljoprivredni proizvođači kao budući
-            korisnici savremene opreme (za đubrenje i detekciju različitih
-            parametara na njivi) koja se koristi u preciznoj poljoprivredi, u
-            velikoj meri nisu dovoljno inforisani o samom konceptu i
-            raspoloživim alatima, te postoji realna potreba za njihovom
-            permanentnom edukacijom. Učesnici kursa bi dobili osnovne
-            informacije na temu savremenih alata u poljoprivredi koji bi im
-            mogli koristiti u svakodnevnom radu. Na osnovu bogatog iskustva,
-            predavača sa Poljoprivrednog fakulteta Univerziteta u Novom Sadu u
-            korišćenju dronskih sistema (dornova za prskanje i daljinsku
-            detekciju), različitih senzorskih sistema za detekciju parametara
-            zemljišta i biljaka, korišćenja GPS i GIS platformi, razvoju
-            algoritama za predikciju prinosa i đubrenja azotom na osnovi NDVI i
-            multispektralnih snimaka, oformili smo specijalizovan kurs "Osnove
-            precizna poljoprivrede".
-          </Description>
-          <DurationTitle>TRAJANJE KURSA</DurationTitle>
+          <DurationTitle>{props.opis}</DurationTitle>
+          <Description>{props.description}</Description>
+          <DurationTitle>{props.durationLongTitle}</DurationTitle>
 
-          <DurationLong>
-            Sveobuhvatni 10-dnevni kurs "Osnove precizna poljoprivrede", koji
-            traje dve uzastopne nedelje sa po 4 školska časa dnevno (ukupno 40
-            časova). Nastava se održava u večernjim satima, čime se omogućava
-            polaznicima da pohađaju bez ometanja njihovih dnevnih obaveza.
-          </DurationLong>
+          <DurationLong>{props.durationLong}</DurationLong>
           <hr id="borderline"></hr>
-          <Price>CENA KURSA</Price>
-          <Price>55.000 rsd</Price>
-          <Description>
-            * Minimum prijavljenih polaznika je neophodan za održavanje kursa u
-            planiranim terminima.
-          </Description>
-          <Description>* Cena uključuje PDV.</Description>
+          <Price>{props.cenaKursaTitle}</Price>
+          <Price>{props.cenaKursa}</Price>
+          <Description>{props.dodatneInformacijeCena1}</Description>
+          <Description>{props.dodatneInformacijeCena2}</Description>
         </LeftContainer>
         <FormContainer>
           <TitleForm>Prijavite se za naredni kurs</TitleForm>

@@ -1,37 +1,17 @@
 import styled from "styled-components";
 import { MdKeyboardArrowRight, MdArrowForward } from "react-icons/md";
 
-import image1 from "../../images/background/pojacanKontrast.png";
-import image2 from "../../images/background/image2.jpg";
-import image3 from "../../images/background/image3.jpg";
-import image4 from "../../images/background/image4.jpg";
-import artwork from "../../images/background/artwork22.jpg";
+import HomeImage2 from "./images/HomeRobot2.png";
 
 export const HomePageContainer = styled.div`
   background: rgb(130, 130, 130);
 
   display: flex;
-  justify-content: end;
   aling-items: center;
   padding: 0 30px;
-  height: 700px;
+  height: 800px;
   position: relative;
   z-index: 1;
-  :before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-grdient(
-        180deg,
-        rgba(0, 0, 0, 0.2) 0%,
-        rgba(0, 0, 0, 0.6) 100%
-      ),
-      linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, transparent 100%);
-    z-index: 2;
-  }
 `;
 export const HomeBackground = styled.div`
   position: absolute;
@@ -42,7 +22,6 @@ export const HomeBackground = styled.div`
   width; 100%;
   height: 100%;
   overflow: hidden;
-
 `;
 
 export const ImageBackground = styled.img`
@@ -50,18 +29,94 @@ export const ImageBackground = styled.img`
   height: 100%;
   -o-object-fit: cover;
   object-fit: cover;
-  background: url(${image1}) no-repeat center center fixed;
+  background: url(${HomeImage2}) no-repeat center center fixed;
   background-size: cover;
 `;
 
 export const HomeContent = styled.div`
   z-index: 3;
-  max-width: 1700px;
-  position: absolute;
-  padding: 8px 24px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
+  padding-top: 80px;
+`;
+
+export const KrleIZokiKnjiga = styled.div`
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 300px;
+  height: 600px;
+  margin: 40px;
+  &:hover {
+    transform: scale(1.03);
+    transition: all 0.3s ease-in-out;
+  }
+`;
+export const MarkoKnjiga = styled.div`
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 300px;
+  height: 600px;
+  margin: 40px;
+  &:hover {
+    transform: scale(1.03);
+    transition: all 0.3s ease-in-out;
+  }
+`;
+export const PreNaslovKnjige = styled.h5`
+  color: white;
+  padding: 0 25px;
+  font-size: 17px;
+  font-weight: bold;
+  margin: 4px 0;
+`;
+export const TitleOfBook = styled.h5`
+  color: white;
+  padding: 0 25px;
+  font-size: 17px;
+  font-weight: bold;
+  margin: 4px 0;
+`;
+export const PUmderTitle = styled.p`
+  color: white;
+  padding: 0 25px;
+  font-size: 17px;
+  font-weight: bold;
+  margin: 4px 0;
+`;
+export const BigYellowButton = styled.button`
+  background-color: #ffca00;
+  width: 250px;
+  height: 50px;
+  border: 1px black solid;
+  margin: 25px;
+  text-align: center;
+  font-size: 20px;
+  border-radius: 10px;
+  font-weight: bold;
+  &:hover {
+    transform: scale(1.02);
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+  }
+`;
+export const ImageWrapper = styled.div``;
+export const ImageOfBook = styled.img`
+  width: 100%;
+  height: 100%;
+  padding: 25px;
+`;
+export const ImageOfBook2 = styled.img`
+  width: 100%;
+  height: 100%;
+  padding: 25px;
+`;
+
+export const SpanBookTitle = styled.span`
+  font-size: 15px;
+  letter-spacing: 0.06rem;
+  line-height: 1.06;
+  text-align: start;
+  font-weight: bold;
+  color: #ffca00;
 `;
 
 export const HomeH1 = styled.h1`

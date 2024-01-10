@@ -46,7 +46,6 @@ const Hero = () => {
             <ZokiDescriptionIme>{data[1].predavac}</ZokiDescriptionIme>
             <ZokiDescription>{data[1].univerzited}</ZokiDescription>
             <ZokiDescription>{data[1].fakultet}</ZokiDescription>
-            <ZokiDescription>{data[1].street}</ZokiDescription>
           </ZokiContainer>
           <KrleContainer>
             <KrleImage src={data[2].src} alt={data[2].alt} />
@@ -54,7 +53,6 @@ const Hero = () => {
             <KrleDescriptionIme>{data[2].predavac}</KrleDescriptionIme>
             <KrleDescription>{data[2].univerzited}</KrleDescription>
             <KrleDescription>{data[2].fakultet}</KrleDescription>
-            <KrleDescription>{data[2].street}</KrleDescription>
           </KrleContainer>
         </TwoImagesContainer>
         {/* </SecondContainer> */}

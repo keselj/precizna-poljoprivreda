@@ -1,11 +1,9 @@
 import styled from "styled-components";
 import { Link, Link as LinkRouter } from "react-router-dom";
 import { NavLink } from "react-router-dom";
-import logoBeli from "../../images/Logo/logoBeli.jpg";
-import logoFax from "../../images/Logo/logoFax.jpg";
-import logoCrni from "../../images/Logo/logoCrni.png";
-import logoCrniZeleni from "../../images/Logo/logoCrniZeleni.png";
+import logoBeliZeleni from "../../images/Logo/logoBeliZeleni.jpg";
 import logoFaxZeleni from "../../images/Logo/logoFaxZeleni.png";
+import { Link as ScrollLink } from "react-scroll";
 
 export const Nav = styled.nav`
   background: ${({ scrollNav }) => (scrollNav ? "#fff" : "rgb(26, 47, 41);")};
@@ -41,8 +39,8 @@ export const NavLogo = styled(Link)`
   text-decoration: none;
   background: ${({ scrollNavLogo }) =>
     scrollNavLogo
-      ? `url(${logoCrniZeleni}) no-repeat center center / contain`
-      : `url(${logoCrniZeleni}) no-repeat center center / contain`};
+      ? `url(${logoBeliZeleni}) no-repeat center center / contain`
+      : `url(${logoBeliZeleni}) no-repeat center center / contain`};
   background-color: rgb(26, 47, 41); /* The improved transparency spell */
   background-size: cover;
 
@@ -84,6 +82,27 @@ export const NavItem = styled.li`
   margin-top: 8px;
 `;
 export const NavLinks = styled(NavLink)`
+  color: #fff;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 0 16px;
+  height: 100%;
+  cursor: pointer;
+  white-space: nowrap;
+  font-weight: bold;
+
+  &.active {
+    border-bottom: 3px solid #ffca00;
+    color: #ffca00;
+  }
+
+  &:hover {
+    color: #ffca00;
+  }
+`;
+
+export const NavLinksKontakt = styled(ScrollLink)`
   color: #fff;
   display: flex;
   align-items: center;

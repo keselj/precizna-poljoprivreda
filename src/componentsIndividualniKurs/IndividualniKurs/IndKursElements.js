@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const IndividualniKursContainer = styled.div`
   height: auto;
   text-align: left;
-  padding: 200px;
+  padding: 100px;
 `;
 
 export const ImgAtTop = styled.img`
@@ -25,6 +25,7 @@ export const LeftContainer = styled.div`
   background-color: #fff;
   box-shadow: 2px 2px 15px rgb(26, 26, 26);
   border-left: 5px solid #ffca00;
+  width: 797px;
 `;
 
 export const TitileMain = styled.h2`
@@ -50,12 +51,14 @@ export const DurationTitle = styled.h5`
 
 export const Description = styled.p`
   margin-bottom: 10px;
-  font-size: 18px;
+  font-size: 16px;
+  line-height: 30px;
 `;
 
 export const DurationLong = styled.p`
   margin-bottom: 10px;
-  font-size: 18px;
+  font-size: 16px;
+  line-height: 30px;
 `;
 
 export const Price = styled.span`
@@ -73,6 +76,7 @@ export const FormContainer = styled.form`
   border-left: 5px solid #ffca00;
   box-shadow: 2px 2px 15px rgb(26, 26, 26);
   margin-left 20px;
+  width: 100%;
 `;
 
 export const TitleForm = styled.h3`

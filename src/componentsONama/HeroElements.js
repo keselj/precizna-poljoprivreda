@@ -84,7 +84,9 @@ export const ZokiContainer = styled.div`
   }
 `;
 
-export const ZokiImage = styled.img``;
+export const ZokiImage = styled.img`
+  margin-bottom: 15px;
+`;
 
 export const ZokiDescriptionIme = styled.p`
   text-align: center;
@@ -118,6 +120,8 @@ margin: 0 80px;
 box-shadow: 0 2px 50px rgba(0, 0, 0, 0.4);
 transition: all 0.2s ease-in-out;
 color: #fff;
+line-height: 20px;
+
 
 
 &:hover {
@@ -127,7 +131,9 @@ color: #fff;
   filter: grayscale(0%);
 `;
 
-export const KrleImage = styled.img``;
+export const KrleImage = styled.img`
+  margin-bottom: 15px;
+`;
 
 export const KrleDescription = styled.p`
   text-align: center;
@@ -138,7 +144,6 @@ export const KrleDescription = styled.p`
 export const SecondTitleandDescriptionContainer = styled.div`
   font-size: 18px;
   text-align: center;
-  font-weight: bold;
 `;
 
 export const SecondTitle = styled.h4`
@@ -149,9 +154,8 @@ export const SecondTitle = styled.h4`
 `;
 
 export const DescriptionTwo = styled.p`
-  font-size: 18px;
-  text-align: center;
-  font-weight: bold;
+  font-size: 16px;
+  text-align: start;
   margin: 30px;
   padding: 0 120px;
   line-height: 35px;
@@ -186,12 +190,15 @@ export const RestOfTeamContainerImages = styled.div`
 export const CardOfTeamMember = styled.div`
 display: flex;
 flex-direction: column;
-height: 435px;
+text-align: start;
+height: 445px;
 width: 235px;
 margin: 0 20px;
 box-shadow: 0 2px 50px rgba(0, 0, 0, 0.4);
 transition: all 0.2s ease-in-out;
 color: #fff;
+line-height: 20px;
+
 
 
 &:hover {
@@ -202,12 +209,15 @@ color: #fff;
 `;
 
 export const ImageOfTeamMember = styled.img`
-  height: 400px;
+  height: 350px;
   width: 235px;
+  margin-bottom: 20px;
 `;
 
 export const DescriptionOfTeamMember = styled.p`
   text-align: center;
   font-size: 12px;
   color: #000;
+  padding: 0 10px;
+  margin-bottom: 20px;
 `;

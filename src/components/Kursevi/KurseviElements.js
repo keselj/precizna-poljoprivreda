@@ -15,6 +15,7 @@ export const KursContainer = styled.div`
 
   @media screen and (max-width: 480px) {
     height: 1300px;
+    flex-direction: column;
   }
 `;
 
@@ -33,6 +34,10 @@ export const SliderWrapper = styled.div`
   padding: 10px 50px;
   height: 100%;
   flex: 2;
+  @media screen and (max-width: 480px) {
+    margin: 0;
+    width: 100%;
+  }
 `;
 
 export const KursH1 = styled.h1`
@@ -48,15 +53,20 @@ export const KursH1 = styled.h1`
 export const KursPh1 = styled.p`
   font-size: 16px;
   text-align: center;
-  margin: 40px;
+  margin-bottom: 40px;
+  padding: 0 40px;
+
+  @media screen and (max-width: 960px) {
+    margin: 0;
+    padding: 5px;
+  }
 `;
 
 export const ButtonContainer = styled.div`
   display: flex;
-  margin: 20px;
 
   & svg {
-    margin: 20px;
+    margin: 0 20px;
     cursor: pointer;
   }
 
@@ -66,12 +76,15 @@ export const ButtonContainer = styled.div`
   }
 
   @media screen and (max-width: 960px) {
-    margin: 0 auto;
+    margin: 0;
   }
 `;
 export const SliderContainer = styled.div`
   display: flex;
   flex-direction: row;
+  @media screen and (max-width: 480px) {
+    width: 100%;
+  }
 `;
 
 export const ReviewSliderKursevi = styled(Slider)`
@@ -102,9 +115,10 @@ export const KursWrapper = styled.div`
   @media screen and (max-width: 1000px) {
     grid-template-columns: 1fr 1fr;
   }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 480px) {
     grid-template-columns: 1fr;
     padding: 0 20px;
+    width: 100%;
   }
 `;
 
@@ -119,7 +133,8 @@ export const KursCard = styled.div`
   width: 383px;
   border-left: 5px solid #ffca00;
 
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+
   transition: all 0.2s ease-in-out;
   color: #fff;
 
@@ -147,12 +162,15 @@ export const KursH2 = styled.h2`
   margin-bottom: 5px;
   color: black;
   text-align: start;
+  padding: 0 10px;
 `;
 
 export const KursP = styled.p`
-  font-size: 18px;
+  font-size: 15px;
   text-align: start;
   color: black;
+  padding: 0 10px;
+  line-height: 25px;
 `;
 
 // Slider 2
@@ -203,7 +221,8 @@ export const KursCardTwo = styled.div`
   border-left: 5px solid #ffca00;
   margin-top: 50px;
 
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+
   transition: all 0.2s ease-in-out;
   color: #fff;
 
@@ -232,6 +251,10 @@ export const KursH2Two = styled.h2`
   margin-bottom: 5px;
   color: black;
 `;
-export const SliderTwoContainer = styled.div``;
+export const SliderTwoContainer = styled.div`
+  @media screen and (max-width: 480px) {
+    display: none;
+  }
+`;
 
 /// Odavde Gore za Sada

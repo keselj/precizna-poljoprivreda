@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { animateScroll as scroll } from "react-scroll";
 
 import { MdKeyboardArrowRight, MdKeyboardArrowLeft } from "react-icons/md";
 
@@ -39,6 +40,10 @@ import {
 
 import { Button } from "../ButtonElement";
 
+const toggleHome = () => {
+  scroll.scrollToTop();
+};
+
 const Kursevi = () => {
   const [hover, setHover] = useState(false);
   const [sliderRef, setSliderRef] = useState(null);
@@ -69,7 +74,12 @@ const Kursevi = () => {
           zaposleni na Poljoprivrednom fakultetu i drugim naučno-istraživačkim
           institucijama, kao i eksperti iz privrede sa velikim radnim iskustvom
         </KursPh1>
-        <Button to="/kursevi" onMouseEnter={onHover} onMouseLeave={onHover}>
+        <Button
+          to="/kursevi"
+          onMouseEnter={onHover}
+          onMouseLeave={onHover}
+          onClick={toggleHome}
+        >
           Pregeled svih Kurseva {hover ? <ArrowForward /> : <ArrowRight />}
         </Button>
       </WrapperH1P>
@@ -105,7 +115,7 @@ const Kursevi = () => {
                 </KursWrapperTwo>
               ))}
             </ReviewSliderTwo>
-            <ButtonContainer>
+            <ButtonContainer className="strelica-kursevi">
               <IconContext.Provider value={{ size: "5rem", color: "#000" }}>
                 <MdKeyboardArrowLeft onClick={() => handleArrowClick("left")} />
                 <MdKeyboardArrowRight

@@ -25,7 +25,11 @@ const UslugeCards = () => {
         {displayItemsInSetsOfThree.map((chunk, index) => (
           <UslugeCardsWrapper key={index}>
             {chunk.map((item) => (
-              <UslugeCardsCard key={item.id} id="kurs-card">
+              <UslugeCardsCard
+                to={`/usluge/${item.id}`}
+                key={item.id}
+                id="kurs-card"
+              >
                 <UslugeCardsIconWrapper>
                   <UslugeCardsIcon src={item.src} alt={item.alt} />
                 </UslugeCardsIconWrapper>

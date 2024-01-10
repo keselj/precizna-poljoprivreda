@@ -1,6 +1,6 @@
-const IndKursData = [
+const data = [
   {
-    id: "Osnove-Precizne-Poljoprivrede",
+    id: "osnove-precizne-poljoprivrede",
     title: "OSNOVE PRECIZNE POLJOPRIVREDE",
     opis: "OPIS",
     description: `Precizna poljoprivreda kao tehnološki koncept značajno odstupa od tradicionalne poljoprivrede jer se procedure prilagođavaju vremenskom i prostornom domenu, a odluke donose na osnovu pouzdanih prostornih informacija, znanja iz više naučnih disciplina i najsavremenije opreme. Poljoprivredni proizvođači kao budući korisnici savremene opreme (za đubrenje i detekciju različitih parametara na njivi) koja se koristi u preciznoj poljoprivredi, u velikoj meri nisu dovoljno inforisani o samom konceptu i raspoloživim alatima, te postoji realna potreba za njihovom permanentnom edukacijom. Učesnici kursa bi dobili osnovne informacije na temu savremenih alata u poljoprivredi koji bi im mogli koristiti u svakodnevnom radu. Na osnovu bogatog iskustva, predavača sa Poljoprivrednog fakulteta Univerziteta u Novom Sadu u korišćenju dronskih sistema (dornova za prskanje i daljinsku detekciju), različitih senzorskih sistema za detekciju parametara zemljišta i biljaka, korišćenja GPS i GIS platformi, razvoju algoritama za predikciju prinosa i đubrenja azotom na osnovi NDVI i multispektralnih snimaka, oformili smo specijalizovan kurs "Osnove precizna poljoprivrede".`,
@@ -10,10 +10,10 @@ const IndKursData = [
     cenaKursa: "55.000 rsd",
     dodatneInformacijeCena1:
       "* Minimum prijavljenih polaznika je neophodan za održavanje kursa u planiranim terminima.",
-    odatneInformacijeCena2: "* Cena uključuje PDV.",
+    dodatneInformacijeCena2: "* Cena uključuje PDV.",
   },
   {
-    id: "Dronovi-u-Poljoprivredi",
+    id: "dronovi-u-poljoprivredi",
     title: "DRONOVI U POLJOPRIVREDI",
     opis: "OPIS",
     description: `Kurs " Dronovi u poljoprivredi " pruža sveobuhvatno znanje o primeni dronova u poljoprivredi. Naučićete kako koristiti dronove za efikasno praćenje stanja i zaštitu biljaka, optimizirajući proizvodnju i smanjujući upotrebu hemikalija i resursa. Pridružite nam se i postanite stručnjak u ovoj naprednoj tehnologiji za unapređenje poljoprivredne proizvodnje.`,
@@ -23,10 +23,10 @@ const IndKursData = [
     cenaKursa: "142.000 rsd",
     dodatneInformacijeCena1:
       "* Minimum prijavljenih polaznika je neophodan za održavanje kursa u planiranim terminima.",
-    odatneInformacijeCena2: "* Cena uključuje PDV.",
+    dodatneInformacijeCena2: "* Cena uključuje PDV.",
   },
   {
-    id: "Dronovi-Za-Zaštitu-Biljaka",
+    id: "dronovi-za-zaštitu-biljaka",
     title: "DRONOVI ZA ZAŠTITU BILJAKA",
     opis: "OPIS",
     description: `Kurs "Dronovi u zaštiti biljaka" omogućava duboko razumevanje kako dronovi revolucioniziraju poljoprivrednu zaštitu bilja. Naučite kako koristiti dronove za efikasnu i preciznu distribuciju pesticida, optimizirajući potrošnju resursa i smanjujući ekološki uticaj. Postanite ekspert u ovom inovativnom pristupu zaštiti biljaka.`,
@@ -36,10 +36,10 @@ const IndKursData = [
     cenaKursa: "99.000 rsd",
     dodatneInformacijeCena1:
       "* Minimum prijavljenih polaznika je neophodan za održavanje kursa u planiranim terminima.",
-    odatneInformacijeCena2: "* Cena uključuje PDV.",
+    dodatneInformacijeCena2: "* Cena uključuje PDV.",
   },
   {
-    id: "Dronovi-Za-Monitoring-u-Poljoprivredi",
+    id: "dronovi-za-monitoring-u-poljoprivredi",
     title: "DRONOVI ZA MONITORING U POLJOPRIVREDI",
     opis: "OPIS",
     description: `Kurs "Dronovi za monitoring u poljoprivredi" pruža praktično i teorijsko znanje o upotrebi dronova u optimizaciji poljoprivredne proizvodnje. Polaznici će naučiti kako efikasno koristiti dronove za praćenje stanja useva, detekciju bolesti i štetočina, kao i za kreiranje varijabilnih mapa. Ovaj kurs omogućava povećanje efikasnosti poljoprivredne proizvodnje uz smanjenje resursa.`,
@@ -49,10 +49,10 @@ const IndKursData = [
     cenaKursa: "72.000 rsd",
     dodatneInformacijeCena1:
       "* Minimum prijavljenih polaznika je neophodan za održavanje kursa u planiranim terminima.",
-    odatneInformacijeCena2: "* Cena uključuje PDV.",
+    dodatneInformacijeCena2: "* Cena uključuje PDV.",
   },
   {
-    id: "Kurs-za-Rukovaoce-Sušara-u-Poljoprivredi",
+    id: "kurs-za-rukovaoce-sušara-u-poljoprivredi",
     title: "KURS ZA RUKOVAOCE SUŠARA U POLJOPRIVREDI",
     opis: "OPIS",
     description: `Departman za poljoprivrednu tehniku dvadeset godina radi na posebnoj obuci stručnjaka koji brinu o sušenju i skladištenju svega onoga što se u domaćoj poljoprivredi proizvede.
@@ -70,7 +70,7 @@ const IndKursData = [
       "Cena obuke zavisi od broja učesnika iz jedne firme. U cenu je uračunato: pohađanje nastave, potrebna literatura u formi knjige, konsultacije, polaganje ispita i izdavanje sertifikata. Za dodatne informacije i pitanja kontaktirajte rukovodioca obuke.",
     dodatneInformacijeCena1:
       "* Minimum prijavljenih polaznika je neophodan za održavanje kursa u planiranim terminima.",
-    odatneInformacijeCena2: "* Cena uključuje PDV.",
+    dodatneInformacijeCena2: "* Cena uključuje PDV.",
   },
 ];
 
@@ -145,4 +145,4 @@ export const dropdowns = [
   },
 ];
 
-export default IndKursData;
+export default data;

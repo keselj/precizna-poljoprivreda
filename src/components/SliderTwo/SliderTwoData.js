@@ -66,7 +66,8 @@ export const sliderSettings = {
     {
       breakpoint: 900,
       settings: {
-        slidesToShow: 2,
+        slidesToScroll: 1,
+        slidesToShow: 1,
       },
     },
   ],
@@ -90,7 +91,8 @@ export const sliderSettings2 = {
     {
       breakpoint: 900,
       settings: {
-        slidesToShow: 2,
+        slidesToScroll: 1,
+        slidesToShow: 1,
       },
     },
   ],

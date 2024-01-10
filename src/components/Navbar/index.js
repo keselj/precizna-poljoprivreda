@@ -1,7 +1,6 @@
 import { FaBars } from "react-icons/fa";
 import { animateScroll as scroll } from "react-scroll";
 import React from "react";
-// import { useState } from "react";
 import {
   Nav,
   NavbarContainer,
@@ -11,6 +10,7 @@ import {
   NavItem,
   NavLinks,
   NavLogoFax,
+  NavLinksKontakt,
 } from "./NavbarElements";
 
 const toggleHome = () => {
@@ -18,17 +18,6 @@ const toggleHome = () => {
 };
 
 const Navbar = ({ toggle }) => {
-  // const [activeNavLinks, setActiveNavLinks] = useState([]);
-  // const handleNavLinkClick = (e) => {
-  //   const path = e.target.pathname;
-
-  //   if (activeNavLinks.includes(path)) {
-  //     setActiveNavLinks(activeNavLinks.filter((item) => item !== path));
-  //   } else {
-  //     setActiveNavLinks([...activeNavLinks, path]);
-  //   }
-  //   e.target.classList.add("active");
-  // };
   return (
     <>
       <Nav>
@@ -39,22 +28,41 @@ const Navbar = ({ toggle }) => {
           </MobileIcon>
           <NavMenu>
             <NavItem>
-              <NavLinks to="/kursevi">KURSEVI</NavLinks>
+              <NavLinks to="/kursevi" onClick={toggleHome}>
+                KURSEVI
+              </NavLinks>
             </NavItem>{" "}
             <NavItem>
-              <NavLinks to="/usluge">USLUGE</NavLinks>
+              <NavLinks to="/usluge" onClick={toggleHome}>
+                USLUGE
+              </NavLinks>
             </NavItem>{" "}
             <NavItem>
-              <NavLinks to="/prodaja">PRODAJA</NavLinks>
+              <NavLinks to="/prodaja" onClick={toggleHome}>
+                PRODAJA
+              </NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="/zanimljivosti">BLOG</NavLinks>
+              <NavLinks to="/zanimljivosti" onClick={toggleHome}>
+                BLOG
+              </NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="/onama">O NAMA</NavLinks>
+              <NavLinks to="/onama" onClick={toggleHome}>
+                O NAMA
+              </NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="/kontakt">KONTAKT</NavLinks>
+              <NavLinksKontakt
+                to="footer"
+                smooth={true}
+                duration={500}
+                spy={true}
+                exact="true"
+                offset={-80}
+              >
+                KONTAKT
+              </NavLinksKontakt>
             </NavItem>
           </NavMenu>
           <NavLogoFax to="http://polj.uns.ac.rs/"></NavLogoFax>

@@ -5,6 +5,7 @@ import Home from "./pages";
 import UslugePage from "./pages/UslugePage";
 import KurseviPage from "./pages/KurseviPage";
 import IndKursPage from "./pages/IndKursPage";
+import IndividualniKurs from "./componentsIndividualniKurs/IndividualniKurs";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import OnamaPage from "./pages/OnamaPage";
@@ -19,6 +20,7 @@ function App() {
         <Route path="/indkurs" element={<IndKursPage />} />
         <Route path="/kurs/:id" element={<KurseviPage />} />
         <Route path="/onama" element={<OnamaPage />} />
+        <Route path="/indkurs/:id" component={IndividualniKurs} />
       </Routes>
     </Router>
   );

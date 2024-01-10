@@ -24,7 +24,6 @@ export const data = [
     univerzited: "Univerzitet u Novom Sadu",
     fakultet: "Poljoprivredni fakultet",
     departmant: "Departman za poljoprivrednu tehniku",
-    street: "Trg Dositeja Obradovića 8, Novi Sad",
   },
   {
     id: 2,
@@ -34,7 +33,6 @@ export const data = [
     univerzited: "Univerzitet u Novom Sadu",
     fakultet: "Poljoprivredni fakultet",
     departmant: "Departman za poljoprivrednu tehniku",
-    street: "Trg Dositeja Obradovića 8, Novi Sad",
   },
 ];
 
@@ -50,8 +48,6 @@ export const dataCard = [
         </p>
         <p className="p__onama">Univerzitet u Novom Sadu</p>
         <p className="p__onama">Poljoprivredni fakultet</p>
-        <p className="p__onama">Departman za poljoprivrednu tehniku</p>
-        <p className="p__onama">Trg Dositeja Obradovića 8, Novi Sad</p>
       </DescriptionOfTeamMember>
     ),
   },
@@ -66,10 +62,6 @@ export const dataCard = [
         </p>
         <p className="p__onama">Univerzitet u Novom Sadu</p>
         <p className="p__onama">Poljoprivredni fakultet</p>
-        <p className="p__onama">
-          Departman za ekonomiku poljoprivrede i sociologiju sela
-        </p>
-        <p className="p__onama">Trg Dositeja Obradovića 8, Novi Sad</p>
       </DescriptionOfTeamMember>
     ),
   },
@@ -84,10 +76,6 @@ export const dataCard = [
         </p>
         <p className="p__onama">Univerzitet u Novom Sadu</p>
         <p className="p__onama">Poljoprivredni fakultet</p>
-        <p className="p__onama">
-          Departman za ekonomiku poljoprivrede i sociologiju sela
-        </p>
-        <p className="p__onama">Trg Dositeja Obradovića 8, Novi Sad</p>
       </DescriptionOfTeamMember>
     ),
   },

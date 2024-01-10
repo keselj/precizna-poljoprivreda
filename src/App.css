@@ -6,6 +6,15 @@
   text-align: start;
 }
 
+.strelica-usluge {
+  padding-left: 400px;
+}
+
+.strelica-kursevi {
+  padding-left: 60px;
+  padding-bottom: 10px;
+}
+
 .p__onama {
   text-align: center;
 }
@@ -28,13 +37,11 @@
 
 #kurs-card {
   box-shadow: 2px 2px 15px rgb(26, 26, 26);
-
 }
 
 .dropdown {
   position: relative;
   display: inline-block;
-
 }
 
 .dropdown-options {
@@ -47,4 +54,3 @@
   border: 1px solid #ccc;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
-

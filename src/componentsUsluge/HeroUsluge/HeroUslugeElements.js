@@ -23,9 +23,9 @@ export const TextP = styled.p`
   margin-top: 60px;
   color: rgb(0, 0, 0);
   font-size: 20px;
-  text-align: center;
+  text-align: start;
   max-width: 1200px;
-  font-weight: bolder;
+  line-height: 35px;
 
   @media screen and (max-width: 768px) {
     font-size: 24px;

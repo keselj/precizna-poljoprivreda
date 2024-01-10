@@ -83,7 +83,7 @@ export const sliderSettings = {
     {
       breakpoint: 1280,
       settings: {
-        slidesToShow: 2,
+        slidesToShow: 1,
         draggable: false,
       },
     },

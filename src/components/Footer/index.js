@@ -92,10 +92,35 @@ const Footer = () => {
               Tu smo da vam pomognemo.
             </FooterTuSmoDaVamPomognemo>
             <FooterFormContainer>
-              <FooterInputEmail />
-              <FooterInputFirstName />
-              <FooterInputLastName />
-              <FooterInputPitanje />
+              <FooterInputEmail
+                type="email"
+                name="email"
+                placeholder="Email"
+                maxlength="50"
+                required
+              />
+              <FooterInputFirstName
+                type="text"
+                name="name"
+                maxlength="50"
+                placeholder="Ime"
+                required
+              />
+              <FooterInputLastName
+                type="text"
+                name="name"
+                maxlength="50"
+                placeholder="Prezime"
+                required
+              />
+              <FooterInputPitanje
+                type="text"
+                id="napomena"
+                name="napomena"
+                maxlength="450"
+                placeholder="Pitanje"
+                rows="7"
+              />
             </FooterFormContainer>
 
             <FooterSubmeitButton>Pošalji Pitanje</FooterSubmeitButton>

@@ -2,9 +2,6 @@ import React from "react";
 import { data, dataCard } from "./HeroData";
 import {
   HeroContainer,
-  SecondContainer,
-  BackgroundImage,
-  ColorOverlay,
   Title,
   TwoImagesContainer,
   ZokiContainer,
@@ -79,28 +76,6 @@ const Hero = () => {
             <CardOfTeamMember>
               <ImageOfTeamMember src={dataCard[2].src} alt={dataCard[2].alt} />
               {dataCard[2].predavac}
-            </CardOfTeamMember>
-            <CardOfTeamMember>
-              <ImageOfTeamMember src={dataCard[0].src} alt={dataCard[0].alt} />
-              {dataCard[0].predavac}
-            </CardOfTeamMember>
-          </RestOfTeamContainerImages>
-          <RestOfTeamContainerImages>
-            <CardOfTeamMember>
-              <ImageOfTeamMember src={dataCard[0].src} alt={dataCard[0].alt} />
-              {dataCard[0].predavac}
-            </CardOfTeamMember>
-            <CardOfTeamMember>
-              <ImageOfTeamMember src={dataCard[1].src} alt={dataCard[1].alt} />
-              {dataCard[1].predavac}
-            </CardOfTeamMember>
-            <CardOfTeamMember>
-              <ImageOfTeamMember src={dataCard[2].src} alt={dataCard[2].alt} />
-              {dataCard[2].predavac}
-            </CardOfTeamMember>
-            <CardOfTeamMember>
-              <ImageOfTeamMember src={dataCard[0].src} alt={dataCard[0].alt} />
-              {dataCard[0].predavac}
             </CardOfTeamMember>
           </RestOfTeamContainerImages>
         </RestOfTeamContainer>

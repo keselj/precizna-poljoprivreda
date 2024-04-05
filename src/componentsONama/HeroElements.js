@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import image1 from "../images/Logo/logoFax.png";
 
 export const HeroContainer = styled.div`
   max-width: 1700px;
@@ -9,6 +8,22 @@ export const HeroContainer = styled.div`
   flex-direction: column;
   align-items: center;
   background-color: #f1eeee;
+
+  @media screen and (max-width: 414px) {
+    overflow-x: hidden;
+  }
+
+  @media screen and (max-width: 430px) {
+    overflow-x: hidden;
+  }
+
+  @media screen and (max-width: 360px) {
+    overflow-x: hidden;
+  }
+
+  @media screen and (max-width: 768px) {
+    overflow-x: hidden;
+  }
 `;
 
 export const SecondContainer = styled.div`
@@ -18,25 +33,25 @@ export const SecondContainer = styled.div`
 `;
 // background: url(${image1}) no-repeat center center fixed;
 
-export const BackgroundImage = styled.div`
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  opacity: 0.5;
-`;
+// export const BackgroundImage = styled.div`
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   width: 100%;
+//   height: 100%;
+//   background-size: cover;
+//   opacity: 0.5;
+// `;
 
-export const ColorOverlay = styled.div`
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #yourColor; // Replace with your desired color
-  opacity: 0.3;
-`;
+// export const ColorOverlay = styled.div`
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   width: 100%;
+//   height: 100%;
+//   background-color: #yourColor; // Replace with your desired color
+//   opacity: 0.3;
+// `;
 
 export const Title = styled.h2`
   margin-top: 170px;
@@ -45,6 +60,12 @@ export const Title = styled.h2`
   text-align: center;
   font-weight: bold;
   width: 500px;
+
+  @media screen and (max-width: 412px) {
+    font-size: 18px !important;
+    margin-top: 140px;
+    width: 90%;
+  }
 
   @media screen and (max-width: 768px) {
     font-size: 48px;
@@ -56,6 +77,36 @@ export const Title = styled.h2`
    {
     font-size: 32px;
   }
+
+  @media screen and (max-width: 414px) {
+    font-size: 23px;
+  }
+
+  @media screen and (max-width: 430px) {
+    font-size: 23px;
+  }
+
+  @media screen and (max-width: 360px) {
+    font-size: 17px;
+    width: 90%;
+    margin-top: 140px;
+  }
+
+  @media screen and (max-width: 768px) {
+    font-size: 30px;
+  }
+
+  @media screen and (max-width: 1024px) {
+    font-size: 38px;
+  }
+
+  @media screen and (max-width: 280px) {
+    font-size: 18px;
+  }
+
+  @media screen and (max-width: 412px) {
+    font-size: 23px !important;
+  }
 `;
 
 export const TwoImagesContainer = styled.div`
@@ -64,6 +115,42 @@ export const TwoImagesContainer = styled.div`
   height: 550px;
   max-width: 1300px;
   justify-content: space-between;
+  align-items: center;
+
+  @media screen and (max-width: 414px) {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  @media screen and (max-width: 430px) {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  @media screen and (max-width: 360px) {
+    flex-direction: column;
+    gap: 50px;
+    margin-top: 300px;
+    margin-right: 40px;
+    margin-bottom: 0px;
+  }
+
+  @media screen and (max-width: 768px) {
+    justify-content: center;
+    margin-left: 0px;
+  }
+
+  @media screen and (max-width: 412px) {
+    flex-direction: column;
+    gap: 50px;
+    margin-top: 300px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+  }
+
+  @media screen and (max-width: 280px) {
+    width: 10%;
+  }
 `;
 
 export const ZokiContainer = styled.div`
@@ -82,10 +169,27 @@ export const ZokiContainer = styled.div`
 
     filter: grayscale(0%);
   }
+
+  @media screen and (max-width: 768px) {
+    margin: 0 40px;
+  }
+
+  @media screen and (max-width: 360px) {
+    &:hover {
+      transform: none;
+      transition: none;
+    }
+  }
+
+  @media screen and (max-width: 280px) {
+    width: 1000%;
+    margin-left: 80px;
+  }
 `;
 
 export const ZokiImage = styled.img`
   margin-bottom: 15px;
+  background-color: rgba(0, 0, 0, 0.5);
 `;
 
 export const ZokiDescriptionIme = styled.p`
@@ -124,15 +228,35 @@ line-height: 20px;
 
 
 
+
+
 &:hover {
   transform: scale(1.1);
-  transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out; 
 
   filter: grayscale(0%);
+
+}
+  @media screen and (max-width: 768px) {
+    margin: 0 40px;
+
+    }
+
+  @media screen and (max-width: 360px) {
+    &:hover {
+      transform: none;
+      transition: none;
+  }
+
+  @media screen and (max-width: 280px) {
+    width: 1000%;
+    margin-left: 80px;
+  }
 `;
 
 export const KrleImage = styled.img`
   margin-bottom: 15px;
+  background-color: rgba(0, 0, 0, 0.5);
 `;
 
 export const KrleDescription = styled.p`
@@ -144,6 +268,18 @@ export const KrleDescription = styled.p`
 export const SecondTitleandDescriptionContainer = styled.div`
   font-size: 18px;
   text-align: center;
+
+  @media screen and (max-width: 414px) {
+    margin-top: 500px;
+  }
+
+  @media screen and (max-width: 430px) {
+    margin-top: 500px;
+  }
+
+  @media screen and (max-width: 360px) {
+    margin-top: 350px;
+  }
 `;
 
 export const SecondTitle = styled.h4`
@@ -151,6 +287,49 @@ export const SecondTitle = styled.h4`
   text-align: center;
   margin-bottom: 50px;
   font-weight: bold;
+
+  @media screen and (max-width: 768px) {
+    margin-top: 20px;
+    margin-left: 45px;
+  }
+
+  @media screen and (max-width: 414px) {
+    font-size: 23px;
+    margin-top: 20px;
+    width: 70%;
+    margin-left: 67px;
+  }
+
+  @media screen and (max-width: 430px) {
+    font-size: 23px;
+    margin-top: 20px;
+    width: 70%;
+    margin-left: 67px;
+  }
+
+  @media screen and (max-width: 360px) {
+    font-size: 17px;
+    margin-top: 20px;
+    width: 50%;
+    margin-left: 120px;
+  }
+
+  @media screen and (max-width: 412px) {
+    margin-top: -100px;
+    font-size: 23px !important;
+    width: 70%;
+    margin-left: 80px;
+  }
+
+  @media screen and (max-width: 1024px) {
+    font-size: 35px;
+  }
+
+  @media screen and (max-width: 280px) {
+    font-size: 15px;
+    width: 50%;
+    margin-left: 120px;
+  }
 `;
 
 export const DescriptionTwo = styled.p`
@@ -159,6 +338,26 @@ export const DescriptionTwo = styled.p`
   margin: 30px;
   padding: 0 120px;
   line-height: 35px;
+
+  @media screen and (max-width: 412px) {
+    font-size: 20px !important;
+  }
+
+  @media screen and (max-width: 768px) {
+    font-size: 21px;
+  }
+
+  @media screen and (max-width: 820px) {
+    font-size: 25px;
+  }
+
+  @media screen and (max-width: 1024px) {
+    font-size: 25px;
+  }
+
+  @media screen and (max-width: 280px) {
+    font-size: 15px;
+  }
 `;
 
 export const RestOfTeamContainer = styled.div`
@@ -176,6 +375,25 @@ export const RestOfTheTeamTitle = styled.h5`
   font-weight: bold;
   margin-top: 50px;
   margin-bottom: 80px;
+
+  @media screen and (max-width: 360px) {
+    font-size: 19px;
+    margin-top: -30px;
+  }
+
+  @media screen and (max-width: 412px) {
+    margin-top: -20px;
+    font-size: 23px !important;
+  }
+
+  @media screen and (max-width: 1024px) {
+    margin-top: -20px;
+    font-size: 35px;
+  }
+
+  @media screen and (max-width: 280px) {
+    font-size: 18px;
+  }
 `;
 
 export const RestOfTeamContainerImages = styled.div`
@@ -185,6 +403,43 @@ export const RestOfTeamContainerImages = styled.div`
   justify-content: space-between;
   flex-direction: row;
   margin-bottom: 80px;
+
+  @media screen and (max-width: 768px) {
+    flex-wrap: wrap;
+    width: 80%;
+    margin-left: 90px;
+  }
+
+  @media screen and (max-width: 414px) {
+    flex-direction: column;
+    gap: 25px;
+    margin-left: 50px;
+  }
+
+  @media screen and (max-width: 430px) {
+    flex-direction: column;
+    gap: 25px;
+    margin-left: 50px;
+  }
+
+  @media screen and (max-width: 360px) {
+    flex-direction: column;
+    margin-left: 0px;
+    margin-top: -55px;
+  }
+
+  @media screen and (max-width: 412px) {
+    margin-top: -55px;
+    margin-right: 50px;
+  }
+
+  @media screen and (max-width: 820px) {
+    gap: 0px;
+  }
+
+  @media screen and (max-width: 280px) {
+    gap: 20px;
+  }
 `;
 
 export const CardOfTeamMember = styled.div`
@@ -206,6 +461,23 @@ line-height: 20px;
   transition: all 0.2s ease-in-out;
 
   filter: grayscale(0%);
+
+}
+
+  @media screen and (max-width: 768px) {
+    flex-basis: calc(100% / 2 - 40% );
+    margin: 20px 10px;
+  }
+
+  @media screen and (max-width: 360px) {
+    &:hover {
+      transform: none;
+      transition: none;
+  }
+
+  @media screen and (max-width: 820px) {
+    margin: 0 12px;
+  }
 `;
 
 export const ImageOfTeamMember = styled.img`

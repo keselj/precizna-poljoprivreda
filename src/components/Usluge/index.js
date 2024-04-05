@@ -70,7 +70,12 @@ const Usluge = () => {
             >
               {UslugeData2.map((el, index) => (
                 <UslugeWrapperTwo>
-                  <UslugeCardTwo key={index}>
+                  <UslugeCardTwo
+                    id="usluga-card"
+                    to={`/usluga/${el.id}`}
+                    key={el.id}
+                    state={el}
+                  >
                     <UslugeIconWrapperTwo>
                       <UslugeIconTwo src={el.src} alt={el.alt} />
                     </UslugeIconWrapperTwo>
@@ -98,7 +103,12 @@ const Usluge = () => {
           >
             {UslugeData.map((el, index) => (
               <UslugeWrapper>
-                <UslugeCard key={index}>
+                <UslugeCard
+                  id="usluga-card"
+                  to={`/usluga/${el.id}`}
+                  key={el.id}
+                  state={el}
+                >
                   <UslugeIconWrapper>
                     <UslugeIcon src={el.src} alt={el.alt} />
                   </UslugeIconWrapper>

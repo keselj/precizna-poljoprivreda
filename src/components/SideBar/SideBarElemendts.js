@@ -20,6 +20,21 @@ export const SidebarContainer = styled.aside`
 
 export const CloseIcon = styled(FaTimes)`
   color: #fff;
+
+  @media screen and (max-width: 768px) {
+    margin-top: 15px;
+    margin-right: 15px;
+  }
+
+  @media screen and (max-width: 820px) {
+    margin-top: 15px;
+    margin-right: 15px;
+  }
+
+  @media screen and (max-width: 853px) {
+    margin-top: 15px;
+    margin-right: 15px;
+  }
 `;
 
 export const Icon = styled.div`
@@ -62,6 +77,10 @@ export const SidebarLink = styled(LinkRouter)`
     color: #ffca00;
     transition: 0.2s ease-in-out;
   }
+
+  @media screen and (max-width: 853px) {
+    font-size: 40px;
+  }
 `;
 
 export const NavLogoSideBar = styled(LinkRouter)`
@@ -76,4 +95,20 @@ export const NavLogoSideBar = styled(LinkRouter)`
   height: 30px;
   min-width: 145px;
   min-height: 45px;
+
+  @media screen and (max-width: 768px) {
+    margin-top: -300px;
+  }
+
+  @media screen and (max-width: 820px) {
+    margin-top: -300px;
+  }
+
+  @media screen and (max-width: 280px) {
+    margin-top: -50px;
+  }
+
+  @media screen and (max-width: 853px) {
+    margin-top: -500px;
+  }
 `;

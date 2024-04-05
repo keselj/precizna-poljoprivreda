@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import Slider from "react-slick";
+import { Link } from "react-router-dom";
 
 export const UslugeContainer = styled.div`
   height: 800px;
@@ -127,7 +128,7 @@ export const UslugeWrapper = styled.div`
   }
 `;
 
-export const UslugeCard = styled.div`
+export const UslugeCard = styled(Link)`
   background: white;
   display: flex;
   flex-direction: column;
@@ -212,7 +213,7 @@ export const UslugeWrapperTwo = styled.div`
   }
 `;
 
-export const UslugeCardTwo = styled.div`
+export const UslugeCardTwo = styled(Link)`
   background: white;
   display: flex;
   flex-direction: column;

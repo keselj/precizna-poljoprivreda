@@ -1,12 +1,12 @@
 import styled from "styled-components";
 import { Link, Link as LinkRouter } from "react-router-dom";
 import { NavLink } from "react-router-dom";
-import logoBeliZeleni from "../../images/Logo/logoBeliZeleni.jpg";
+import LogoBeliPlavi from "../../images/Logo/logoBeliPlav.jpg";
 import logoFaxZeleni from "../../images/Logo/logoFaxZeleni.png";
 import { Link as ScrollLink } from "react-scroll";
 
 export const Nav = styled.nav`
-  background: ${({ scrollNav }) => (scrollNav ? "#fff" : "rgb(26, 47, 41);")};
+  background: ${({ scrollNav }) => (scrollNav ? "#fff" : "rgb(17, 29, 30);")};
   height: 100px;
   display: flex;
   justify-content: center;
@@ -19,6 +19,9 @@ export const Nav = styled.nav`
 
   @media screen and (max-width: 960px) {
     transition: 0.8s all case;
+  }
+
+  @media screen and (max-width: 360px) {
   }
 `;
 
@@ -39,9 +42,9 @@ export const NavLogo = styled(Link)`
   text-decoration: none;
   background: ${({ scrollNavLogo }) =>
     scrollNavLogo
-      ? `url(${logoBeliZeleni}) no-repeat center center / contain`
-      : `url(${logoBeliZeleni}) no-repeat center center / contain`};
-  background-color: rgb(26, 47, 41); /* The improved transparency spell */
+      ? `url(${LogoBeliPlavi}) no-repeat center center / contain`
+      : `url(${LogoBeliPlavi}) no-repeat center center / contain`};
+  background-color: rgb(17, 29, 30); /* The improved transparency spell */
   background-size: cover;
 
   width: 40px;
@@ -63,14 +66,26 @@ export const MobileIcon = styled.div`
     cursor: pointer;
     color: #fff;
   }
+
+  @media screen and (max-width: 768px) {
+    margin-top: 10px;
+  }
+
+  @media screen and (max-width: 820px) {
+    margin-top: 10px;
+  }
+
+  @media screen and (max-width: 853px) {
+    margin-top: 10px;
+  }
 `;
 
 export const NavMenu = styled.ul`
   display: flex;
-  aling-items: center;
+  align-items: center;
   list-style: none;
   text-align: center;
-  margin-right: -22px;
+  margin-right: 0;
   @media screen and (max-width: 1247px) {
     display: none;
   }

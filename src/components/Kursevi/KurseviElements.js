@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import Slider from "react-slick";
+import { Link } from "react-router-dom";
 
 export const KursContainer = styled.div`
   height: 800px;
@@ -122,7 +123,7 @@ export const KursWrapper = styled.div`
   }
 `;
 
-export const KursCard = styled.div`
+export const KursCard = styled(Link)`
   background: white;
   display: flex;
   flex-direction: column;
@@ -209,7 +210,7 @@ export const KursWrapperTwo = styled.div`
   }
 `;
 
-export const KursCardTwo = styled.div`
+export const KursCardTwo = styled(Link)`
   background: white;
   display: flex;
   flex-direction: column;

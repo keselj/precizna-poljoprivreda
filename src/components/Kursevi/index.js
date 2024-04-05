@@ -88,7 +88,12 @@ const Kursevi = () => {
           <ReviewSliderKursevi {...sliderSettings} ref={setSliderRefTwo}>
             {data.map((el, index) => (
               <KursWrapper>
-                <KursCard key={index}>
+                <KursCard
+                  id="kurs-card"
+                  to={`/kurs/${el.id}`}
+                  key={el.id}
+                  state={el}
+                >
                   <KursIconWrapper>
                     <KursIcon src={el.src} alt={el.alt} />
                   </KursIconWrapper>
@@ -104,7 +109,12 @@ const Kursevi = () => {
             <ReviewSliderTwo {...sliderSettingsTwo} ref={setSliderRef}>
               {dataSecond.map((el, index) => (
                 <KursWrapperTwo>
-                  <KursCardTwo key={index}>
+                  <KursCardTwo
+                    id="kurs-card"
+                    to={`/kurs/${el.id}`}
+                    key={el.id}
+                    state={el}
+                  >
                     <KursIconWrapperTwo>
                       <KursIconTwo src={el.src} alt={el.alt} />
                     </KursIconWrapperTwo>

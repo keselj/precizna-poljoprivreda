@@ -43,7 +43,7 @@ const Navbar = ({ toggle }) => {
               </NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="/zanimljivosti" onClick={toggleHome}>
+              <NavLinks to="/blog" onClick={toggleHome}>
                 BLOG
               </NavLinks>
             </NavItem>
@@ -65,7 +65,7 @@ const Navbar = ({ toggle }) => {
               </NavLinksKontakt>
             </NavItem>
           </NavMenu>
-          <NavLogoFax to="http://polj.uns.ac.rs/"></NavLogoFax>
+          {/* <NavLogoFax to="http://polj.uns.ac.rs/"></NavLogoFax> */}
         </NavbarContainer>
       </Nav>
     </>

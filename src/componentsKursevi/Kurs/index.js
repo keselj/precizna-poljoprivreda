@@ -17,16 +17,16 @@ const Kurs = () => {
     const chunk = KursData.slice(i, i + 3);
     displayItemsInSetsOfThree.push(chunk);
   }
-
+  const x = 2;
   return (
     <>
       <KursContainer>
         {displayItemsInSetsOfThree.map((chunk, index) => (
-          <KursWrapper key={index}>
+          <KursWrapper key={index} title={x}>
             {chunk.map((item) => (
               <KursCard
                 id="kurs-card"
-                to={`/kursevi/${item.id}`}
+                to={`/kurs/${item.id}`}
                 key={item.id}
                 state={item}
               >

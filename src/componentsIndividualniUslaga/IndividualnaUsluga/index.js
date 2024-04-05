@@ -1,5 +1,6 @@
 import React from "react";
 import TestDropDown from "../TestDropDown";
+
 import {
   IndividualniKursContainer,
   FormLeftContainer,
@@ -16,32 +17,32 @@ import {
   DurationTitle,
   InputNapomena,
   DropDownContainer,
-} from "./IndKursElements";
-
-import data from "./IndKursData";
+} from "./IndUslugaElements";
 
 import { Button } from "../../components/ButtonElement";
 
-const IndividualniKurs = (props) => {
+const IndividualniUslaga = (props) => {
   return (
     <IndividualniKursContainer>
       <TitileMain>{props.title}</TitileMain>
       <FormLeftContainer>
         <LeftContainer>
-          <DurationTitle>{props.opis}</DurationTitle>
+          <DurationTitle>OPIS</DurationTitle>
           <Description>{props.description}</Description>
-          <DurationTitle>{props.durationLongTitle}</DurationTitle>
+          <DurationTitle>{props.durationTitle}</DurationTitle>
 
           <DurationLong>{props.durationLong}</DurationLong>
           <hr id="borderline"></hr>
-          <Price>{props.cenaKursaTitle}</Price>
+          <Price>CENA</Price>
           <Price>{props.cenaKursa}</Price>
-          <Description>{props.dodatneInformacijeCena1}</Description>
-          <Description>{props.dodatneInformacijeCena2}</Description>
+          <Description>
+            * Minimum prijavljenih polaznika je neophodan za održavanje kursa u
+            planiranim terminima.
+          </Description>
+          <Description>* Cena uključuje PDV.</Description>
         </LeftContainer>
         <FormContainer>
           <TitleForm>Prijavite se za naredni kurs</TitleForm>
-          <TitleForm>Video Game Development 1</TitleForm>
           <DuratioFormDate>09.01.2024 - 09.04.2024</DuratioFormDate>
           <DuratioFormDate>18:00 - 21:00</DuratioFormDate>
           <PForm>Ostavite Vaše podatke, a mi ćemo Vas kontaktirati.</PForm>
@@ -97,4 +98,4 @@ const IndividualniKurs = (props) => {
   );
 };
 
-export default IndividualniKurs;
+export default IndividualniUslaga;

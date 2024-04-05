@@ -26,9 +26,10 @@ const UslugeCards = () => {
           <UslugeCardsWrapper key={index}>
             {chunk.map((item) => (
               <UslugeCardsCard
-                to={`/usluge/${item.id}`}
+                id="usluga-card"
+                to={`/usluga/${item.id}`}
                 key={item.id}
-                id="kurs-card"
+                state={item}
               >
                 <UslugeCardsIconWrapper>
                   <UslugeCardsIcon src={item.src} alt={item.alt} />

@@ -91,6 +91,17 @@ export const SpanHeader1 = styled.span`
   font-weight: bold;
   margin-right: 8px;
   color: #ffca00;
+
+  @media screen and (max-width: 414px) {
+    margin-left: 15px;
+  }
+
+  @media screen and (max-width: 430px) {
+    margin-left: 15px;
+  }
+  @media screen and (max-width: 360px) {
+    margin-left: 15px;
+  }
 `;
 
 export const SpanHeader2 = styled.span`

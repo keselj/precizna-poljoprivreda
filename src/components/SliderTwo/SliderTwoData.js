@@ -1,49 +1,54 @@
+import agrovojvodina from "../../images/companies/Agrovojvodina.png";
+import corteva from "../../images/companies/Corteva.png";
+import DPT from "../../images/companies/DPT.gif";
+import DronAgri from "../../images/companies/DronAgri.jpg";
+import horschMaschinen from "../../images/companies/horsch-maschinen.png";
+import Mikron from "../../images/companies/Mikron.png";
+import kljakic from "../../images/companies/Kljakic.png";
+import sigma from "../../images/companies/sigma.png";
+import TerraConsulting from "../../images/companies/TerraConsulting.png";
+import TRCpro from "../../images/companies/TRCpro.jpg";
+import Tupanjac from "../../images/companies/Tupanjac.jpg";
+import Vaderstad from "../../images/companies/Vaderstad.png";
+
 export const data = [
   {
-    image: "http://tupanjac.rs/wp-content/uploads/2017/02/logo4-2.jpg",
+    image: agrovojvodina,
   },
   {
-    image:
-      "https://mikron-doo.rs/wp-content/themes/mikron_v2/assets/images/logo.svg",
+    image: corteva,
   },
   {
-    image:
-      "https://assets.corteva.com/is/image/Corteva/LOG-Corteva_Logo-Corporate-Global-V1",
+    image: DPT,
   },
   {
-    image: "https://www.deltaagrar.rs/images/template/logo.png",
+    image: DronAgri,
   },
   {
-    image:
-      "https://www.kitedoo.rs/wp-content/uploads/2022/05/logo-kite-doo.png",
+    image: horschMaschinen,
   },
   {
-    image:
-      "https://agrotech.land/sites/default/files/gbb-uploads/steyr_german_claim_cmyk-r1to3a.png",
+    image: Mikron,
   },
 ];
 export const data2 = [
   {
-    image:
-      "https://www.elixirgroup.rs/wp-content/themes/elixir/img/ElixirGroup.svg",
+    image: kljakic,
   },
   {
-    image:
-      "https://www.mkgroup.rs/wp-content/uploads/2019/06/mk_group_logo.png",
+    image: sigma,
   },
   {
-    image:
-      "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQUmZAcMIGiRcllmCIlS6NMjRpOf97gOrfC00iPPtWVkGvvjMDq",
+    image: TerraConsulting,
   },
   {
-    image: "http://www.livona.rs/wp-content/uploads/Livona-logo-011.png",
+    image: TRCpro,
   },
   {
-    image:
-      "https://www.agrovojvodina-mehanizacija.co.rs/wp-content/uploads/2020/04/cropped-cropped-AGROVOJVODINA-MEHANIZACIJA_DOO_logo.png",
+    image: Tupanjac,
   },
   {
-    image: "https://agrotech.land/sites/default/files/agrotech-logo-pm.png",
+    image: Vaderstad,
   },
 ];
 

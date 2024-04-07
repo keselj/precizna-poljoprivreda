@@ -81,6 +81,18 @@ export const SidebarLink = styled(LinkRouter)`
   @media screen and (max-width: 853px) {
     font-size: 40px;
   }
+
+  @media screen and (max-width: 414px) {
+    font-size: 30px;
+  }
+
+  @media screen and (max-width: 430px) {
+    font-size: 30px;
+  }
+
+  @media screen and (max-width: 1024px) {
+    font-size: 40px;
+  }
 `;
 
 export const NavLogoSideBar = styled(LinkRouter)`
@@ -110,5 +122,13 @@ export const NavLogoSideBar = styled(LinkRouter)`
 
   @media screen and (max-width: 853px) {
     margin-top: -500px;
+  }
+
+  @media screen and (max-width: 414px) {
+    margin-top: -200px;
+  }
+
+  @media screen and (max-width: 430px) {
+    margin-top: -200px;
   }
 `;

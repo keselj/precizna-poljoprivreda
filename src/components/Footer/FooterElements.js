@@ -5,6 +5,14 @@ import logoBeliPlavi from "../../images/Logo/logoBeliPlav.jpg";
 
 export const FooterContainer = styled.footer`
   background-color: rgb(17, 29, 30);
+
+  @media screen and (max-width: 540px) {
+    width: 115%;
+  }
+
+  @media screen and (max-width: 412px) {
+    width: 100%;
+  }
 `;
 
 export const FooterWrap = styled.div`
@@ -44,6 +52,10 @@ export const FooterWrap = styled.div`
   @media screen and (max-width: 820px) {
     gap: 20px;
   }
+
+  @media screen and (max-width: 375px) {
+    padding-right: 0;
+  }
 `;
 
 export const FooterLogoAndAddress = styled.div`
@@ -64,6 +76,15 @@ export const FooterLogoAndAddress = styled.div`
 
   @media screen and (max-width: 853px) {
     margin-left: 35px;
+  }
+
+  @media screen and (max-width: 375px) {
+    margin-left: -15px;
+  }
+
+  @media screen and (max-width: 540px) {
+    margin-left: 0px;
+    width: 40%;
   }
 `;
 
@@ -117,6 +138,10 @@ export const FooterOnamaKurseviUslugeProdaja = styled.div`
   }
 
   @media screen and (max-width: 360px) {
+    display: none;
+  }
+
+  @media screen and (max-width: 540px) {
     display: none;
   }
 `;
@@ -179,6 +204,9 @@ export const FooterSolicalMedia = styled.div`
 
   @media screen and (max-width: 412px) {
     margin-top: 20px;
+    width: 100% !important;
+    margin-left: -25px;
+    gap: 26px;
   }
 
   @media screen and (max-width: 280px) {
@@ -186,6 +214,15 @@ export const FooterSolicalMedia = styled.div`
     flex-direction: row;
     margin-left: -30px;
     gap: 20px;
+  }
+
+  @media screen and (max-width: 375px) {
+    gap: 20px;
+    margin-left: -28px;
+  }
+
+  @media screen and (max-width: 540px) {
+    width: 40%;
   }
 `;
 
@@ -251,6 +288,14 @@ export const FooterBox = styled.div`
   @media screen and (max-width: 853px) {
     width: 90%;
   }
+
+  @media screen and (max-width: 375px) {
+    width: 80%;
+  }
+
+  @media screen and (max-width: 540px) {
+    width: 100%;
+  }
 `;
 export const FooterPitajteNasNaslov = styled.h4`
   font-size: 24px;
@@ -274,6 +319,14 @@ export const FooterFormContainer = styled.form`
 
   @media screen and (max-width: 360px) {
     width: 100%;
+  }
+
+  @media screen and (max-width: 375px) {
+    width: 90%;
+  }
+
+  @media screen and (max-width: 540px) {
+    width: 90%;
   }
 `;
 export const FooterInputEmail = styled.input`
@@ -300,6 +353,14 @@ export const FooterInputPitanje = styled.textarea`
 
   @media screen and (max-width: 360px) {
     width: 100%;
+  }
+
+  @media screen and (max-width: 375px) {
+    width: 135%;
+  }
+
+  @media screen and (max-width: 540px) {
+    width: 135%;
   }
 `;
 export const FooterSubmeitButton = styled.button`

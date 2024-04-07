@@ -23,6 +23,22 @@ export const Nav = styled.nav`
 
   @media screen and (max-width: 360px) {
   }
+
+  @media screen and (max-width: 375px) {
+    width: 100%;
+  }
+
+  @media screen and (max-width: 360px) {
+    width: 100%;
+  }
+
+  @media screen and (max-width: 540px) {
+    width: 110% !important;
+  }
+
+  @media screen and (max-width: 412px) {
+    width: 100% !important;
+  }
 `;
 
 export const NavbarContainer = styled.div`

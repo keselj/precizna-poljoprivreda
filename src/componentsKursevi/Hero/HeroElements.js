@@ -17,6 +17,10 @@ export const Header = styled.h1`
    {
     font-size: 32px;
   }
+
+  @media screen and (max-width: 375px) {
+    font-size: 35px;
+  }
 `;
 
 export const TextP = styled.p`
@@ -35,6 +39,46 @@ export const TextP = styled.p`
   }
    {
     font-size: 18px;
+  }
+
+  @media screen and (max-width: 375px) {
+    font-size: 10px;
+    width: 90%;
+    margin-left: -50px;
+  }
+
+  @media screen and (max-width: 414px) {
+    font-size: 17px;
+  }
+
+  @media screen and (max-width: 430px) {
+    font-size: 18px;
+  }
+
+  @media screen and (max-width: 360px) {
+    font-size: 15px;
+    margin-left: 15px;
+    text-align: left;
+  }
+
+  @media screen and (max-width: 768px) {
+    font-size: 20px !important;
+  }
+
+  @media screen and (max-width: 912px) {
+    font-size: 23px;
+  }
+
+  @media screen and (max-width: 540px) {
+    font-size: 18px !important;
+  }
+
+  @media screen and (max-width: 280px) {
+    font-size: 14px !important;
+  }
+
+  @media screen and (max-width: 412px) {
+    font-size: 15px !important;
   }
 `;
 

@@ -16,12 +16,43 @@ export const KursWrapper = styled.div`
   padding: 0 140px;
   grid-template-columns: 1fr 1fr 1fr;
 
-  @media screen and (max-width: 1000px) {
-    grid-template-columns: 1fr 1fr;
-  }
   @media screen and (max-width: 768px) {
     grid-template-columns: 1fr;
     padding: 0 20px;
+  }
+
+  @media screen and (max-width: 375px) {
+    gap: 50px;
+  }
+
+  @media screen and (max-width: 414px) {
+    gap: 50px;
+  }
+
+  @media screen and (max-width: 390px) {
+    margin-left: 10px;
+  }
+
+  @media screen and (max-width: 430px) {
+    gap: 50px;
+  }
+
+  @media screen and (max-width: 768px) {
+    gap: 50px;
+  }
+
+  @media screen and (max-width: 820px) {
+    gap: 50px;
+    grid-template-columns: 1fr;
+  }
+
+  @media screen and (max-width: 1024px) {
+    gap: 50px;
+    grid-template-columns: 1fr;
+  }
+
+  @media screen and (max-width: 280px) {
+    margin-left: -80px;
   }
 `;
 
@@ -73,4 +104,24 @@ export const KursP = styled.p`
   color: black;
   padding: 0 10px;
   line-height: 25px;
+
+  @media screen and (max-width: 375px) {
+    font-size: 13px;
+  }
+
+  @media screen and (max-width: 414px) {
+    font-size: 14px;
+  }
+
+  @media screen and (max-width: 820px) {
+    font-size: 15px;
+  }
+
+  @media screen and (max-width: 1024px) {
+    font-size: 15px;
+  }
+
+  @media screen and (max-width: 280px) {
+    font-size: 11.2px;
+  }
 `;

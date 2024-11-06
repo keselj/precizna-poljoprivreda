@@ -65,6 +65,10 @@ const Hero = () => {
         <RestOfTeamContainer>
           <RestOfTheTeamTitle>{data[0].restOfTeamTitle}</RestOfTheTeamTitle>
           <RestOfTeamContainerImages>
+            {/* <CardOfTeamMember>
+              <ImageOfTeamMember src={dataCard[0].src} alt={dataCard[0].alt} />
+              {dataCard[0].predavac}
+            </CardOfTeamMember> */}
             <CardOfTeamMember>
               <ImageOfTeamMember src={dataCard[0].src} alt={dataCard[0].alt} />
               {dataCard[0].predavac}
@@ -72,10 +76,6 @@ const Hero = () => {
             <CardOfTeamMember>
               <ImageOfTeamMember src={dataCard[1].src} alt={dataCard[1].alt} />
               {dataCard[1].predavac}
-            </CardOfTeamMember>
-            <CardOfTeamMember>
-              <ImageOfTeamMember src={dataCard[2].src} alt={dataCard[2].alt} />
-              {dataCard[2].predavac}
             </CardOfTeamMember>
           </RestOfTeamContainerImages>
         </RestOfTeamContainer>

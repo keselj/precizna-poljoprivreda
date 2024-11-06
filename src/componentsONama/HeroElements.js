@@ -1,12 +1,12 @@
 import styled from "styled-components";
 
 export const HeroContainer = styled.div`
-  max-width: 1700px;
   position: relative;
   padding: 8px 24px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   background-color: #f1eeee;
 
   @media screen and (max-width: 414px) {
@@ -116,6 +116,7 @@ export const TwoImagesContainer = styled.div`
   max-width: 1300px;
   justify-content: space-between;
   align-items: center;
+  background-color: #f1eeee;
 
   @media screen and (max-width: 414px) {
     flex-direction: column;
@@ -194,7 +195,7 @@ export const ZokiImage = styled.img`
 
 export const ZokiDescriptionIme = styled.p`
   text-align: center;
-  background-color: #fff;
+  background-color: #f1eeee;
   color: #000;
   font-size: 16px;
   font-weight: bold;
@@ -202,14 +203,14 @@ export const ZokiDescriptionIme = styled.p`
 
 export const ZokiDescription = styled.p`
   text-align: center;
-  background-color: #fff;
+  background-color: #f1eeee;
   color: #000;
   font-size: 16px;
 `;
 
 export const KrleDescriptionIme = styled.p`
   text-align: center;
-  background-color: #fff;
+  background-color: #f1eeee;
   color: #000;
   font-size: 16px;
   font-weight: bold;
@@ -263,6 +264,7 @@ export const KrleDescription = styled.p`
   text-align: center;
   font-size: 16px;
   color: #000;
+  background-color: #f1eeee;
 `;
 
 export const SecondTitleandDescriptionContainer = styled.div`
@@ -288,37 +290,42 @@ export const SecondTitle = styled.h4`
   margin-bottom: 50px;
   font-weight: bold;
 
+  @media screen and (max-width: 375px) {
+    margin-left: 0 !important;
+    font-size: 23px;
+    width: 100% !important;
+  }
+
   @media screen and (max-width: 768px) {
     margin-top: 20px;
     margin-left: 45px;
   }
 
   @media screen and (max-width: 414px) {
-    font-size: 23px;
-    margin-top: 20px;
-    width: 70%;
-    margin-left: 67px;
+    margin-left: 0 !important;
+    font-size: 23px !important;
+    width: 100% !important;
+    margin-top: -120px;
   }
 
   @media screen and (max-width: 430px) {
-    font-size: 23px;
-    margin-top: 20px;
-    width: 70%;
-    margin-left: 67px;
+    margin-left: 0 !important;
+    font-size: 23px !important;
+    width: 100% !important;
+    margin-top: -120px;
   }
 
   @media screen and (max-width: 360px) {
-    font-size: 17px;
-    margin-top: 20px;
-    width: 50%;
-    margin-left: 120px;
+    margin-left: 0 !important;
+    font-size: 23px !important;
+    width: 100% !important;
+    margin-top: 0 !important;
   }
 
   @media screen and (max-width: 412px) {
-    margin-top: -100px;
+    margin-left: 0 !important;
     font-size: 23px !important;
-    width: 70%;
-    margin-left: 80px;
+    width: 100% !important;
   }
 
   @media screen and (max-width: 1024px) {
@@ -326,9 +333,9 @@ export const SecondTitle = styled.h4`
   }
 
   @media screen and (max-width: 280px) {
-    font-size: 15px;
-    width: 50%;
-    margin-left: 120px;
+    margin-left: 0 !important;
+    font-size: 23px !important;
+    width: 100% !important;
   }
 `;
 
@@ -339,24 +346,70 @@ export const DescriptionTwo = styled.p`
   padding: 0 120px;
   line-height: 35px;
 
+  @media screen and (max-width: 375px) {
+    text-align: center;
+    font-weight: 500;
+    font-size: 17px !important;
+    word-spacing: 4px;
+    line-height: 23px;
+    letter-spacing: 1px;
+    padding: 0;
+    margin: 30px 0;
+  }
+
   @media screen and (max-width: 412px) {
-    font-size: 20px !important;
+    text-align: center;
+    font-weight: 500;
+    font-size: 17px !important;
+    word-spacing: 4px;
+    line-height: 23px;
+    letter-spacing: 1px;
+    padding: 0;
+    margin: 30px 0;
   }
 
   @media screen and (max-width: 768px) {
-    font-size: 21px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 17px !important;
+    word-spacing: 4px;
+    line-height: 23px;
+    letter-spacing: 1px;
+    padding: 0;
+    margin: 30px 0;
   }
 
   @media screen and (max-width: 820px) {
-    font-size: 25px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 17px !important;
+    word-spacing: 4px;
+    line-height: 23px;
+    letter-spacing: 1px;
+    padding: 0;
+    margin: 30px 0;
   }
 
   @media screen and (max-width: 1024px) {
-    font-size: 25px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 17px !important;
+    word-spacing: 4px;
+    line-height: 23px;
+    letter-spacing: 1px;
+    padding: 0;
+    margin: 30px 0;
   }
 
   @media screen and (max-width: 280px) {
-    font-size: 15px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 17px !important;
+    word-spacing: 4px;
+    line-height: 23px;
+    letter-spacing: 1px;
+    padding: 0;
+    margin: 30px 0;
   }
 `;
 

@@ -7,16 +7,15 @@ import {
   ImageWrapper,
   CarouselImage,
   SpanHeader1,
-  SpanHeader2,
   Section,
 } from "./SliderTwoElements";
 
-const Carousel = () => {
+const Carousel = ({ backgroundColor }) => {
   const [sliderRef, setSliderRef] = useState(null);
   const [sliderRef2, setSliderRef2] = useState(null);
 
   return (
-    <Section inverse>
+    <Section inverse backgroundColor={backgroundColor}>
       <Heading>
         <SpanHeader1>| </SpanHeader1>
         NAŠI PARTNERI

@@ -1,5 +1,6 @@
 import React from "react";
 import TestDropDown from "../TestDropDown";
+import Swal from "sweetalert2";
 
 import {
   IndividualniKursContainer,
@@ -10,18 +11,68 @@ import {
   DurationLong,
   Price,
   FormContainer,
-  TitleForm,
-  DuratioFormDate,
-  PForm,
   Input,
   DurationTitle,
   InputNapomena,
   DropDownContainer,
 } from "./IndKursElements";
 
-import { Button } from "../../components/ButtonElement";
+import { FooterSubmeitButton } from "../../components/Footer/FooterElements";
 
 const IndividualniKurs = (props) => {
+  const poslato = () => {
+    Swal.fire({
+      title: "Uspesno",
+      text: "Uspesno ste poslali mail",
+      icon: "success",
+    });
+  };
+
+  const error = () => {
+    Swal.fire({
+      title: "Niste popunili sva polja",
+      icon: "error",
+    });
+  };
+
+  const validateForm = (event) => {
+    const form = event.target.closest("form");
+    const email = form.querySelector('[name="email"]').value;
+    const firstName = form.querySelector('[name="firstName"]').value;
+    const lastName = form.querySelector('[name="lastName"]').value;
+
+    if (email && firstName && lastName) {
+      poslato();
+    } else {
+      error();
+    }
+  };
+
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    const formData = new FormData(event.target);
+
+    formData.append("access_key", "5d439610-697a-4bc1-94c7-41c4e4cbe95d");
+
+    const object = Object.fromEntries(formData);
+    const json = JSON.stringify(object);
+
+    const res = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+      body: json,
+    }).then((res) => res.json());
+
+    if (res.success) {
+      console.log("Success", res);
+    } else {
+      console.log("Error", res);
+    }
+  };
+
   return (
     <IndividualniKursContainer>
       <TitileMain>{props.title}</TitileMain>
@@ -41,59 +92,44 @@ const IndividualniKurs = (props) => {
           </Description>
           <Description>* Cena uključuje PDV.</Description>
         </LeftContainer>
-        <FormContainer>
-          <TitleForm>Prijavite se za naredni kurs</TitleForm>
-          <DuratioFormDate>09.01.2024 - 09.04.2024</DuratioFormDate>
-          <DuratioFormDate>18:00 - 21:00</DuratioFormDate>
-          <PForm>Ostavite Vaše podatke, a mi ćemo Vas kontaktirati.</PForm>
-          <label htmlFor="name" />
-          <Input
-            type="text"
-            name="name"
-            maxlength="50"
-            placeholder="Ime i Prezime"
-            required
-          />
-          <label htmlFor="email" />
+        <FormContainer onSubmit={onSubmit}>
           <Input
             type="email"
             name="email"
             placeholder="Email"
-            maxlength="50"
+            maxLength="50"
             required
           />
-          <label htmlFor="phone" />
-          <Input
-            type="tel"
-            id="phone"
-            name="phone"
-            placeholder="Telefon"
-            required
-            maxlength="50"
-          />
-          <label htmlFor="address" />
           <Input
             type="text"
-            id="address"
-            name="address"
-            placeholder="Adresa"
-            maxlength="50"
+            name="firstName"
+            maxLength="50"
+            placeholder="Ime"
+            required
           />
-          <label htmlFor="napomena" />
+          <Input
+            type="text"
+            name="lastName"
+            maxLength="50"
+            placeholder="Prezime"
+            required
+          />
           <InputNapomena
             type="text"
             id="napomena"
             name="napomena"
-            maxlength="450"
-            placeholder="Napomena"
+            maxLength="450"
+            placeholder="Pitanje"
             rows="7"
           />
-          <Button>Prijavi me</Button>
+          <FooterSubmeitButton type="submit" onClick={validateForm}>
+            Pošalji Pitanje
+          </FooterSubmeitButton>
         </FormContainer>
       </FormLeftContainer>
       <DropDownContainer>
-        <TestDropDown></TestDropDown>
-      </DropDownContainer>{" "}
+        <TestDropDown kursId={props.id}></TestDropDown>
+      </DropDownContainer>
     </IndividualniKursContainer>
   );
 };

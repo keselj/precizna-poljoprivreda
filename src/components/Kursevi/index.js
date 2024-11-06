@@ -36,6 +36,7 @@ import {
   SliderTwoContainer,
   ReviewSliderTwo,
   SliderContainer,
+  Dots,
 } from "./KurseviElements";
 
 import { Button } from "../ButtonElement";
@@ -80,7 +81,7 @@ const Kursevi = () => {
           onMouseLeave={onHover}
           onClick={toggleHome}
         >
-          Pregeled svih Kurseva {hover ? <ArrowForward /> : <ArrowRight />}
+          Pregled svih Kurseva {hover ? <ArrowForward /> : <ArrowRight />}
         </Button>
       </WrapperH1P>
       <SliderWrapper>
@@ -102,6 +103,7 @@ const Kursevi = () => {
                     <KursP> {el.description}</KursP>
                   </KursH2PWrapper>
                 </KursCard>
+                <Dots />
               </KursWrapper>
             ))}
           </ReviewSliderKursevi>

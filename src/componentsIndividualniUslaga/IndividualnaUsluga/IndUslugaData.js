@@ -1,10 +1,58 @@
 const tableData = [
-  ["Veličina parcele ", "Cena"],
-  ["Row 2, Col 1", "Row 2, Col 2"],
-  ["Row 3, Col 1", "Row 3, Col 2"],
-  ["Row 4, Col 1", "Row 4, Col 2"],
-  ["Row 5, Col 1", "Row 5, Col 2"],
-  ["Row 6, Col 1", "Row 6, Col 2"],
+  ["Veličina parcele", "Cena"],
+  ["Do 20 ha", "5300 rsd/ha "],
+  ["20-40 ha", "5000 rsd/ha"],
+  ["40-60 ha", "4800 rsd/ha"],
+  ["60-80 ha", "4400 rsd/ha"],
+  ["Preko 80 ha", "4400 rsd/ha"],
+];
+
+const tableData2 = [
+  ["Veličina parcele", "Cena"],
+  ["Do 20 ha", "1000 rsd/ha "],
+  ["20-50 ha", "900 rsd/ha"],
+  ["50-100 ha", "800 rsd/ha"],
+  ["Preko 100 ha", "700 rsd/ha"],
+];
+
+const tableData3 = [
+  ["Veličina parcele", "Cena"],
+  ["Do 20 ha", "800 rsd/ha "],
+  ["20-50 ha", "700 rsd/ha"],
+  ["50-100 ha", "600 rsd/ha"],
+  ["Preko 100 ha", "500 rsd/ha"],
+];
+
+const tableData4 = [
+  ["Veličina parcele", "Cena"],
+  ["Do 20 ha", "1200 rsd/ha "],
+  ["20-50 ha", "1050 rsd/ha"],
+  ["50-100 ha", "950 rsd/ha"],
+  ["Preko 100 ha", "800 rsd/ha"],
+];
+
+const tableData5 = [
+  ["Veličina parcele", "Cena"],
+  ["Do 20 ha", "600 rsd/ha "],
+  ["20-50 ha", "500 rsd/ha"],
+  ["50-100 ha", "400 rsd/ha"],
+  ["Preko 100 ha", "300 rsd/ha"],
+];
+
+const tableData6 = [
+  ["Veličina parcele", "Cena"],
+  ["Do 20 ha", "1200 rsd/ha "],
+  ["20-50 ha", "1000 rsd/ha"],
+  ["50-100 ha", "800 rsd/ha"],
+  ["Preko 100 ha", "600 rsd/ha"],
+];
+
+const tableData12 = [
+  ["Veličina parcele", "Cena"],
+  ["Do 20 ha", "1200 rsd/ha "],
+  ["20-50 ha", "1000 rsd/ha"],
+  ["50-100 ha", "800 rsd/ha"],
+  ["Preko 100 ha", "600 rsd/ha"],
 ];
 
 const dataUsluge = [
@@ -18,13 +66,18 @@ const dataUsluge = [
     Uz našu uslugu prskanja dronom, možete računati na vrhunski nivo preciznosti i efikasnosti, čime ćete postići bolje rezultate u poljoprivredi. Obratite nam se sa poverenjem i zajedno ćemo raditi na optimizaciji vaše poljoprivredne proizvodnje.
     `,
 
+    description1: "* U cenu nije uračunat prevoz do mesta parcele.",
+    description2: "* U cenu nije uračunat PDV.",
+
     cenaKursa: (
-      <table>
-        <tbody>
+      <table className="table">
+        <tbody className="tbody">
           {tableData.map((rowData, rowIndex) => (
-            <tr key={rowIndex}>
+            <tr key={rowIndex} className="row">
               {rowData.map((cellData, cellIndex) => (
-                <td key={cellIndex}>{cellData}</td>
+                <td key={cellIndex} className="column">
+                  {cellData}
+                </td>
               ))}
             </tr>
           ))}
@@ -41,7 +94,24 @@ const dataUsluge = [
     
     `,
 
-    cenaKursa: "55.000 rsd",
+    description1: "* U cenu nije uračunat prevoz do mesta parcele.",
+    description2: "* U cenu nije uračunat PDV.",
+
+    cenaKursa: (
+      <table className="table">
+        <tbody className="tbody">
+          {tableData2.map((rowData, rowIndex) => (
+            <tr key={rowIndex} className="row">
+              {rowData.map((cellData, cellIndex) => (
+                <td key={cellIndex} className="column">
+                  {cellData}
+                </td>
+              ))}
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    ),
   },
   {
     id: "izrada-mapa-za-varijabilne-tratmane",
@@ -50,7 +120,25 @@ const dataUsluge = [
 
     `,
 
-    cenaKursa: "55.000 rsd",
+    description1:
+      "** troškovi aktivnosti po nalogu  klijenta kao što su uzimanje uzorka, laboratorijska analiza, itd. se zasebno obračunavaju ",
+    description2: "* U cenu nije uračunat PDV.",
+
+    cenaKursa: (
+      <table className="table">
+        <tbody className="tbody">
+          {tableData3.map((rowData, rowIndex) => (
+            <tr key={rowIndex} className="row">
+              {rowData.map((cellData, cellIndex) => (
+                <td key={cellIndex} className="column">
+                  {cellData}
+                </td>
+              ))}
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    ),
   },
   {
     id: "predviđanje-prinosa-pšenice",
@@ -59,15 +147,47 @@ const dataUsluge = [
     description: `Nakon prijave i ličnog kontakta, naš tim stručnjaka sa Poljoprivrednog fakulteta iz Novog Sada dolazi na vašu parcelu kako bi obavili procenu prinosa pšenice. Koristeći najsavremeniju tehnologiju i DJI Phantom P4 dron, mapiramo celu parcelu. U dogovorenom roku, pružamo vam detaljan izveštaj koji sadrži precizne kalkulacije i procenu očekivanog prinosa pšenice. Naša usluga vam omogućava da bolje planirate resurse i upravljate svojim usevima, pružajući vam pouzdane informacije o stanju vaših poljoprivrednih površina.
     `,
 
-    cenaKursa: "55.000 rsd",
+    description1: "* U cenu nije uračunat prevoz do mesta parcele.",
+    description2: "* U cenu nije uračunat PDV.",
+
+    cenaKursa: (
+      <table className="table">
+        <tbody className="tbody">
+          {tableData4.map((rowData, rowIndex) => (
+            <tr key={rowIndex} className="row">
+              {rowData.map((cellData, cellIndex) => (
+                <td key={cellIndex} className="column">
+                  {cellData}
+                </td>
+              ))}
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    ),
   },
   {
     id: "procena-potreba-biljaka-za-azotom-bez-laboratorijskih-analiza",
     title: "SENZORSKA DETEKCIJA AZOTA U BILJKAMA (BLISKA ILI/I DALJINSKA)",
     description: `Procena sadržaja azota u biljkama može se sprovesti korišćenjem ručnih senzora tipa GreenSeeker ili PlantOmeter, odnosno korišćenjem multispektralnih snimaka sa drona ili satelita. U zavisnosti o situacije i preferencijala naručioca, moguće je koristiti jednu od pomenutih ili kombinovanu metodu kako bi se došlo do informacije o deficitu u azotu u biljkama te na osnovu toga dale adekvatne preporuke. Metode su neinvanzivne i brze što u kombinaciji sa proverenim algoritmima za izračunavanje potrebne količine azota značajno olakšava proces donošenja odluke uz smanjenje nepotrebnih troškova na analize zemlje ili biljnog tkiva. 
     `,
-
-    cenaKursa: "55.000 rsd",
+    description1: "* U cenu nije uračunat prevoz do mesta parcele.",
+    description2: "* U cenu nije uračunat PDV.",
+    cenaKursa: (
+      <table className="table">
+        <tbody className="tbody">
+          {tableData5.map((rowData, rowIndex) => (
+            <tr key={rowIndex} className="row">
+              {rowData.map((cellData, cellIndex) => (
+                <td key={cellIndex} className="column">
+                  {cellData}
+                </td>
+              ))}
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    ),
   },
   {
     id: "procena-kvaliteta-setve",
@@ -76,7 +196,23 @@ const dataUsluge = [
     description: `Sklop biljaka je presudan za ostvarivanje ciljanog prinosa. Proređivanje biljaka može biti posledica više biotičkih i abiotičkih faktora. Jedini način da se preduprede sistemske greške u setvi i pripremi zemljišta jeste utvrđivanje sklopa. Procena kvaliteta setve na celokupnoj populaciji biljaka na parceli se izvodi kombinacijom metode snimanja iz vazduha i automatizovanom obradom snimaka korišćenjem prilagođenih modela mašinskog učenja. Na ovaj način, moguće je sa preko 95% sigurnosti utvrditi sklop biljaka i devijaciju u razmacima unutar reda.
     `,
 
-    cenaKursa: "55.000 rsd",
+    description1: "* U cenu nije uračunat prevoz do mesta parcele.",
+    description2: "* U cenu nije uračunat PDV.",
+    cenaKursa: (
+      <table className="table">
+        <tbody className="tbody">
+          {tableData6.map((rowData, rowIndex) => (
+            <tr key={rowIndex} className="row">
+              {rowData.map((cellData, cellIndex) => (
+                <td key={cellIndex} className="column">
+                  {cellData}
+                </td>
+              ))}
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    ),
   },
   {
     id: "menadžment-podacima",
@@ -94,6 +230,8 @@ const dataUsluge = [
     description: `Mašine za površinsku distribuciju su neizostavne u procesu poljoprivredne proizvodnje. Kvalitet rada tih mašina zavisi od podešenosti od stane korisnika. Da bi se pravilno podesila prskalica, rasipač min. đubriva ili sejalica, važno je znati kakva je karakteristika dozirnog mehanizma kako bi se pravilno odabrali radni parametri (brzina, širina zahvata). Ovo je posebno bitno kad se radi sa mašinama za rad sa granulisanim materijalima (sejalice, rasipači) jer su fizičke karakteristike ulaznog materijala nestandardne te se mora pristupiti kalibraciji. Izrada kalibracionih karti podrazumeva da se za pojedinačnu mašinu odredi karakteristika dozatora kroz seriju testiranja, na osnovu čega se kreira jedinstveni matematički model tj. dijagram iz čega se mogu isčitavati potrebni parametri za podešavanje mašine. 
 
     `,
+    description1: "* U cenu nije uračunat prevoz do mesta parcele.",
+    description2: "* U cenu nije uračunat PDV.",
 
     cenaKursa: "23600 rsd/po mašini",
   },
@@ -105,6 +243,8 @@ const dataUsluge = [
     Uravnoteženje rotora bez demontaže sa ležišta mašine obično se naziva i in-situ balansiranje ili dinamičko balansiranje na terenu. Ovaj postupak se radi kada je demontaža rotora teška ili skupa, ili kada se rotor ne može ukloniti iz svog radnog okruženja iz nekog drugog razloga. Da bi se rešio problem neravnoteže rotora, prvo se debalans mora identifikovati. To se obično sprovodi korišćenjem tehnika dinamičkog balansiranja kao što je vibraciona analiza. Nakon što se identifikuje uzrok neravnoteže, mogu se preduzeti određeni koraci za rešavanje problema. To uključuje dodavanje ili uklanjanje mase na određenim mestima rotora kako bi se postigla ravnoteža. Mi posedujemo znanja i opremu za merenje i lociranje debalansa na vratilima poljoprivrednih mašina kao što su rotosečke, tarupi, bubnjevi, zamajci i ostli rotirajući elementi. 
     
     `,
+    description1: "* U cenu nije uračunat prevoz do mesta parcele.",
+    description2: "* U cenu nije uračunat PDV.",
 
     cenaKursa: "40000 rsd/po mašini",
   },
@@ -117,7 +257,8 @@ const dataUsluge = [
     
     `,
 
-    cenaKursa: "55.000 rsd",
+    cenaKursa:
+      "Cena naših usluga varira u zavisnosti od obima projekta i vrste angažmana. Detalje ćemo razmotriti nakon što nam ostavite vaše podatke i opišete specifične zahteve vašeg projekta. Naš cilj je pružiti vam najbolje moguće rešenje uz konkurentske cene.",
   },
   {
     id: "izrada-3D-modela-mašinskih-sklopova-i-elemenata",
@@ -137,8 +278,25 @@ const dataUsluge = [
     Na taj način se omogućava poljoprivrednicima da primene đubrivo na način koji je prilagođen specifičnim potrebama zemljišta i useva na određenom području.
    
     `,
+    description1:
+      "* troškovi aktivnosti po nalogu klijenta kao što su uzimanje uzorka, laboratorijska analiza, itd. se zasebno obračunavaju .",
+    description2: "* U cenu nije uračunat PDV.",
 
-    cenaKursa: "55.000 rsd",
+    cenaKursa: (
+      <table className="table">
+        <tbody className="tbody">
+          {tableData12.map((rowData, rowIndex) => (
+            <tr key={rowIndex} className="row">
+              {rowData.map((cellData, cellIndex) => (
+                <td key={cellIndex} className="column">
+                  {cellData}
+                </td>
+              ))}
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    ),
   },
   {
     id: "savetovanje-u-preciznoj-poljoprivredi",
@@ -148,77 +306,6 @@ const dataUsluge = [
     `,
 
     cenaKursa: "Cena zavisi od vrste investicije.",
-  },
-];
-
-export const dropdowns = [
-  {
-    title: "SADRŽAJ KURSA",
-    options: [
-      <li>
-        <b>Uvod u Preciznu Poljoprivredu:</b> Razumevanje koncepta i značaja
-        precizne poljoprivrede.
-      </li>,
-      <li>
-        <b> Prostorne Informacije u Poljoprivredi:</b> Upotreba GIS platformi za
-        bolje prostorno planiranje.
-      </li>,
-      <li>
-        <b>Dronovi u Praksi:</b>Praktična primena dronova za prskanje i
-        daljinsku detekciju u poljoprivredi.
-      </li>,
-      <li>
-        <b>Senzorski Sistemi:</b> Korišćenje naprednih senzora za precizno
-        merenje parametara zemljišta i biljaka.
-      </li>,
-      <li>
-        <b>GPS Tehnologija u Navigaciji:</b> Integracija GPS sistema za preciznu
-        navigaciju na poljoprivrednom zemljištu.
-      </li>,
-      <li>
-        <b>Algoritmi za Prinos:</b> Razvoj algoritama za precizno predviđanje
-        prinosa na osnovu NDVI i multispektralnih snimaka.
-      </li>,
-      <li>
-        <b>Đubrenje Azotom:</b> Efikasno đubrenje azotom kroz napredne
-        tehnologije.
-      </li>,
-      <li>
-        <b>Edukacija o Korišćenju Savremenih Alata:</b> Edukacija
-        poljoprivrednika o dostupnim tehnologijama.
-      </li>,
-      <li>
-        <b>Praktična Primena Kursa:</b> Implementacija stečenih znanja u
-        svakodnevnom radu na poljoprivrednom gazdinstvu.
-      </li>,
-      <li>
-        {" "}
-        <b>Optimizacija Poljoprivredne Proizvodnje:</b> Postizanje efikasnije i
-        održive poljoprivredne proizvodnje kroz primenu preciznih tehnologija.
-      </li>,
-    ],
-  },
-  {
-    title: "SERTIFIKACIJA",
-    options: [
-      "Završetkom kursa polaznici stiču sertifikat Poljoprivrednog fakulteta u Novom Sadu, čime se potvrđuje poznavanje osnova iz oblasti precizne poljoprivrede.",
-    ],
-  },
-  {
-    title: "PREDAVAČI",
-    options: [
-      <ol>
-        <li>
-          <b>1. Dr Marko Kostić, vanredni profesor</b>
-        </li>
-        <li>
-          <b>2. Dr Zoran Stamenković, docent</b>
-        </li>
-        <li>
-          <b>3. MSc Krstan Kešelj, asistent</b>
-        </li>
-      </ol>,
-    ],
   },
 ];
 

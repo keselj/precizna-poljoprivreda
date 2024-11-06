@@ -9,7 +9,7 @@ import {
   NavMenu,
   NavItem,
   NavLinks,
-  NavLogoFax,
+  // NavLogoFax,
   NavLinksKontakt,
 } from "./NavbarElements";
 
@@ -28,6 +28,16 @@ const Navbar = ({ toggle }) => {
           </MobileIcon>
           <NavMenu>
             <NavItem>
+              <NavLinks to="/" onClick={toggleHome}>
+                NASLOVNA
+              </NavLinks>
+            </NavItem>
+            <NavItem>
+              <NavLinks to="/prodaja" onClick={toggleHome}>
+                PRODAJA
+              </NavLinks>
+            </NavItem>
+            <NavItem>
               <NavLinks to="/kursevi" onClick={toggleHome}>
                 KURSEVI
               </NavLinks>
@@ -37,11 +47,6 @@ const Navbar = ({ toggle }) => {
                 USLUGE
               </NavLinks>
             </NavItem>{" "}
-            <NavItem>
-              <NavLinks to="/prodaja" onClick={toggleHome}>
-                PRODAJA
-              </NavLinks>
-            </NavItem>
             <NavItem>
               <NavLinks to="/blog" onClick={toggleHome}>
                 BLOG

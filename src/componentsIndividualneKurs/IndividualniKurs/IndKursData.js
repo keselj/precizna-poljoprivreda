@@ -49,71 +49,307 @@ const dataKurs = [
   },
 ];
 
-export const dropdowns = [
+//dropdowns
+
+export const dropdownsKurs = [
   {
+    id: "osnove-precizne-poljoprivrede",
     title: "SADRŽAJ KURSA",
     options: [
-      <li>
+      <li className="kurs-item">
         <b>Uvod u Preciznu Poljoprivredu:</b> Razumevanje koncepta i značaja
         precizne poljoprivrede.
       </li>,
-      <li>
-        <b> Prostorne Informacije u Poljoprivredi:</b> Upotreba GIS platformi za
+      <li className="kurs-item">
+        <b>Prostorne Informacije u Poljoprivredi:</b> Upotreba GIS platformi za
         bolje prostorno planiranje.
       </li>,
-      <li>
-        <b>Dronovi u Praksi:</b>Praktična primena dronova za prskanje i
+      <li className="kurs-item">
+        <b>Dronovi u Praksi:</b> Praktična primena dronova za prskanje i
         daljinsku detekciju u poljoprivredi.
       </li>,
-      <li>
+      <li className="kurs-item">
         <b>Senzorski Sistemi:</b> Korišćenje naprednih senzora za precizno
         merenje parametara zemljišta i biljaka.
       </li>,
-      <li>
+      <li className="kurs-item">
         <b>GPS Tehnologija u Navigaciji:</b> Integracija GPS sistema za preciznu
         navigaciju na poljoprivrednom zemljištu.
       </li>,
-      <li>
+      <li className="kurs-item">
         <b>Algoritmi za Prinos:</b> Razvoj algoritama za precizno predviđanje
         prinosa na osnovu NDVI i multispektralnih snimaka.
       </li>,
-      <li>
+      <li className="kurs-item">
         <b>Đubrenje Azotom:</b> Efikasno đubrenje azotom kroz napredne
         tehnologije.
       </li>,
-      <li>
+      <li className="kurs-item">
         <b>Edukacija o Korišćenju Savremenih Alata:</b> Edukacija
         poljoprivrednika o dostupnim tehnologijama.
       </li>,
-      <li>
+      <li className="kurs-item">
         <b>Praktična Primena Kursa:</b> Implementacija stečenih znanja u
         svakodnevnom radu na poljoprivrednom gazdinstvu.
       </li>,
-      <li>
-        {" "}
+      <li className="kurs-item">
         <b>Optimizacija Poljoprivredne Proizvodnje:</b> Postizanje efikasnije i
         održive poljoprivredne proizvodnje kroz primenu preciznih tehnologija.
       </li>,
     ],
   },
   {
+    id: "osnove-precizne-poljoprivrede",
     title: "SERTIFIKACIJA",
+    options: [`Uskoro Obaveštenje.`],
+  },
+  {
+    id: "osnove-precizne-poljoprivrede",
+    title: "PREDAVAČI",
     options: [
-      "Završetkom kursa polaznici stiču sertifikat Poljoprivrednog fakulteta u Novom Sadu, čime se potvrđuje poznavanje osnova iz oblasti precizne poljoprivrede.",
+      <ol className="predavaci-list">
+        <li>
+          <b>
+            1. Dr Marko Kostić, vanredni profesor, Poljoprivredni fakultet, Novi
+            Sad
+          </b>
+        </li>
+
+        <li>
+          <b>
+            2. Dr Zoran Stamenković, docent, Poljoprivredni fakultet, Novi Sad
+          </b>
+        </li>
+
+        <li>
+          <b>
+            3. MSc Krstan Kešelj, asistent, Poljoprivredni fakultet, Novi Sad
+          </b>
+        </li>
+      </ol>,
     ],
   },
   {
+    id: "dronovi-u-poljoprivredi",
+    title: "SADRŽAJ KURSA",
+    options: [
+      <li className="kurs-item">
+        Razumevanje i rukovanje dronovima specijalizovanim za prskanje i
+        monitoring u poljoprivredi.
+      </li>,
+      <li className="kurs-item">
+        Ovladavanje sigurnosnim standardima i procedurama upotrebe dronova.
+      </li>,
+      <li className="kurs-item">
+        Mapiranje poljoprivrednih površina i kreiranje efikasnih planova
+        prskanja, kao i varijabilnih mapa za precizno poljoprivredno delovanje.
+      </li>,
+      <li className="kurs-item">
+        Multispektralna analiza i obrada slika za detaljan monitoring useva.
+      </li>,
+      <li className="kurs-item">
+        Tehnike za efikasno distribuiranje pesticida, detekciju bolesti i
+        štetočina putem dronova.
+      </li>,
+      <li className="kurs-item">
+        Praktične veštine letenja i upravljanja dronom za različite
+        poljoprivredne misije.
+      </li>,
+      <li className="kurs-item">
+        Pravni, etički i ekonomski aspekti korišćenja dronova u poljoprivredi.
+      </li>,
+    ],
+  },
+  {
+    id: "dronovi-u-poljoprivredi",
+    title: "ZAVRŠNI PROJEKAT I SERTIFIKACIJA",
+    options: [`Uskoro Obaveštenje.`],
+  },
+  {
+    id: "dronovi-u-poljoprivredi",
     title: "PREDAVAČI",
     options: [
-      <ol>
+      <ol className="predavaci-list">
         <li>
-          <b>1. Dr Marko Kostić, vanredni profesor</b>
+          <b>
+            1. Dr Zoran Stamenković, docent, Poljoprivredni fakultet, Novi Sad
+          </b>
         </li>
+
         <li>
-          <b>2. Dr Zoran Stamenković, docent</b>
+          <b>
+            2. MSc Krstan Kešelj, asistent, Poljoprivredni fakultet, Novi Sad
+          </b>
         </li>
+      </ol>,
+    ],
+  },
+  {
+    id: "dronovi-za-zaštitu-biljaka",
+    title: "SADRŽAJ KURSA",
+    options: [
+      <li className="kurs-item">
+        Polaznici će naučiti kako efikasno upravljati dronovima namenjenim za
+        prskanje u poljoprivredne svrhe
+      </li>,
+      <li className="kurs-item">
+        Upoznaće se sa ključnim aspektima dronova u zaštiti bilja i sa
+        sigurnosnim standardima za njihovo korišćenje.
+      </li>,
+      <li className="kurs-item">
+        Razumeće kako se različiti tipovi prskalica i senzora integrišu u sistem
+        za prskanje dronovima.
+      </li>,
+      <li className="kurs-item">
+        Ovladaće veštinama mapiranja poljoprivrednih površina i kreiranja
+        efikasnih planova prskanja.
+      </li>,
+      <li className="kurs-item">
+        Steći će iskustvo u izvođenju letova za prskanje, s posebnim fokusom na
+        praktične veštine upravljanja dronom.
+      </li>,
+      <li className="kurs-item">
+        Naučiće kako analizirati efekte prskanja i optimizovati distribuciju
+        sredstava za zaštitu bilja.
+      </li>,
+      <li className="kurs-item">
+        Upoznaće se sa najnovijim tehnološkim dostignućima u oblasti prskanja
+        dronovima, uključujući automatizaciju i varijabilno doziranje.
+      </li>,
+    ],
+  },
+  {
+    id: "dronovi-za-zaštitu-biljaka",
+    title: "ZAVRŠNI PROJEKAT I SERTIFIKACIJA",
+    options: [`Uskoro Obaveštenje.`],
+  },
+  {
+    id: "dronovi-za-zaštitu-biljaka",
+    title: "PREDAVAČI",
+    options: [
+      <ol className="predavaci-list">
         <li>
-          <b>3. MSc Krstan Kešelj, asistent</b>
+          <b>
+            1. Dr Zoran Stamenković, docent, Poljoprivredni fakultet, Novi Sad
+          </b>
+        </li>
+
+        <li>
+          <b>
+            2. MSc Krstan Kešelj, asistent, Poljoprivredni fakultet, Novi Sad
+          </b>
+        </li>
+      </ol>,
+    ],
+  },
+  {
+    id: "dronovi-za-monitoring-u-poljoprivredi",
+    title: "SADRŽAJ KURSA",
+    options: [
+      <li className="kurs-item">
+        Polaznici će biti obučeni za upravljane i letenje dronom.
+      </li>,
+      <li className="kurs-item">
+        Steći će uvid o ulozi dronova u poljoprivredi i osnovama njihovog
+        sigurnog rukovanja i precedura koje to prate.
+      </li>,
+      <li className="kurs-item">
+        Ovladaće tehnikama obrade slika i softverima neophodnim za analizu
+        podataka prikupljenih dronom.
+      </li>,
+      <li className="kurs-item">
+        Steći će praktično iskustvo u planiranju letačkih misija i prikupljanju
+        podataka pomoću drona.
+      </li>,
+      <li className="kurs-item">
+        Naučiće kako interpretirati dobijene podatke radi preciznog uvida u
+        stanje useva.
+      </li>,
+      <li className="kurs-item">
+        Biće upoznati s naprednim tehnologijama i metodama, kao što su
+        multispektralna analiza stanja useva, mapiranje parcela i kreiranje
+        varjabilnih mapa.
+      </li>,
+      <li className="kurs-item">
+        Razumeće pravne, etičke i ekonomske aspekte upotrebe dronova u
+        poljoprivredi, kao i načine integracije dron tehnologija u postojeće
+        poljoprivredne operacije.
+      </li>,
+    ],
+  },
+  {
+    id: "dronovi-za-monitoring-u-poljoprivredi",
+    title: "ZAVRŠNI PROJEKAT I SERTIFIKACIJA",
+    options: [`Uskoro Obaveštenje.`],
+  },
+  {
+    id: "dronovi-za-monitoring-u-poljoprivredi",
+    title: "PREDAVAČI",
+    options: [
+      <ol className="predavaci-list">
+        <li>
+          <b>
+            1. Dr Zoran Stamenković, docent, Poljoprivredni fakultet, Novi Sad
+          </b>
+        </li>
+
+        <li>
+          <b>
+            2. MSc Krstan Kešelj, asistent, Poljoprivredni fakultet, Novi Sad
+          </b>
+        </li>
+      </ol>,
+    ],
+  },
+  {
+    id: "kurs-za-rukovaoce-sušara-u-poljoprivredi",
+    title: "SADRŽAJ KURSA",
+    options: [
+      <div>
+        <p style={{ marginBottom: "10px", fontWeight: "bold" }}>
+          Plan i program kursa obuhvata:
+        </p>
+        <li className="kurs-item">goriva,</li>,
+        <li className="kurs-item">gorionike,</li>,
+        <li className="kurs-item">energetiku,</li>,
+        <li className="kurs-item">tehnologije sušenja i skladištenja,</li>,
+        <li className="kurs-item">konstrukcije sušara,</li>,
+        <li className="kurs-item">opremu na centru,</li>,
+        <li className="kurs-item">rukovanje sušarom,</li>,
+        <li className="kurs-item">automatiku,</li>,
+        <li className="kurs-item">evidenciju rada,</li>,
+        <li className="kurs-item">održavanje,</li>,
+        <li className="kurs-item">protivpožarne i bezbednosne mere i dr.</li>,
+      </div>,
+    ],
+  },
+  {
+    id: "kurs-za-rukovaoce-sušara-u-poljoprivredi",
+    title: "ZAVRŠNI ISPIT I SERTIFIKACIJA",
+    options: [`Uskoro Obaveštenje.`],
+  },
+  {
+    id: "kurs-za-rukovaoce-sušara-u-poljoprivredi",
+    title: "PREDAVAČI",
+    options: [
+      <ol className="predavaci-list">
+        <li>
+          <b>
+            1. Dr Ivan Pavkov, redovni profesor, Poljoprivredni fakultet, Novi
+            Sad
+          </b>
+        </li>
+
+        <li>
+          <b>
+            2. Dr Zoran Stamenković, docent, Poljoprivredni fakultet, Novi Sad
+          </b>
+        </li>
+
+        <li>
+          <b>
+            3. MSc Krstan Kešelj, asistent, Poljoprivredni fakultet, Novi Sad
+          </b>
         </li>
       </ol>,
     ],

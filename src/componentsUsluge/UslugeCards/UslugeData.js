@@ -9,7 +9,7 @@ const UslugeData = [
   },
   {
     id: "procena-štete-i-stanja-useva",
-    src: require("../UslugeImages/2. Procena štete i stanja useva.png"),
+    src: require("../UslugeImages/2. Procena stete i stanja useva.png"),
     alt: "Procena štete i stanja useva",
     title: "PROCENA STANJA USEVA ILI NASTALE ŠTETE",
     description:
@@ -25,11 +25,11 @@ const UslugeData = [
   },
   {
     id: "predviđanje-prinosa-pšenice",
-    src: require("../UslugeImages/4. Predviđanje prinosa pšenice.png"),
+    src: require("../UslugeImages/4. Predvidjanje prinosa psenice.png"),
     alt: "Predviđanje prinosa pšenice",
     title: "PREDVIĐANJE PRINOSA PŠENICE",
     description:
-      "Predviđanje prinosa pšenice postalo je preciznije nego ikad uz upotrebu multispektralnih indeksa, dronova i mašinskog učenja. Ova kombinacija tehnologija omogućava postizanje tačnosti predviđanja prinosa od čak 97%, čime se omogućava bolje upravljanje usevima i resursima.",
+      "Predviđanje prinosa pšenice postalo je preciznije nego ikad uz upotrebu multispektralnih indeksa, dronova i mašinskog učenja. Ova kombinacija daje tačnost predviđanja prinosa do 97%, čime se omogućava bolje upravljanje usevima i resursima.",
   },
   {
     id: "procena-potreba-biljaka-za-azotom-bez-laboratorijskih-analiza",
@@ -49,7 +49,7 @@ const UslugeData = [
   },
   {
     id: "menadžment-podacima",
-    src: require("../UslugeImages/7. Menadžment podacima.png"),
+    src: require("../UslugeImages/7. Menadzment podacima.png"),
     alt: "Menadžment podacima",
     title: "MENADŽMENT PODACIMA",
     description:
@@ -57,7 +57,7 @@ const UslugeData = [
   },
   {
     id: "podešavanje-poljoprivrednih-mašina",
-    src: require("../UslugeImages/8. Podešavanje poljoprivrednih mašin.png"),
+    src: require("../UslugeImages/8. Podesavanje poljoprivrednih masin.png"),
     alt: "Podešavanje poljoprivrednih mašina",
     title: "PODEŠAVANJE POLJOPRIVREDNIH MAŠINA - IZRADA KALIBRACIONIH KARTI",
     description:
@@ -65,7 +65,7 @@ const UslugeData = [
   },
   {
     id: "uravnoteženje-rotora",
-    src: require("../UslugeImages/9. Uravnoteženje rotora.png"),
+    src: require("../UslugeImages/9. Uravnotezenje rotora.png"),
     alt: "Uravnoteženje rotora",
     title: "URAVNOTEŽENJE ROTORA",
     description:
@@ -73,7 +73,7 @@ const UslugeData = [
   },
   {
     id: "izrada-tehničke-dokumentacije",
-    src: require("../UslugeImages/10. Izrada tehničke dokumentacije.png"),
+    src: require("../UslugeImages/10. Izrada tehnicke dokumentacije.png"),
     alt: "Izrada tehničke dokumentacije",
     title: "IZRADA TEHNIČKE DOKUMENTACIJE",
     description:
@@ -81,17 +81,18 @@ const UslugeData = [
   },
   {
     id: "izrada-3D-modela-mašinskih-sklopova-i-elemenata",
-    src: require("../UslugeImages/11. Izrada 3D modela mašinskih sklopova i elemenata.png"),
+    src: require("../UslugeImages/11. Izrada 3D modela masinskih sklopova i elemenata.png"),
     alt: "Izrada 3D modela mašinskih sklopova i elemenata",
     title: "IZRADA 3D MODELA MAŠINSKIH SKLOPOVA I ELEMENATA",
     description:
-      "Izrada 3D modela mašinskih sklopova i elemenata pruža prednosti u savremenoj inženjerskoj industriji. 3D modeli omogućavaju precizne i detaljne vizualne reprezentacije mašinskih sklopova, olakšavajući dizajn, razvoj i analizu mašina.",
+      "Izrada 3D modela mašinskih sklopova i elemenata pruža prednosti u savremenoj inženjerskoj industriji. 3D modeli daju precizne vizualne reprezentacije mašinskih sklopova, olakšavajući dizajn, razvoj i analizu mašina.",
   },
   {
     id: "izrada-mape-preporuke-P-i-K-na-osnovu-mape-prinosa",
     src: require("../UslugeImages/12. Izrada mape preporuke P i K na osnovu mape prinosa.png"),
     alt: "Izrada mape preporuke P i K na osnovu mape prinosa",
-    title: "IZRADA VARIJABILNE MAPE P i K",
+    title: `IZRADA VARIJABILNE`,
+    title2: ` MAPE P i K`,
     description:
       "Izrada mapa preporuka za varijabilno đubrenje kalijuma i fosfora je važan proces u poljoprivredi koji omogućava preciznije i efikasnije korišćenje đubriva, što može rezultirati povećanjem prinosa, smanjenjem troškova.",
   },

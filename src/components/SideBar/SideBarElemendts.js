@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { FaTimes } from "react-icons/fa";
 import { Link as LinkRouter } from "react-router-dom";
+import { Link } from "react-scroll";
 import logoBeli from "../../images/Logo/logoBeli.png";
 
 export const SidebarContainer = styled.aside`
@@ -63,6 +64,39 @@ export const SidebarMenu = styled.ul`
 `;
 
 export const SidebarLink = styled(LinkRouter)`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  text-decoration: none;
+  list-style: none;
+  transition: 0.2s ease-in-out;
+  color: #fff;
+  cursor: pointer;
+
+  &:hover {
+    color: #ffca00;
+    transition: 0.2s ease-in-out;
+  }
+
+  @media screen and (max-width: 853px) {
+    font-size: 40px;
+  }
+
+  @media screen and (max-width: 414px) {
+    font-size: 30px;
+  }
+
+  @media screen and (max-width: 430px) {
+    font-size: 30px;
+  }
+
+  @media screen and (max-width: 1024px) {
+    font-size: 40px;
+  }
+`;
+
+export const SideBarLinkKonakt = styled(Link)`
   display: flex;
   align-items: center;
   justify-content: center;

@@ -6,10 +6,20 @@ import horschMaschinen from "../../images/companies/horsch-maschinen.png";
 import Mikron from "../../images/companies/Mikron.png";
 import kljakic from "../../images/companies/Kljakic.png";
 import sigma from "../../images/companies/sigma.png";
-import TerraConsulting from "../../images/companies/TerraConsulting.png";
 import TRCpro from "../../images/companies/TRCpro.jpg";
 import Tupanjac from "../../images/companies/Tupanjac.jpg";
 import Vaderstad from "../../images/companies/Vaderstad.png";
+import Agroglobe from "../../images/companies/Agroglobe.png";
+import Agromarket from "../../images/companies/Agromarket.png";
+import Bayer from "../../images/companies/Bayer.png";
+import DeltaAgrar from "../../images/companies/Delta-Agrar.png";
+import Elixir from "../../images/companies/Elixir.png";
+import HunAgri from "../../images/companies/HunAgri.png";
+import Kite from "../../images/companies/Kite DOO.png";
+import Lidea from "../../images/companies/Lidea logo.png";
+import Livona from "../../images/companies/Livona logo.png";
+import Raintop from "../../images/companies/RAINTOP.png";
+import SavaBavici from "../../images/companies/SAVA_BAVIC_LOGO.jpg";
 
 export const data = [
   {
@@ -30,6 +40,21 @@ export const data = [
   {
     image: Mikron,
   },
+  {
+    image: Agromarket,
+  },
+  {
+    image: DeltaAgrar,
+  },
+  {
+    image: HunAgri,
+  },
+  {
+    image: Lidea,
+  },
+  {
+    image: Raintop,
+  },
 ];
 export const data2 = [
   {
@@ -39,7 +64,7 @@ export const data2 = [
     image: sigma,
   },
   {
-    image: TerraConsulting,
+    image: Agroglobe,
   },
   {
     image: TRCpro,
@@ -50,6 +75,21 @@ export const data2 = [
   {
     image: Vaderstad,
   },
+  {
+    image: Bayer,
+  },
+  {
+    image: Elixir,
+  },
+  {
+    image: Kite,
+  },
+  {
+    image: Livona,
+  },
+  {
+    image: SavaBavici,
+  },
 ];
 
 export const sliderSettings = {
@@ -59,8 +99,15 @@ export const sliderSettings = {
   accessability: false,
   autoplay: true,
   slidesToScroll: 3,
-  speed: 2500,
+  speed: 3500,
   responsive: [
+    {
+      breakpoint: 1367,
+      settings: {
+        slidesToShow: 3,
+      },
+    },
+
     {
       breakpoint: 1280,
       settings: {
@@ -84,8 +131,14 @@ export const sliderSettings2 = {
   accessability: false,
   autoplay: true,
   slidesToScroll: 3,
-  speed: 2500,
+  speed: 3500,
   responsive: [
+    {
+      breakpoint: 1367,
+      settings: {
+        slidesToShow: 3,
+      },
+    },
     {
       breakpoint: 1280,
       settings: {

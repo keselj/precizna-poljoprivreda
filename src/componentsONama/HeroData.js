@@ -2,16 +2,16 @@ import { DescriptionOfTeamMember } from "./HeroElements";
 
 export const data = [
   {
-    title: "OSNIVAČI INTERNET PLATFORME preciznapoljoprivreda.rs",
+    title: "INTERNET PLATFORMA preciznapoljoprivreda.rs",
     secondTitle: "SVE ZA POLJOPRIVREDU NA JEDNOM MESTU",
     desxription1:
       "Dobrodošli u budućnost poljoprivrede na jednom mestu! Pozivamo vas da istražite našu inovativnu platformu posvećenu preciznoj poljoprivredi gde se znanje, tehnologija i praktično iskustvo sjedinjuju kako bi vam omogućili najviši nivo uspeha u vašem agrarnom poduhvatu.",
     desxription2:
-      "Naša internet platforma je vaša kapija ka svetu savremene poljoprivrede u kojem se dešavaju fascinantni preokreti. Svake nedelje donosimo vam zanimljive i nekonvencionalne priče iz tog sveta, inspirišemo vas pričama o uspehu poljoprivrednika koji su iskoristili inovativne pristupe kako bi postigli izvanredne rezultate. Osim toga, pružamo vam uvid u najnovija dostignuća poljoprivredne nauke kroz naše kurseve. Stručno osmišljeni i vođeni od strane iskusnih predavača, naši kursevi vam omogućavaju da koristite najsavremenije tehnike i strategije koje su ključne za uspeh u današnjoj dinamičnoj poljoprivredi.",
+      "Naša internet platforma je vaša kapija ka svetu savremene poljoprivrede u kojem se dešavaju fascinantni preokreti. Osim toga, pružamo vam uvid u najnovija dostignuća poljoprivredne nauke kroz naše kurseve. Stručno osmišljeni i vođeni od strane iskusnih predavača, naši kursevi vam omogućavaju da koristite najsavremenije tehnike i strategije koje su ključne za uspeh u današnjoj dinamičnoj poljoprivredi.",
     desxription3:
       "Ono što nas čini posebnim je naša posvećenost edukaciji i naučnom razvoju. Osnivači i saradnici naše firme Precizna Poljoprivreda d.o.o. čine stručnjaci iz naučno-obrazovnih institucija, većinom zaposlenih na Poljoprivrednom fakultetu u Novom Sadu. Naš cilj je ne samo usmeren ka napredovanju u polju poljoprivredne nauke, već i ka prenošenju tog znanja i donošenja najnovijih tehnologija poljoprivrednim proizvođačima. Sa tom misijom, rodila se ideja da objedinimo sve iz agrarnog sveta na internet platformi preciznapoljoprivreda.rs.",
     desxription4:
-      "Pored kurseva, koje organizujemo na Poljoprivrednom fakultetu u Novom Sadu, pružamo stručne usluge i nudimo širok asortiman proizvoda koji obuhvata sve od alata, mašina, semena, do poljoprivrednih proizvoda i revolucionarnih dronova.",
+      "Pored kurseva, koje organizujemo na Poljoprivrednom fakultetu u Novom Sadu, pružamo stručne usluge i nudimo širok asortiman revolucionarnih dronova.",
     desxription5:
       "Dobrodošli ste na našu platformu koja je dizajnirana kako bi vas inspirisala i podržala na putu ka uspehu u preciznoj poljoprivredi!",
     restOfTeamTitle: "Predavači i Stručni Saradnici",
@@ -37,20 +37,20 @@ export const data = [
 ];
 
 export const dataCard = [
-  {
-    id: 1,
-    src: require("./images/Kostic.jpg"),
-    alt: "Dr Marko Kostić",
-    predavac: (
-      <DescriptionOfTeamMember>
-        <p className="p__onama">
-          <b>Dr Marko Kostić, vanredni profesor</b>
-        </p>
-        <p className="p__onama">Univerzitet u Novom Sadu</p>
-        <p className="p__onama">Poljoprivredni fakultet</p>
-      </DescriptionOfTeamMember>
-    ),
-  },
+  // {
+  //   id: 1,
+  //   src: require("./images/Kostic.jpg"),
+  //   alt: "Dr Marko Kostić",
+  //   predavac: (
+  //     <DescriptionOfTeamMember>
+  //       <p className="p__onama">
+  //         <b>Dr Marko Kostić, vanredni profesor</b>
+  //       </p>
+  //       <p className="p__onama">Univerzitet u Novom Sadu</p>
+  //       <p className="p__onama">Poljoprivredni fakultet</p>
+  //     </DescriptionOfTeamMember>
+  //   ),
+  // },
   {
     id: 2,
     src: require("./images/Tekic.jpg"),

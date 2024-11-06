@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 // import { Button } from "../ButtonElement";
 import KrleiZokiBook from "./images/ZKKnjiga.jpg";
 import MarkoKnjigaImage from "./images/MarkovaKnjiga.png";
@@ -33,7 +33,7 @@ const HomePageSection = () => {
         <ImageBackground />
       </HomeBackground>
       <HomeContent>
-        <KrleIZokiKnjiga>
+        {/* <KrleIZokiKnjiga>
           <ImageWrapper>
             <ImageOfBook src={KrleiZokiBook} />
           </ImageWrapper>
@@ -45,7 +45,7 @@ const HomePageSection = () => {
           <PUmderTitle>i privucite stotine novih </PUmderTitle>{" "}
           <PUmderTitle>klijenata</PUmderTitle>
           <BigYellowButton>VIŠE INFORMACIJA</BigYellowButton>
-        </KrleIZokiKnjiga>
+        </KrleIZokiKnjiga> */}
         <MarkoKnjiga>
           <ImageWrapper>
             <ImageOfBook2 src={MarkoKnjigaImage} />
@@ -68,14 +68,43 @@ const HomePageSection = () => {
 
 export default HomePageSection;
 
-{
-  /* <HomeH1>Krle i Zoki Prestavljaju</HomeH1>
-        <HomeP>Kursevi na kojima nesto i naucite a nesto i platite</HomeP> */
-}
-{
-  /* <HomeButtonWrapper>
-          <Button to="onama" onMouseEnter={onHover} onMouseLeave={onHover}>
-            Kupi odma {hover ? <ArrowForward /> : <ArrowRight />}
-          </Button>
-        </HomeButtonWrapper> */
-}
+// import React from "react";
+// import "./HomePage.css";
+// import KrleiZokiBook from "./images/ZKKnjiga.jpg";
+// import MarkoKnjigaImage from "./images/MarkovaKnjiga.png";
+
+// const HomePageSection = () => {
+//   const handleButtonClick = () => {
+//     window.open(
+//       "http://polj.uns.ac.rs/sites/default/files/udzbenici/Precizna%20poljoprivreda%20-%20Kosti%C4%87%20Marko%20kona%C4%8Dno.pdf",
+//       "_blank"
+//     );
+//   };
+
+//   return (
+//     <div className="home-page-container" id="home">
+//       <div className="home-background">
+//         <img className="image-background" alt="Background" />
+//       </div>
+//       <div className="home-content">
+//         <div className="marko-knjiga">
+//           <div className="image-wrapper">
+//             <img className="image-of-book2" src={MarkoKnjigaImage} alt="Marko Knjiga" />
+//           </div>
+//           <h5 className="pre-naslov-knjige">
+//             <span className="span-book-title">| </span>KNJIGA
+//           </h5>
+//           <h5 className="title-of-book">"PRECIZNA POLJOPRIVREDA"</h5>
+//           <p className="pumder-title">Prof. dr Marko Kostić</p>
+//           <p className="pumder-title">Poljoprivredni Fakultet</p>
+//           <p className="pumder-title">Novi Sad</p>
+//           <button className="big-yellow-button" onClick={handleButtonClick}>
+//             PREUZMITE PDF Besplatno
+//           </button>
+//         </div>
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default HomePageSection;

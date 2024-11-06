@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { MdKeyboardArrowRight, MdArrowForward } from "react-icons/md";
 
 import HomeImage2 from "./images/HomeRobot2.png";
+import HomePageImage from "./images/HomePage.jpg";
 
 export const HomePageContainer = styled.div`
   background: rgb(130, 130, 130);
@@ -12,6 +13,29 @@ export const HomePageContainer = styled.div`
   height: 800px;
   position: relative;
   z-index: 1;
+
+  @media screen and (max-width: 375px) {
+    margin-bottom: 650px;
+    margin-left: 50px;
+    background: none;
+  }
+
+  @media screen and (max-width: 414px) {
+    margin-bottom: 650px;
+    margin-left: 50px;
+    background: none;
+  }
+
+  @media screen and (max-width: 430px) {
+    margin-bottom: 650px;
+    margin-left: 50px;
+    background: none;
+    height: 200px;
+  }
+
+  @media screen and (max-width: 1366px) {
+    max-width: 1293px;
+  }
 `;
 export const HomeBackground = styled.div`
   position: absolute;
@@ -22,6 +46,18 @@ export const HomeBackground = styled.div`
   width; 100%;
   height: 100%;
   overflow: hidden;
+
+  @media screen and (max-width: 375px) {
+    display: none;
+  }
+
+  @media screen and (max-width: 414px) {
+    display: none;
+  }
+
+  @media screen and (max-width: 430px) {
+    display: none;
+  }
 `;
 
 export const ImageBackground = styled.img`
@@ -29,8 +65,25 @@ export const ImageBackground = styled.img`
   height: 100%;
   -o-object-fit: cover;
   object-fit: cover;
-  background: url(${HomeImage2}) no-repeat center center fixed;
-  background-size: cover;
+  background: url(${HomePageImage}) no-repeat -1250px -100px fixed;
+  background-size: 200% 100%;
+  //
+
+  @media screen and (max-width: 1600px) {
+    background: url(${HomePageImage}) no-repeat -1000px center fixed;
+    background-size: 200% 100%;
+  }
+  @media screen and (max-width: 375px) {
+    background: none;
+  }
+
+  @media screen and (max-width: 414px) {
+    background: none;
+  }
+
+  @media screen and (max-width: 430px) {
+    background: none;
+  }
 `;
 
 export const HomeContent = styled.div`
@@ -39,6 +92,33 @@ export const HomeContent = styled.div`
   flex-direction: row;
   align-items: center;
   padding-top: 80px;
+
+  @media screen and (max-width: 375px) {
+    flex-direction: column;
+    width: 80%;
+  }
+
+  @media screen and (max-width: 414px) {
+    flex-direction: column;
+    width: 80%;
+  }
+
+  @media screen and (max-width: 430px) {
+    flex-direction: column;
+    width: 80%;
+  }
+
+  @media screen and (max-width: 1024px) {
+    margin-left: 90px;
+  }
+
+  @media screen and (max-width: 344px) {
+    margin-left: 10px;
+  }
+
+  @media screen and (max-width: 853px) {
+    margin-left: 10px;
+  }
 `;
 
 export const KrleIZokiKnjiga = styled.div`
@@ -50,6 +130,10 @@ export const KrleIZokiKnjiga = styled.div`
     transform: scale(1.03);
     transition: all 0.3s ease-in-out;
   }
+
+  @media screen and (max-width: 768px) {
+    margin-left: 17px;
+  }
 `;
 export const MarkoKnjiga = styled.div`
   background-color: rgba(0, 0, 0, 0.7);
@@ -59,6 +143,10 @@ export const MarkoKnjiga = styled.div`
   &:hover {
     transform: scale(1.03);
     transition: all 0.3s ease-in-out;
+  }
+
+  @media screen and (max-width: 344px) {
+    margin-left: 20px;
   }
 `;
 export const PreNaslovKnjige = styled.h5`
@@ -117,52 +205,6 @@ export const SpanBookTitle = styled.span`
   text-align: start;
   font-weight: bold;
   color: #ffca00;
-`;
-
-export const HomeH1 = styled.h1`
-  margin-top: 100px;
-  color: #fff;
-  font-size: 48px;
-  text-align: center;
-  font-weight: bold;
-
-  @media screen and (max-width: 768px) {
-    font-size: 48px;
-  }
-
-  @media screen and {
-    max-width: 480px;
-  }
-   {
-    font-size: 32px;
-  }
-`;
-
-export const HomeP = styled.p`
-  margin-top: 24px;
-  color: rgb(0, 0, 0);
-  font-size: 24px;
-  text-aling: center;
-  max-width: 600px;
-  font-weight: bolder;
-
-  @media screen and (max-width: 768px) {
-    font-size: 24px;
-  }
-
-  @media screen and {
-    max-width: 480px;
-  }
-   {
-    font-size: 18px;
-  }
-`;
-
-export const HomeButtonWrapper = styled.div`
-  margin-top: 32px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 `;
 
 export const ArrowForward = styled(MdArrowForward)`

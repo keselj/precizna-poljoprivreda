@@ -1,9 +1,10 @@
 import styled from "styled-components";
-import { Link, Link as LinkRouter } from "react-router-dom";
+import { Link as LinkRouter } from "react-router-dom";
 
-export const Button = styled(Link)`
+// Styled-component for LinkRouter with button styles
+export const Button = styled(LinkRouter)`
   border-radius: 50px;
-  background: ${({ primary }) => (primary ? "#FFCA00" : "#010606")};
+  background: ${({ primary }) => (primary ? "#FFCA00" : "rgb(17, 29, 30);")};
   white-space: nowrap;
   padding: ${({ big }) => (big ? "14px 48px" : "12px 30px")};
   color: ${({ dark }) => (dark ? "#010606" : "#FFCA00")};
@@ -13,7 +14,7 @@ export const Button = styled(Link)`
   cursor: pointer;
   display: flex;
   justify-content: center;
-  aling-items: center;
+  align-items: center; // Fixed typo from "aling-items" to "align-items"
   transition: all 0.2s ease-in-out;
 
   &:hover {

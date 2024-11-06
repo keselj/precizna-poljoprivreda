@@ -6,8 +6,16 @@
   text-align: start;
 }
 
+/* Home.css */
+@media (max-width: 768px) {
+  .home-section {
+    display: none; /* Hide HomePageSection on phones */
+  }
+}
+
 .strelica-usluge {
-  padding-left: 400px;
+  padding-left: 60px;
+  padding-bottom: 10px;
 }
 
 .strelica-kursevi {
@@ -18,8 +26,9 @@
 .p__onama {
   text-align: center;
 }
-
+/* zuta linija na indkurspage */
 #borderline {
+  margin-bottom: 10px;
   border-color: #ffca00;
 }
 
@@ -36,54 +45,7 @@
 } */
 
 #kurs-card {
-  box-shadow: 2px 2px 15px rgb(26, 26, 26);
-
-  @media screen and (max-width: 375px) {
-    width: 90%;
-  }
-
-  @media screen and (max-width: 414px) {
-    width: 110%;
-    margin-left: -15px;
-  }
-
-  @media screen and (max-width: 390px) {
-    width: 120%;
-    margin-left: -30px;
-  }
-
-  @media screen and (max-width: 430px) {
-    width: 120%;
-    margin-left: -30px;
-  }
-
-  @media screen and (max-width: 768px) {
-    margin-left: 120px;
-  }
-
-  @media screen and (max-width: 820px) {
-    margin-left: 20px;
-  }
-
-  @media screen and (max-width: 1024px) {
-    margin-left: 100px;
-  }
-
-  @media screen and (max-width: 912px) {
-    margin-left: 55px;
-  }
-
-  @media screen and (max-width: 540px) {
-    margin-left: 30px;
-  }
-
-  @media screen and (max-width: 280px) {
-    width: 95%;
-  }
-
-  @media screen and (max-width: 412px) {
-    margin-left: -30px;
-  }
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
 }
 
 .dropdown {
@@ -100,4 +62,54 @@
   list-style: none;
   border: 1px solid #ccc;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.column {
+  font-size: 22px;
+  text-align: center;
+
+  @media screen and (max-width: 375px) {
+    font-size: 20px;
+  }
+  @media screen and (max-width: 414px) {
+    font-size: 20px;
+  }
+
+  @media screen and (max-width: 430px) {
+    font-size: 20px;
+  }
+
+  @media screen and (max-width: 540px) {
+    font-size: 20px;
+  }
+}
+
+.table {
+  border-collapse: separate;
+  border-spacing: 10px;
+  justify-self: center;
+}
+
+.tbody .row .column {
+  padding: 5px;
+}
+
+/* DROPDOWN KURS */
+
+.kurs-item {
+  margin-bottom: 5px; /* Adjust the space between list items */
+  line-height: 1.45; /* Adjust the line height for better spacing between words */
+}
+
+/* .predavaci-list {
+  margin-bottom: 50px; 
+} */
+/* Space between the <ol> elements */
+
+.predavaci-list li {
+  margin-bottom: 10px; /* Space between list items within the <ol> */
+}
+
+p {
+  margin-bottom: 10px; /* Space between paragraphs */
 }

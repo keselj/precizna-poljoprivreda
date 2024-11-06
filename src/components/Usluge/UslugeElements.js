@@ -3,20 +3,30 @@ import Slider from "react-slick";
 import { Link } from "react-router-dom";
 
 export const UslugeContainer = styled.div`
-  height: 800px;
+  height: 750px;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   background: #fff;
+  position: relative;
+  margin-top: 45px;
 
   @media screen and (max-width: 768px) {
     height: 1100px;
+    flex-direction: column;
+  }
+
+  @media screen and (max-width: 820px) {
+    flex-direction: column;
   }
 
   @media screen and (max-width: 480px) {
     height: 1300px;
     flex-direction: column;
+  }
+  @media screen and (max-width: 1366px) {
+    max-width: 1293px;
   }
 `;
 
@@ -26,11 +36,6 @@ export const WrapperH1P = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
-  @media screen and (max-width: 480px) {
-    order: -1;
-    margin-bottom: 20px;
-  }
 `;
 
 export const SliderWrapper = styled.div`
@@ -40,9 +45,49 @@ export const SliderWrapper = styled.div`
   padding: 10px 50px;
   height: 100%;
   flex: 2;
+
   @media screen and (max-width: 480px) {
     margin: 0;
     width: 100%;
+  }
+
+  @media screen and (max-width: 375px) {
+    .slick-slide {
+      width: 120% !important;
+      margin-right: 25px;
+      margin-left: 25px;
+    }
+
+    .slick-track {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  @media screen and (max-width: 414px) {
+    .slick-slide {
+      width: 120% !important;
+      margin-right: 25px;
+      margin-left: 25px;
+    }
+
+    .slick-track {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  @media screen and (max-width: 430px) {
+    .slick-slide {
+      width: 120% !important;
+      margin-right: 25px;
+      margin-left: 25px;
+    }
+
+    .slick-track {
+      display: flex;
+      justify-content: center;
+    }
   }
 `;
 
@@ -58,21 +103,29 @@ export const UslugeH1 = styled.h1`
 
 export const UslugePh1 = styled.p`
   font-size: 16px;
-  color: #010606;
+  text-align: center;
   margin-bottom: 40px;
-  padding: 0 20px;
+  padding: 0 40px;
 
-  @media screen and (max-width: 480px) {
-    font-size: 32px;
+  @media screen and (max-width: 960px) {
+    margin: 0;
+    padding: 5px;
+  }
+
+  @media screen and (max-width: 414px) {
+    margin: 10px;
+  }
+
+  @media screen and (max-width: 430px) {
+    margin: 10px;
   }
 `;
 
 export const ButtonContainer = styled.div`
   display: flex;
-  margin: 0;
 
   & svg {
-    margin: 20px;
+    margin: 0 20px;
     cursor: pointer;
   }
 
@@ -82,14 +135,48 @@ export const ButtonContainer = styled.div`
   }
 
   @media screen and (max-width: 960px) {
-    margin: 0 auto;
+    margin: 0;
+  }
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+
+  @media screen and (max-width: 820px) {
+    display: none;
+  }
+
+  @media screen and (max-width: 1024px) {
+    display: none;
   }
 `;
+
 export const SliderContainer = styled.div`
   display: flex;
   flex-direction: row;
+
   @media screen and (max-width: 480px) {
-    width: auto;
+    width: 100%;
+  }
+
+  @media screen and (max-width: 414px) {
+    width: 100%;
+  }
+
+  @media screen and (max-width: 430px) {
+    width: 100%;
+  }
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
+
+  @media screen and (max-width: 820px) {
+    width: 100%;
+  }
+
+  @media screen and (max-width: 1024px) {
+    width: 100%;
   }
 `;
 
@@ -99,6 +186,7 @@ export const ReviewSliderKursevi = styled(Slider)`
   .slick-track {
     display: flex;
   }
+
   .slick-slide {
     display: flex;
     justify-content: center;
@@ -109,10 +197,26 @@ export const ReviewSliderKursevi = styled(Slider)`
   .slick-list {
     overflow: hidden;
   }
+
+  @media screen and (max-width: 375px) {
+    width: 110%;
+  }
+
+  @media screen and (max-width: 414px) {
+    width: 110%;
+  }
+
+  @media screen and (max-width: 430px) {
+    width: 110%;
+  }
+
+  @media screen and (max-width: 412px) {
+    width: 110%;
+  }
 `;
 
 export const UslugeWrapper = styled.div`
-  margin: 40px 0;
+  margin: 20px 0;
   display: grid;
   align-items: center;
   padding: 0 140px;
@@ -121,10 +225,14 @@ export const UslugeWrapper = styled.div`
   @media screen and (max-width: 1000px) {
     grid-template-columns: 1fr 1fr;
   }
+
   @media screen and (max-width: 480px) {
     grid-template-columns: 1fr;
     padding: 0 20px;
-    width: 100%;
+  }
+
+  @media screen and (max-width: 412px) {
+    margin-left: 0;
   }
 `;
 
@@ -138,6 +246,7 @@ export const UslugeCard = styled(Link)`
   height: 620px;
   width: 383px;
   border-left: 5px solid rgb(121, 27, 39);
+
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
 
   transition: all 0.2s ease-in-out;
@@ -148,6 +257,37 @@ export const UslugeCard = styled(Link)`
     transition: all 0.2s ease-in-out;
     cursor: pointer;
   }
+
+  @media screen and (max-width: 414px) {
+    width: 120% !important;
+    margin-left: -30px !important;
+  }
+
+  @media screen and (max-width: 430px) {
+    width: 120% !important;
+    margin-left: -30px !important;
+  }
+
+  @media screen and (max-width: 412px) {
+    margin-left: -30px !important;
+  }
+`;
+
+export const Dots = styled.div`
+  display: none;
+  text-align: center;
+  margin-top: 50px;
+  margin-left: -20px;
+
+  &::before {
+    content: "●\u00A0\u00A0\u00A0●\u00A0\u00A0\u00A0●";
+    font-size: 1.5rem;
+    color: #000;
+  }
+
+  @media screen and (max-width: 768px) {
+    display: block;
+  }
 `;
 
 export const UslugeIconWrapper = styled.div``;
@@ -157,16 +297,34 @@ export const UslugeIcon = styled.img`
   width: 100%;
   border-radius: 10px;
 `;
+
 export const UslugeH2PWrapper = styled.div`
   margin-top: 15px;
   padding: 5px;
+
+  @media screen and (max-width: 375px) {
+    width: 100%;
+  }
 `;
 
 export const UslugeH2 = styled.h2`
-  font-size: 22px;
+  font-size: 20px;
   margin-bottom: 5px;
   color: black;
+  text-align: start;
   padding: 0 10px;
+
+  @media screen and (max-width: 375px) {
+    font-size: 18px !important;
+  }
+
+  @media screen and (max-width: 414px) {
+    font-size: 18px;
+  }
+
+  @media screen and (max-width: 430px) {
+    font-size: 18px;
+  }
 `;
 
 export const UslugeP = styled.p`
@@ -175,9 +333,15 @@ export const UslugeP = styled.p`
   color: black;
   padding: 0 10px;
   line-height: 25px;
-`;
 
-// Slider 2
+  @media screen and (max-width: 375px) {
+    font-size: 14px !important;
+  }
+
+  @media screen and (max-width: 360px) {
+    font-size: 13px !important;
+  }
+`;
 
 export const ReviewSliderTwo = styled(Slider)`
   width: 700px;
@@ -185,6 +349,7 @@ export const ReviewSliderTwo = styled(Slider)`
   .slick-track {
     display: flex;
   }
+
   .slick-slide {
     display: flex;
     justify-content: center;
@@ -194,6 +359,21 @@ export const ReviewSliderTwo = styled(Slider)`
 
   .slick-list {
     overflow: hidden;
+  }
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+
+  @media screen and (max-width: 820px) {
+    display: none;
+  }
+
+  @media screen and (max-width: 1024px) {
+    display: none;
+  }
+  @media screen and (max-width: 1366px) {
+    display: none;
   }
 `;
 
@@ -207,7 +387,13 @@ export const UslugeWrapperTwo = styled.div`
   @media screen and (max-width: 1000px) {
     grid-template-columns: 1fr 1fr;
   }
+
   @media screen and (max-width: 768px) {
+    grid-template-columns: 1fr;
+    padding: 0 20px;
+  }
+
+  @media screen and (max-width: 820px) {
     grid-template-columns: 1fr;
     padding: 0 20px;
   }
@@ -223,7 +409,6 @@ export const UslugeCardTwo = styled(Link)`
   height: 440px;
   width: 320px;
   border-left: 5px solid rgb(121, 27, 39);
-
   margin-top: 50px;
 
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
@@ -252,10 +437,11 @@ export const UslugeH2PWrapperTwo = styled.div`
 `;
 
 export const UslugeH2Two = styled.h2`
-  font-size: 22px;
+  font-size: 20px;
   margin-bottom: 5px;
   color: black;
 `;
+
 export const SliderTwoContainer = styled.div`
   @media screen and (max-width: 480px) {
     display: none;

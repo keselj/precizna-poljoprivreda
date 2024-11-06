@@ -1,9 +1,9 @@
 import React, { useEffect } from "react";
 import Footer from "../components/Footer";
-import IndividualniKurs from "../componentsIndividualneKurs/IndividualniKurs/index";
 import Layout from "./Layout";
 import { useParams } from "react-router-dom";
 import dataKurs from "../componentsIndividualneKurs/IndividualniKurs/IndKursData";
+import IndividualniKurs from "../componentsIndividualneKurs/IndividualniKurs";
 
 const IndKursPage = () => {
   const { id } = useParams();

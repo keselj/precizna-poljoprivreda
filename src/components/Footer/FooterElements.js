@@ -1,34 +1,47 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-import logoBeliZeleni from "../../images/Logo/logoBeliZeleni.jpg";
+
 import logoBeliPlavi from "../../images/Logo/logoBeliPlav.jpg";
 
 export const FooterContainer = styled.footer`
   background-color: rgb(17, 29, 30);
 
+  @media screen and (max-width: 430px) {
+    width: 100% !important;
+  }
   @media screen and (max-width: 540px) {
-    width: 115%;
+    width: 100% !important;
+  }
+
+  @media screen and (max-width: 414px) {
+    width: 100% !important;
   }
 
   @media screen and (max-width: 412px) {
-    width: 100%;
+    width: 100% !important;
+  }
+
+  @media screen and (max-width: 1366px) {
+    width: 1293px;
   }
 `;
 
 export const FooterWrap = styled.div`
-  padding: 48px 24px;
+  padding: 48px 35px;
+  margin-left: 24px;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   align-items: start;
-  max-width: 1200px;
-  margin: 0 auto;
-  grid-template-columns: 2fr 1fr 1fr 2fr;
   gap: 50px;
   color: white;
 
   @media screen and (max-width: 768px) {
     gap: 12px;
+    padding: 20px 0;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
   }
 
   @media screen and (max-width: 414px) {
@@ -37,7 +50,6 @@ export const FooterWrap = styled.div`
 
   @media screen and (max-width: 430px) {
     flex-direction: column;
-    margin-left: 10px;
   }
 
   @media screen and (max-width: 360px) {
@@ -84,7 +96,6 @@ export const FooterLogoAndAddress = styled.div`
 
   @media screen and (max-width: 540px) {
     margin-left: 0px;
-    width: 40%;
   }
 `;
 
@@ -105,10 +116,32 @@ export const FooterLogo = styled(Link)`
   height: 30px;
   min-width: 145px;
   min-height: 45px;
+
+  @media screen and (max-width: 540px) {
+    display: none;
+  }
 `;
 
 export const FooterText = styled.p`
   font-weight: 500;
+
+  @media screen and (max-width: 375px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  @media screen and (max-width: 414px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  @media screen and (max-width: 430px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 `;
 
 export const FooterAddress = styled.p`
@@ -118,7 +151,9 @@ export const FooterCity = styled.p`
   font-weight: 500;
 `;
 export const FooterPhone = styled.p`
+  margin-top: 25px;
   font-weight: 500;
+  white-space: nowrap;
 `;
 export const FooterEmail = styled.p`
   font-weight: 500;
@@ -180,6 +215,14 @@ export const FooterProdaja = styled(Link)`
   justify-content: center;
 `;
 
+export const FooterBlog = styled(Link)`
+  color: white;
+  font-weight: 500;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+`;
+
 export const FooterSolicalMedia = styled.div`
   display: flex;
   flex-direction: column;
@@ -188,11 +231,15 @@ export const FooterSolicalMedia = styled.div`
   justify-content: center;
 
   @media screen and (max-width: 414px) {
-    flex-direction: row;
+    display: none;
   }
 
   @media screen and (max-width: 430px) {
     flex-direction: row;
+  }
+
+  @media screen and (max-width: 540px) {
+    display: none;
   }
 
   @media screen and (max-width: 360px) {
@@ -224,6 +271,22 @@ export const FooterSolicalMedia = styled.div`
   @media screen and (max-width: 540px) {
     width: 40%;
   }
+
+  @media screen and (max-width: 430px) {
+    display: none;
+  }
+`;
+export const LinkForFacebook = styled(Link)`
+  color: white;
+`;
+export const LinkForInstagram = styled(Link)`
+  color: white;
+`;
+export const LinkForLinkedin = styled(Link)`
+  color: white;
+`;
+export const LinkForYouTube = styled(Link)`
+  color: white;
 `;
 
 export const FooterSolicalMediatNaslov = styled.h4`
@@ -249,6 +312,8 @@ export const FooterPitajteNas = styled.div`
   flex-direction: column;
   max-width: 400px;
   height: 100%;
+  justify-content: center;
+  align-items: center;
 `;
 export const FooterBox = styled.div`
   display: flex;
@@ -263,7 +328,6 @@ export const FooterBox = styled.div`
   border: none;
 
   @media screen and (max-width: 360px) {
-    width: 100%;
     margin-left: 7px;
     margin-top: 30px;
   }
@@ -274,27 +338,11 @@ export const FooterBox = styled.div`
   }
 
   @media screen and (max-width: 768px) {
-    width: 90%;
+    width: 120% !important;
   }
 
   @media screen and (max-width: 820px) {
     width: 90%;
-  }
-
-  @media screen and (max-width: 280px) {
-    margin-left: 10px;
-  }
-
-  @media screen and (max-width: 853px) {
-    width: 90%;
-  }
-
-  @media screen and (max-width: 375px) {
-    width: 80%;
-  }
-
-  @media screen and (max-width: 540px) {
-    width: 100%;
   }
 `;
 export const FooterPitajteNasNaslov = styled.h4`
@@ -356,11 +404,11 @@ export const FooterInputPitanje = styled.textarea`
   }
 
   @media screen and (max-width: 375px) {
-    width: 135%;
+    width: 100%;
   }
 
   @media screen and (max-width: 540px) {
-    width: 135%;
+    width: 100%;
   }
 `;
 export const FooterSubmeitButton = styled.button`
@@ -380,101 +428,11 @@ export const FooterSubmeitButton = styled.button`
   font-size: 16px;
 `;
 
-// STARI FOOTER
-
-// export const FooterLinksContainer = styled.div`
-//   display: flex;
-//   justify-content: center;
-
-//   @media screen and (max-width: 820px) {
-//     padding-top: 32px;
-//   }
-// `;
-
-// export const FooterLinksWrapper = styled.div`
-//   display: flex;
-
-//   @media screen and (max-width: 820px) {
-//     flex-direction: column;
-//   }
-// `;
-
-// export const FooterLinkItems = styled.div`
-//   display: flex;
-//   flex-direction: column;
-//   align-items: flex-start;
-//   margin: 16px;
-//   text-align: left;
-//   width: 160px;
-//   box-sizing: border-box;
-//   color: #fff;
-
-//   @media screen and (max-width: 420px) {
-//     margin: 0;
-//     padding: 10px;
-//     width: 100%;
-//   }
-// `;
-
-// export const FooterLinkTitle = styled.h1`
-//   font-size: 14px;
-//   margin-bottom: 16px;
-// `;
-
-// export const FooterLink = styled(Link)`
-//   color: #fff;
-//   text-decoration: none;
-//   margin-bottom: 8px;
-//   font-size: 14px;
-
-//   &:hover {
-//     color: #01bf71;
-//     transition: 0.3s ease-out;
-//   }
-// `;
-
-// export const SocialMedia = styled.section`
-//   max-width: 1000px;
-//   width: 100%;
-// `;
-
-// export const SocialMediaWrap = styled.div`
-//   display: flex;
-//   justify-content: space-between;
-//   aling-items: center;
-//   max-width: 1100px;
-//   margin: 40px auto 0 auto;
-
-//   @media screen and (max-width: 820px) {
-//     flex-direction: column;
-//   }
-// `;
-
-// export const SocialLogo = styled(Link)`
-//   color: #fff;
-//   justify-self: start;
-//   cursor: pointer:
-//   text-decoration: none;
-//   font-size: 24px;
-//   display: flex;
-//   aling-items: center;
-//   margin-bottom: 16px;
-//   font-weight: bold;
-// `;
-
-// export const WebsiteRight = styled.small`
-//   color: #fff;
-//   margin-bottom: 16px;
-// `;
-
-// export const SocialIcons = styled.div`
-//   display: flex;
-//   justify-content: space-between;
-//   align-items: center;
-//   width: 240px;
-// `;
-
-// export const SocoalIconLink = styled.a`
-//   color: #fff;
-//   font-size: 24px;
-// `;
+export const FooterCopyright = styled.p`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: 500;
+  padding: 20px 20px 40px 20px;
+`;

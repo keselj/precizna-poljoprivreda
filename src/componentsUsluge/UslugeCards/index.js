@@ -36,6 +36,7 @@ const UslugeCards = () => {
                 </UslugeCardsIconWrapper>
                 <UslugeCardsH2PWrapper>
                   <UslugeCardsH2>{item.title}</UslugeCardsH2>
+                  <UslugeCardsH2>{item.title2}</UslugeCardsH2>
                   <UslugeCardsP>{item.description}</UslugeCardsP>
                 </UslugeCardsH2PWrapper>
               </UslugeCardsCard>

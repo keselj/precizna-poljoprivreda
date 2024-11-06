@@ -37,6 +37,7 @@ import {
   SliderTwoContainer,
   ReviewSliderTwo,
   SliderContainer,
+  Dots,
 } from "./UslugeElements";
 const toggleHome = () => {
   scroll.scrollToTop();
@@ -61,8 +62,49 @@ const Usluge = () => {
 
   return (
     <UslugeContainer>
+      <WrapperH1P>
+        <UslugeH1>Usluge</UslugeH1>
+        <UslugePh1>
+          U saradnji sa specijalizovanim stručnim firmama iz oblasti
+          poljoprivrede, pružamo vam usluge za unapređenje vašeg poslovanja.
+          Naša ponuda bazira se na implementaciji najnovijih tehnologija u
+          poljoprivrednoj proizvodnji.
+        </UslugePh1>
+        <Button
+          to="usluge"
+          onMouseEnter={onHover}
+          onMouseLeave={onHover}
+          onClick={toggleHome}
+        >
+          Pregled svih Usluga {hover ? <ArrowForward /> : <ArrowRight />}
+        </Button>
+      </WrapperH1P>
       <SliderWrapper>
         <SliderContainer>
+          <ReviewSliderKursevi
+            {...uslugeSliderSettings}
+            ref={setSliderRefTwoUsluge}
+          >
+            {UslugeData.map((el, index) => (
+              <UslugeWrapper>
+                <UslugeCard
+                  id="usluga-card"
+                  to={`/usluga/${el.id}`}
+                  key={el.id}
+                  state={el}
+                >
+                  <UslugeIconWrapper>
+                    <UslugeIcon src={el.src} alt={el.alt} />
+                  </UslugeIconWrapper>
+                  <UslugeH2PWrapper>
+                    <UslugeH2>{el.title}</UslugeH2>
+                    <UslugeP> {el.description}</UslugeP>
+                  </UslugeH2PWrapper>
+                </UslugeCard>
+                <Dots />
+              </UslugeWrapper>
+            ))}
+          </ReviewSliderKursevi>
           <SliderTwoContainer>
             <ReviewSliderTwo
               {...uslugeSliderSettingsTwo}
@@ -97,48 +139,8 @@ const Usluge = () => {
               </IconContext.Provider>
             </ButtonContainer>
           </SliderTwoContainer>
-          <ReviewSliderKursevi
-            {...uslugeSliderSettings}
-            ref={setSliderRefTwoUsluge}
-          >
-            {UslugeData.map((el, index) => (
-              <UslugeWrapper>
-                <UslugeCard
-                  id="usluga-card"
-                  to={`/usluga/${el.id}`}
-                  key={el.id}
-                  state={el}
-                >
-                  <UslugeIconWrapper>
-                    <UslugeIcon src={el.src} alt={el.alt} />
-                  </UslugeIconWrapper>
-                  <UslugeH2PWrapper>
-                    <UslugeH2>{el.title}</UslugeH2>
-                    <UslugeP> {el.description}</UslugeP>
-                  </UslugeH2PWrapper>
-                </UslugeCard>
-              </UslugeWrapper>
-            ))}
-          </ReviewSliderKursevi>
         </SliderContainer>
       </SliderWrapper>
-      <WrapperH1P>
-        <UslugeH1>Usluge</UslugeH1>
-        <UslugePh1>
-          U saradnji sa specijalizovanim stručnim firmama iz oblasti
-          poljoprivrede, pružamo vam usluge za unapređenje vašeg poslovanja.
-          Naša ponuda bazira se na implementaciji najnovijih tehnologija u
-          poljoprivrednoj proizvodnji.
-        </UslugePh1>
-        <Button
-          to="usluge"
-          onMouseEnter={onHover}
-          onMouseLeave={onHover}
-          onClick={toggleHome}
-        >
-          Pregeled svih Usluga {hover ? <ArrowForward /> : <ArrowRight />}
-        </Button>
-      </WrapperH1P>
     </UslugeContainer>
   );
 };

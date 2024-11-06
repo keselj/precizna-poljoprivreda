@@ -7,6 +7,10 @@ export const KursContainer = styled.div`
   grid-gap: 16px;
   padding: 10px 50px;
   height: 100%;
+
+  @media screen and (max-width: 1366px) {
+    max-width: 1293px;
+  }
 `;
 
 export const KursWrapper = styled.div`
@@ -15,6 +19,11 @@ export const KursWrapper = styled.div`
   align-items: center;
   padding: 0 140px;
   grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+
+  @media screen and (max-width: 1366px) {
+    padding: 0;
+  }
 
   @media screen and (max-width: 768px) {
     grid-template-columns: 1fr;
@@ -52,7 +61,6 @@ export const KursWrapper = styled.div`
   }
 
   @media screen and (max-width: 280px) {
-    margin-left: -80px;
   }
 `;
 
@@ -76,6 +84,49 @@ export const KursCard = styled(Link)`
     transition: all 0.2s ease-in-out;
     cursor: pointer;
   }
+
+  @media screen and (max-width: 1366px) {
+    width: 300px;
+  }
+
+  @media screen and (max-width: 375px) {
+    width: 90%;
+  }
+
+  @media screen and (max-width: 414px) {
+    width: 110%;
+  }
+
+  @media screen and (max-width: 390px) {
+    width: 120%;
+  }
+
+  @media screen and (max-width: 430px) {
+    width: 120%;
+  }
+
+  @media screen and (max-width: 768px) {
+  }
+
+  @media screen and (max-width: 820px) {
+  }
+
+  @media screen and (max-width: 1024px) {
+  }
+
+  @media screen and (max-width: 912px) {
+  }
+
+  @media screen and (max-width: 540px) {
+  }
+
+  @media screen and (max-width: 280px) {
+    width: 95%;
+  }
+
+  @media screen and (max-width: 412px) {
+    margin-left: -30px;
+  }
 `;
 
 export const KursIconWrapper = styled.div``;
@@ -96,6 +147,10 @@ export const KursH2 = styled.h2`
   margin-bottom: 5px;
   color: black;
   padding: 0 10px;
+
+  @media screen and (max-width: 1366px) {
+    font-size: 18px;
+  }
 `;
 
 export const KursP = styled.p`

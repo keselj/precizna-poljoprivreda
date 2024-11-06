@@ -18,7 +18,7 @@ export const data = [
   },
   {
     id: "dronovi-za-zaštitu-biljaka",
-    src: require("./KursImages/3. Dronovi za zaštitu biljaka.png"),
+    src: require("./KursImages/3. Dronovi za zastitu biljaka.png"),
 
     alt: "Dronovi za zaštitu biljaka",
     title: "DRONOVI ZA ZAŠTITU BILJAKA",
@@ -34,15 +34,15 @@ export const data = [
     description:
       "Kurs Dronovi za monitoring u poljoprivredi pruža praktično i teorijsko znanje o upotrebi dronova u optimizaciji poljoprivredne proizvodnje. Polaznici će naučiti kako efikasno koristiti dronove za praćenje stanja useva, detekciju bolesti i štetočina...",
   },
-  {
-    id: "kurs-za-rukovaoce-sušara-u-poljoprivredi",
-    src: require("./KursImages/5. Kurs za rukovaoce sušara u poljoprivredi.png"),
+  // {
+  //   id: "kurs-za-rukovaoce-sušara-u-poljoprivredi",
+  //   src: require("./KursImages/5. Kurs za rukovaoce sušara u poljoprivredi.png"),
 
-    alt: "Kurs za rukovaoce sušara u poljoprivredi",
-    title: "KURS ZA RUKOVAOCE SUŠARA U POLJOPRIVREDI",
-    description:
-      "Departman za poljoprivrednu tehniku dvadeset godina radi na posebnoj obuci stručnjaka koji brinu o sušenju i skladištenju svega onoga što se u domaćoj poljoprivredi proizvede.",
-  },
+  //   alt: "Kurs za rukovaoce sušara u poljoprivredi",
+  //   title: "KURS ZA RUKOVAOCE SUŠARA U POLJOPRIVREDI",
+  //   description:
+  //     "Departman za poljoprivrednu tehniku dvadeset godina radi na posebnoj obuci stručnjaka koji brinu o sušenju i skladištenju svega onoga što se u domaćoj poljoprivredi proizvede.",
+  // },
 ];
 
 export const dataSecond = [
@@ -56,7 +56,7 @@ export const dataSecond = [
 
   {
     id: "dronovi-za-zaštitu-biljaka",
-    src: require("./KursImages/3. Dronovi za zaštitu biljaka.png"),
+    src: require("./KursImages/3. Dronovi za zastitu biljaka.png"),
 
     alt: "Dronovi za zaštitu biljaka",
     title: "DRONOVI ZA ZAŠTITU BILJAKA",
@@ -70,13 +70,13 @@ export const dataSecond = [
     title: "DRONOVI ZA MONITORING U POLJOPRIVREDI",
   },
 
-  {
-    id: "kurs-za-rukovaoce-sušara-u-poljoprivredi",
-    src: require("./KursImages/5. Kurs za rukovaoce sušara u poljoprivredi.png"),
+  // {
+  //   id: "kurs-za-rukovaoce-sušara-u-poljoprivredi",
+  //   src: require("./KursImages/5. Kurs za rukovaoce sušara u poljoprivredi.png"),
 
-    alt: "Kurs za rukovaoce sušara u poljoprivredi",
-    title: "KURS ZA RUKOVAOCE SUŠARA U POLJOPRIVREDI",
-  },
+  //   alt: "Kurs za rukovaoce sušara u poljoprivredi",
+  //   title: "KURS ZA RUKOVAOCE SUŠARA U POLJOPRIVREDI",
+  // },
 
   {
     id: "osnove-precizne-poljoprivrede",
@@ -109,6 +109,13 @@ export const sliderSettings = {
         draggable: true,
       },
     },
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 1,
+        draggable: true,
+      },
+    },
   ],
 };
 
@@ -131,6 +138,12 @@ export const sliderSettingsTwo = {
 
     {
       breakpoint: 900,
+      settings: {
+        slidesToShow: 0,
+      },
+    },
+    {
+      breakpoint: 768,
       settings: {
         slidesToShow: 0,
       },

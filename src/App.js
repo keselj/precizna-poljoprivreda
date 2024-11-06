@@ -10,16 +10,19 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import OnamaPage from "./pages/OnamaPage";
 import BlogPage from "./pages/BlogPage";
 import ProdajaPage from "./pages/ProdajaPage";
+import IndProdajaPage from "./pages/IndProdajaPage";
 
 function App() {
   return (
-    <Router basename="/precizna-poljoprivreda">
+    <Router basename="/">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/usluge" element={<UslugePage />} />
         <Route path="/blog" element={<BlogPage />} />
         <Route path="/prodaja" element={<ProdajaPage />} />
+        <Route path="/prodaja/:id" element={<IndProdajaPage />} />
         <Route path="/usluga/:id" element={<IndUslugaPage />} />
+
         <Route path="/kursevi" element={<KurseviPage />} />
         <Route path="/kurs/:id" element={<IndKursPage />} />
         <Route path="/onama" element={<OnamaPage />} />

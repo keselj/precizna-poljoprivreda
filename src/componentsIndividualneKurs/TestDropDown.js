@@ -6,7 +6,7 @@ import {
   DropdownContent,
 } from "./IndividualniKurs/IndKursElements";
 
-import { dropdowns } from "./IndividualniKurs/IndKursData";
+import { dropdownsKurs } from "./IndividualniKurs/IndKursData";
 
 const Dropdown = ({ title, options }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -27,10 +27,15 @@ const Dropdown = ({ title, options }) => {
 };
 
 // Usage
-const TestDropDown = () => {
+const TestDropDownKurs = ({ kursId }) => {
+  // Filter dropdownsKurs based on the kurs ID
+  const filteredDropdowns = dropdownsKurs.filter(
+    (dropdown) => dropdown.id === kursId
+  );
+
   return (
     <div>
-      {dropdowns.map((dropdown, index) => (
+      {filteredDropdowns.map((dropdown, index) => (
         <Dropdown
           key={index}
           title={dropdown.title}
@@ -41,4 +46,4 @@ const TestDropDown = () => {
   );
 };
 
-export default TestDropDown;
+export default TestDropDownKurs;

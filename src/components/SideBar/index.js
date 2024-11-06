@@ -7,6 +7,7 @@ import {
   SidebarLink,
   SidebarMenu,
   NavLogoSideBar,
+  SideBarLinkKonakt,
 } from "./SideBarElemendts";
 
 const Sidebar = ({ isOpen, toggle }) => {
@@ -17,12 +18,22 @@ const Sidebar = ({ isOpen, toggle }) => {
       </Icon>
       <SidebarWrapper>
         <SidebarMenu>
+          <SidebarLink to="/prodaja">Prodaja</SidebarLink>{" "}
           <SidebarLink to="/kursevi">Kursevi</SidebarLink>
           <SidebarLink to="/usluge"> Usluge</SidebarLink>{" "}
-          <SidebarLink to="/prodaja">Prodaja</SidebarLink>{" "}
+          <SidebarLink to="/blog">Blog</SidebarLink>{" "}
           <SidebarLink to="/onama">O Nama</SidebarLink>{" "}
-          <SidebarLink to="/naslovna">Naslovna</SidebarLink>{" "}
-          <SidebarLink to="/kontakt">Kontakt</SidebarLink>
+          <SideBarLinkKonakt
+            to="footer"
+            smooth={true}
+            duration={500}
+            spy={true}
+            exact="true"
+            offset={-80}
+            onClick={toggle}
+          >
+            Kontakt
+          </SideBarLinkKonakt>
         </SidebarMenu>
       </SidebarWrapper>
       <NavLogoSideBar to="/" />

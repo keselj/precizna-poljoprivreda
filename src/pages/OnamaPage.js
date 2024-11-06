@@ -9,7 +9,7 @@ const OnamaPage = () => {
     <>
       <Layout />
       <Hero />
-      <SliderTwo />
+      <SliderTwo backgroundColor="#f1eeee" />
       <Footer />
     </>
   );

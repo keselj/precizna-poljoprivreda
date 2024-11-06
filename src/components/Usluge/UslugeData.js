@@ -1,5 +1,23 @@
 export const UslugeData = [
   {
+    id: "prskanje-dronom",
+
+    src: require("./UslugeImages/1. Prskanje dronom.png"),
+    alt: "Prskanje dronom",
+    title: "PRSKANJE DRONOM",
+    description:
+      "Prskanje useva dronom je nezamenljivo kada konvencionalna traktorska prskalica ne može pristupiti polju. Naša firma ima više od 2000 ha iskustva u ovim tretmanima, bez reklamacija i sa odličnim rezultatima. Dronovi pružaju preciznost i efikasnost u poljoprivredi kao nikada ranije.",
+  },
+  {
+    id: "procena-štete-i-stanja-useva",
+
+    src: require("./UslugeImages/2. Procena stete i stanja useva.png"),
+    alt: "Procena štete i stanja useva",
+    title: "PROCENA STANJA USEVA ILI NASTALE ŠTETE",
+    description:
+      "Nastale štete na usevima usled vremenskih nepogoda poput grada, poplava i olujnih vetrova sada se precizno procenjuju. Pružamo visoko precizno mapiranje terena. Savremene tehnologije omogućavaju tačno određivanje obima štete i trenutnog stanja useva.",
+  },
+  {
     id: "izrada-mapa-za-varijabilne-tratmane",
     src: require("./UslugeImages/3. Izrada mapa za varijabilne tratmane.png"),
     alt: "Izrada mapa za varijabilne tratmane",
@@ -9,7 +27,7 @@ export const UslugeData = [
   },
   {
     id: "predviđanje-prinosa-pšenice",
-    src: require("./UslugeImages/4. Predviđanje prinosa pšenice.png"),
+    src: require("./UslugeImages/4. Predvidjanje prinosa psenice.png"),
     alt: "Predviđanje prinosa pšenice",
     title: "PREDVIĐANJE PRINOSA PŠENICE",
     description:
@@ -33,7 +51,7 @@ export const UslugeData = [
   },
   {
     id: "menadžment-podacima",
-    src: require("./UslugeImages/7. Menadžment podacima.png"),
+    src: require("./UslugeImages/7. Menadzment podacima.png"),
     alt: "Menadžment podacima",
     title: "MENADŽMENT PODACIMA",
     description:
@@ -41,7 +59,7 @@ export const UslugeData = [
   },
   {
     id: "podešavanje-poljoprivrednih-mašina",
-    src: require("./UslugeImages/8. Podešavanje poljoprivrednih mašin.png"),
+    src: require("./UslugeImages/8. Podesavanje poljoprivrednih masin.png"),
     alt: "Podešavanje poljoprivrednih mašina",
     title: "PODEŠAVANJE POLJOPRIVREDNIH MAŠINA - IZRADA KALIBRACIONIH KARTI",
     description:
@@ -49,7 +67,7 @@ export const UslugeData = [
   },
   {
     id: "uravnoteženje-rotora",
-    src: require("./UslugeImages/9. Uravnoteženje rotora.png"),
+    src: require("./UslugeImages/9. Uravnotezenje rotora.png"),
     alt: "Uravnoteženje rotora",
     title: "URAVNOTEŽENJE ROTORA",
     description:
@@ -57,7 +75,7 @@ export const UslugeData = [
   },
   {
     id: "izrada-tehničke-dokumentacije",
-    src: require("./UslugeImages/10. Izrada tehničke dokumentacije.png"),
+    src: require("./UslugeImages/10. Izrada tehnicke dokumentacije.png"),
     alt: "Izrada tehničke dokumentacije",
     title: "IZRADA TEHNIČKE DOKUMENTACIJE",
     description:
@@ -65,7 +83,7 @@ export const UslugeData = [
   },
   {
     id: "izrada-3D-modela-mašinskih-sklopova-i-elemenata",
-    src: require("./UslugeImages/11. Izrada 3D modela mašinskih sklopova i elemenata.png"),
+    src: require("./UslugeImages/11. Izrada 3D modela masinskih sklopova i elemenata.png"),
     alt: "Izrada 3D modela mašinskih sklopova i elemenata",
     title: "IZRADA 3D MODELA MAŠINSKIH SKLOPOVA I ELEMENATA",
     description:
@@ -87,41 +105,18 @@ export const UslugeData = [
     description:
       "Konsalting u preciznoj poljoprivredi igra ključnu ulogu u pružanju stručnih saveta i podrške poljoprivrednicima u implementaciji naprednih tehnologija i praksi koje se koriste za optimizaciju poljoprivredne proizvodnje.",
   },
-  {
-    id: "prskanje-dronom",
-
-    src: require("./UslugeImages/1. Prskanje dronom.png"),
-    alt: "Prskanje dronom",
-    title: "PRSKANJE DRONOM",
-    description:
-      "Prskanje useva dronom je nezamenljivo kada konvencionalna traktorska prskalica ne može pristupiti polju. Naša firma ima više od 2000 ha iskustva u ovim tretmanima, bez reklamacija i sa odličnim rezultatima. Dronovi pružaju preciznost i efikasnost u poljoprivredi kao nikada ranije.",
-  },
-  {
-    id: "procena-štete-i-stanja-useva",
-
-    src: require("./UslugeImages/2. Procena štete i stanja useva.png"),
-    alt: "Procena štete i stanja useva",
-    title: "PROCENA STANJA USEVA ILI NASTALE ŠTETE",
-    description:
-      "Nastale štete na usevima usled vremenskih nepogoda poput grada, poplava i olujnih vetrova sada se precizno procenjuju. Pružamo visoko precizno mapiranje terena. Savremene tehnologije omogućavaju tačno određivanje obima štete i trenutnog stanja useva.",
-  },
 ];
 
+// Druga grupa
 export const UslugeData2 = [
-  {
-    id: "prskanje-dronom",
-
-    src: require("./UslugeImages/1. Prskanje dronom.png"),
-    alt: "Prskanje dronom",
-    title: "PRSKANJE DRONOM",
-  },
   {
     id: "procena-štete-i-stanja-useva",
 
-    src: require("./UslugeImages/2. Procena štete i stanja useva.png"),
+    src: require("./UslugeImages/2. Procena stete i stanja useva.png"),
     alt: "Procena štete i stanja useva",
     title: "PROCENA STANJA USEVA ILI NASTALE ŠTETE",
   },
+
   {
     id: "izrada-mapa-za-varijabilne-tratmane",
 
@@ -132,7 +127,7 @@ export const UslugeData2 = [
   {
     id: "predviđanje-prinosa-pšenice",
 
-    src: require("./UslugeImages/4. Predviđanje prinosa pšenice.png"),
+    src: require("./UslugeImages/4. Predvidjanje prinosa psenice.png"),
     alt: "Predviđanje prinosa pšenice",
     title: "PREDVIĐANJE PRINOSA PŠENICE",
   },
@@ -152,35 +147,35 @@ export const UslugeData2 = [
   {
     id: "menadžment-podacima",
 
-    src: require("./UslugeImages/7. Menadžment podacima.png"),
+    src: require("./UslugeImages/7. Menadzment podacima.png"),
     alt: "Menadžment podacima",
     title: "MENADŽMENT PODACIMA",
   },
   {
     id: "podešavanje-poljoprivrednih-mašina",
 
-    src: require("./UslugeImages/8. Podešavanje poljoprivrednih mašin.png"),
+    src: require("./UslugeImages/8. Podesavanje poljoprivrednih masin.png"),
     alt: "Podešavanje poljoprivrednih mašina",
     title: "PODEŠAVANJE POLJOPRIVREDNIH MAŠINA - IZRADA KALIBRACIONIH KARTI",
   },
   {
     id: "uravnoteženje-rotora",
 
-    src: require("./UslugeImages/9. Uravnoteženje rotora.png"),
+    src: require("./UslugeImages/9. Uravnotezenje rotora.png"),
     alt: "Uravnoteženje rotora",
     title: "URAVNOTEŽENJE ROTORA",
   },
   {
     id: "izrada-tehničke-dokumentacije",
 
-    src: require("./UslugeImages/10. Izrada tehničke dokumentacije.png"),
+    src: require("./UslugeImages/10. Izrada tehnicke dokumentacije.png"),
     alt: "Izrada tehničke dokumentacije",
     title: "IZRADA TEHNIČKE DOKUMENTACIJE",
   },
   {
     id: "izrada-3D-modela-mašinskih-sklopova-i-elemenata",
 
-    src: require("./UslugeImages/11. Izrada 3D modela mašinskih sklopova i elemenata.png"),
+    src: require("./UslugeImages/11. Izrada 3D modela masinskih sklopova i elemenata.png"),
     alt: "Izrada 3D modela mašinskih sklopova i elemenata",
     title: "IZRADA 3D MODELA MAŠINSKIH SKLOPOVA I ELEMENATA",
   },
@@ -196,6 +191,14 @@ export const UslugeData2 = [
     alt: "Savetovanje u preciznoj poljoprivredi",
     title: "KONSALTING U PRECIZNOJ POLJOPRIVREDI",
   },
+
+  {
+    id: "prskanje-dronom",
+
+    src: require("./UslugeImages/1. Prskanje dronom.png"),
+    alt: "Prskanje dronom",
+    title: "PRSKANJE DRONOM",
+  },
 ];
 
 export const uslugeSliderSettings = {
@@ -209,13 +212,20 @@ export const uslugeSliderSettings = {
     {
       breakpoint: 1280,
       settings: {
-        slidesToShow: 2,
+        slidesToShow: 1,
         draggable: false,
       },
     },
 
     {
       breakpoint: 900,
+      settings: {
+        slidesToShow: 1,
+        draggable: true,
+      },
+    },
+    {
+      breakpoint: 768,
       settings: {
         slidesToShow: 1,
         draggable: true,
@@ -243,6 +253,12 @@ export const uslugeSliderSettingsTwo = {
 
     {
       breakpoint: 900,
+      settings: {
+        slidesToShow: 0,
+      },
+    },
+    {
+      breakpoint: 768,
       settings: {
         slidesToShow: 0,
       },

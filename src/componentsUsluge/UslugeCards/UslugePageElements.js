@@ -7,6 +7,9 @@ export const UslugeCardsContainer = styled.div`
   grid-gap: 16px;
   padding: 10px 50px;
   height: 100%;
+  @media screen and (max-width: 1366px) {
+    max-width: 1293px;
+  }
 `;
 
 export const UslugeCardsWrapper = styled.div`
@@ -15,6 +18,11 @@ export const UslugeCardsWrapper = styled.div`
   align-items: center;
   padding: 0 140px;
   grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+
+  @media screen and (max-width: 1366px) {
+    padding: 0;
+  }
 
   @media screen and (max-width: 1000px) {
     grid-template-columns: 1fr 1fr;
@@ -22,6 +30,32 @@ export const UslugeCardsWrapper = styled.div`
   @media screen and (max-width: 768px) {
     grid-template-columns: 1fr;
     padding: 0 20px;
+  }
+
+  @media screen and (max-width: 375px) {
+    gap: 50px;
+  }
+
+  @media screen and (max-width: 414px) {
+    gap: 50px;
+  }
+
+  @media screen and (max-width: 430px) {
+    gap: 50px;
+  }
+
+  @media screen and (max-width: 768px) {
+    gap: 50px;
+  }
+
+  @media screen and (max-width: 820px) {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+
+  @media screen and (max-width: 1024px) {
+    grid-template-columns: 1fr;
+    gap: 50px;
   }
 `;
 
@@ -45,6 +79,51 @@ export const UslugeCardsCard = styled(Link)`
     transition: all 0.2s ease-in-out;
     cursor: pointer;
   }
+
+  @media screen and (max-width: 1366px) {
+    width: 300px;
+  }
+
+  @media screen and (max-width: 375px) {
+    width: 120%;
+    margin-left: -25px;
+  }
+
+  @media screen and (max-width: 414px) {
+    width: 120%;
+    margin-left: -25px;
+  }
+
+  @media screen and (max-width: 430px) {
+    width: 120%;
+    margin-left: -30px;
+  }
+
+  @media screen and (max-width: 360px) {
+    width: 130%;
+    margin-left: -35px;
+  }
+
+  @media screen and (max-width: 768px) {
+    margin-left: 120px;
+  }
+
+  @media screen and (max-width: 820px) {
+    margin-left: 30px;
+  }
+
+  @media screen and (max-width: 1024px) {
+    margin-left: 45px;
+  }
+
+  @media screen and (max-width: 280px) {
+    margin-left: -40px;
+    width: 150%;
+  }
+
+  @media screen and (max-width: 412px) {
+    margin-left: -30px;
+  }
 `;
 
 export const UslugeCardsIconWrapper = styled.div``;
@@ -65,6 +144,22 @@ export const UslugeCardsH2 = styled.h2`
   margin-bottom: 5px;
   color: black;
   padding: 0 10px;
+
+  @media screen and (max-width: 1366px) {
+    font-size: 18px;
+  }
+
+  @media screen and (max-width: 768px) {
+    font-size: 20px;
+  }
+
+  @media screen and (max-width: 820px) {
+    font-size: 20px;
+  }
+
+  @media screen and (max-width: 280px) {
+    font-size: 17px;
+  }
 `;
 
 export const UslugeCardsP = styled.p`

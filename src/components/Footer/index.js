@@ -1,19 +1,13 @@
 import React from "react";
-import {
-  FaFacebook,
-  FaInstagram,
-  FaYoutube,
-  FaTwitter,
-  FaLinkedin,
-} from "react-icons/fa";
+import { animateScroll as scroll } from "react-scroll";
+import Swal from "sweetalert2";
+import { FaFacebook, FaInstagram, FaYoutube, FaLinkedin } from "react-icons/fa";
 import {
   FooterContainer,
   FooterWrap,
   FooterLogoAndAddress,
   FooterLogo,
   FooterText,
-  FooterAddress,
-  FooterCity,
   FooterPhone,
   FooterEmail,
   FooterOnamaKurseviUslugeProdaja,
@@ -34,23 +28,78 @@ import {
   FooterInputPitanje,
   FooterSubmeitButton,
   FooterFormContainer,
-  // FooterLinksContainer,
-  // FooterLinksWrapper,
-  // FooterLinkItems,
-  // FooterLinkTitle,
-  // FooterLink,
-  // SocialMediaWrap,
-  // SocialLogo,
-  // WebsiteRight,
-  // SocialMedia,
-  // SocoalIconLink,
-  // SocialIcons,
+  FooterBlog,
+  LinkForYouTube,
+  LinkForFacebook,
+  LinkForInstagram,
+  LinkForLinkedin,
+  FooterCopyright,
 } from "./FooterElements";
+
+const toggleHome = () => {
+  scroll.scrollToTop();
+};
 
 const Footer = () => {
   const iconStyle = {
     fontSize: "24px",
     cursor: "pointer",
+  };
+
+  const poslato = () => {
+    Swal.fire({
+      title: "Uspesno",
+      text: "Uspesno ste poslali mail",
+      icon: "success",
+    });
+  };
+
+  const error = () => {
+    Swal.fire({
+      title: "Niste popunili sva polja",
+      icon: "error",
+    });
+  };
+
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    const formData = new FormData(event.target);
+
+    formData.append("access_key", "5d439610-697a-4bc1-94c7-41c4e4cbe95d");
+
+    const object = Object.fromEntries(formData);
+    const json = JSON.stringify(object);
+
+    const res = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+      body: json,
+    }).then((res) => res.json());
+
+    if (res.success) {
+      poslato();
+      console.log("Success", res);
+    } else {
+      error();
+      console.log("Error", res);
+    }
+  };
+
+  const validateForm = (event) => {
+    const form = event.target.closest("form");
+    const email = form.querySelector('[name="email"]').value;
+    const firstName = form.querySelector('[name="firstName"]').value;
+    const lastName = form.querySelector('[name="lastName"]').value;
+    const napomena = form.querySelector('[name="napomena"]').value;
+
+    if (email && firstName && lastName && napomena) {
+      poslato();
+    } else {
+      error();
+    }
   };
 
   return (
@@ -59,31 +108,51 @@ const Footer = () => {
         <FooterLogoAndAddress>
           <FooterLogo />
           <FooterText>
-            Hvatajući korak sa vremenom u jednoj od najdinamičnijih oblasti
-            današnjice, na Agromedia portalu mešaju se stara i nova znanja,
-            mudrost tradicije i najnovija tehnološka dostignuća. Uhvatite korak
-            sa promenama, pratite najčitaniji poljoprivredni portal u Srbiji!
+            U svetu gde preciznost seje temelje uspeha, Precizna Poljoprivreda
+            doo vas vodi kroz svet napredne poljoprivrede. Naša vizija je da
+            spojimo duboko ukorenjena znanja sa prednjom linijom tehnološkog
+            razvoja, nudeći vam opremu, alate i znanje za rast i prosperitet.
+            Budite deo promene koja oblikuje zeleniju i efikasniju budućnost
+            poljoprivredne proizvodnje
           </FooterText>
-          <FooterAddress>Dr Ivana Ribara 84, VI/26</FooterAddress>
-          <FooterCity>11070 Novi Beograd</FooterCity>
-          <FooterPhone>Telefon:+381 64 1627 353</FooterPhone>
-          <FooterEmail>Email: info@agromedia.rs</FooterEmail>
+          <FooterPhone>Telefon:+381 69 720 739</FooterPhone>
+          <FooterEmail>Email: info@preciznapoljoprivreda.rs</FooterEmail>
         </FooterLogoAndAddress>
         <FooterOnamaKurseviUslugeProdaja>
           <FooterPreciznaPoljoprivreda>
             Precizna Poljoprivreda
           </FooterPreciznaPoljoprivreda>
-          <FooterOnama>O Nama</FooterOnama>
-          <FooterKursevi>Kursevi</FooterKursevi>
-          <FooterUsluge>Usluge</FooterUsluge>
-          <FooterProdaja>Prodaja</FooterProdaja>
+          <FooterProdaja to="/prodaja" onClick={toggleHome}>
+            Prodaja
+          </FooterProdaja>
+          <FooterKursevi to="/kursevi" onClick={toggleHome}>
+            Kursevi
+          </FooterKursevi>
+          <FooterUsluge to="/usluge" onClick={toggleHome}>
+            Usluge
+          </FooterUsluge>
+          <FooterBlog to="/blog" onClick={toggleHome}>
+            Blog
+          </FooterBlog>
+          <FooterOnama to="/onama" onClick={toggleHome}>
+            O Nama
+          </FooterOnama>
         </FooterOnamaKurseviUslugeProdaja>
+
         <FooterSolicalMedia>
           <FooterSolicalMediatNaslov>Social Media</FooterSolicalMediatNaslov>
-          <FaFacebook style={iconStyle} />
-          <FaInstagram style={iconStyle} />
-          <FaLinkedin style={iconStyle} />
-          <FaYoutube style={iconStyle} />
+          <LinkForFacebook to="https://www.facebook.com/profile.php?id=61563444249235">
+            <FaFacebook style={iconStyle} />
+          </LinkForFacebook>
+          <LinkForInstagram to="https://www.instagram.com/precizna_poljoprivreda_doo">
+            <FaInstagram style={iconStyle} />
+          </LinkForInstagram>
+          <LinkForLinkedin>
+            <FaLinkedin style={iconStyle} />
+          </LinkForLinkedin>
+          <LinkForYouTube to="https://www.youtube.com/@droneagras9795">
+            <FaYoutube style={iconStyle} />
+          </LinkForYouTube>
         </FooterSolicalMedia>
         <FooterPitajteNas>
           <FooterBox>
@@ -91,25 +160,25 @@ const Footer = () => {
             <FooterTuSmoDaVamPomognemo>
               Tu smo da vam pomognemo.
             </FooterTuSmoDaVamPomognemo>
-            <FooterFormContainer>
+            <FooterFormContainer onSubmit={onSubmit}>
               <FooterInputEmail
                 type="email"
                 name="email"
                 placeholder="Email"
-                maxlength="50"
+                maxLength="50"
                 required
               />
               <FooterInputFirstName
                 type="text"
-                name="name"
-                maxlength="50"
+                name="firstName"
+                maxLength="50"
                 placeholder="Ime"
                 required
               />
               <FooterInputLastName
                 type="text"
-                name="name"
-                maxlength="50"
+                name="lastName"
+                maxLength="50"
                 placeholder="Prezime"
                 required
               />
@@ -117,86 +186,25 @@ const Footer = () => {
                 type="text"
                 id="napomena"
                 name="napomena"
-                maxlength="450"
+                maxLength="450"
                 placeholder="Pitanje"
                 rows="7"
+                required
               />
+              <FooterSubmeitButton type="submit" onClick={validateForm}>
+                Pošalji Pitanje
+              </FooterSubmeitButton>
             </FooterFormContainer>
-
-            <FooterSubmeitButton>Pošalji Pitanje</FooterSubmeitButton>
           </FooterBox>
         </FooterPitajteNas>
       </FooterWrap>
+      <FooterCopyright>
+        Copyright © 2024 Precizna Poljoprivreda Sadržaj sajta je u vlasništvu
+        kompanije Precizna Poljoprivreda. Zabranjeno je njegovo preuzimanje bez
+        dozvole.
+      </FooterCopyright>
     </FooterContainer>
   );
 };
 
 export default Footer;
-
-{
-  /* <FooterLinksContainer>
-          <FooterLinksWrapper>
-            <FooterLinkItems>
-              <FooterLinkTitle>O Nama</FooterLinkTitle>
-              <FooterLink to="/onamapages">How it works</FooterLink>
-              <FooterLink to="/onamapages">Testimonials</FooterLink>
-              <FooterLink to="/onamapages">Careers</FooterLink>
-              <FooterLink to="/onamapages">Investors</FooterLink>
-              <FooterLink to="/onamapages">Terms of Service</FooterLink>
-            </FooterLinkItems>
-            <FooterLinkItems>
-              <FooterLinkTitle>Contact Us</FooterLinkTitle>
-              <FooterLink to="/onamapages">Contact</FooterLink>
-              <FooterLink to="/onamapages">Support</FooterLink>
-              <FooterLink to="/onamapages">Destinations</FooterLink>
-              <FooterLink to="/onamapages">Sponsorship</FooterLink>
-            </FooterLinkItems>
-          </FooterLinksWrapper>
-          <FooterLinksWrapper>
-            <FooterLinkItems>
-              <FooterLinkTitle>Videos</FooterLinkTitle>
-              <FooterLink to="/onamapages">Submit Video</FooterLink>
-              <FooterLink to="/onamapages">Ambassadors</FooterLink>
-              <FooterLink to="/onamapages">Agency</FooterLink>
-              <FooterLink to="/onamapages">Influencer</FooterLink>
-            </FooterLinkItems>
-            <FooterLinkItems>
-              <FooterLinkTitle>Social Media</FooterLinkTitle>
-              <FooterLink to="/onamapages">Instagram</FooterLink>
-              <FooterLink to="/onamapages">Facebook</FooterLink>
-              <FooterLink to="https://www.youtube.com/@droneagras9795">
-                YouTube
-              </FooterLink>
-              <FooterLink to="/onamapages">Twitter</FooterLink>
-            </FooterLinkItems>
-          </FooterLinksWrapper>
-        </FooterLinksContainer>
-        <SocialMedia>
-          <SocialMediaWrap>
-            <SocialLogo to="">Precizna Poljoprivreda</SocialLogo>
-            <WebsiteRight>
-              Precizna Poljoprivreda © {new Date().getFullYear()} All rights
-              reserved
-            </WebsiteRight>
-            <SocialIcons>
-              <SocoalIconLink href="/" target="_blank" arial-label="Facebook">
-                <FaFacebook />
-              </SocoalIconLink>
-              <SocoalIconLink href="/" target="_blank" arial-label="Instagram">
-                <FaInstagram />
-              </SocoalIconLink>
-              <SocoalIconLink
-                href="https://www.youtube.com/@droneagras9795"
-                target="_blank"
-                arial-label="YouTube"
-              >
-                <FaYoutube />
-              </SocoalIconLink>
-
-              <SocoalIconLink href="/" target="_blank" arial-label="Linkedin">
-                <FaLinkedin />
-              </SocoalIconLink>
-            </SocialIcons>
-          </SocialMediaWrap>
-        </SocialMedia> */
-}

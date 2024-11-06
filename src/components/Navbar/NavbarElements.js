@@ -1,8 +1,8 @@
 import styled from "styled-components";
-import { Link, Link as LinkRouter } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { NavLink } from "react-router-dom";
 import LogoBeliPlavi from "../../images/Logo/logoBeliPlav.jpg";
-import logoFaxZeleni from "../../images/Logo/logoFaxZeleni.png";
+// import logoFaxZeleni from "../../images/Logo/logoFaxZeleni.png";
 import { Link as ScrollLink } from "react-scroll";
 
 export const Nav = styled.nav`
@@ -21,6 +21,10 @@ export const Nav = styled.nav`
     transition: 0.8s all case;
   }
 
+  @media screen and (max-width: 430px) {
+    width: 100% !important;
+  }
+
   @media screen and (max-width: 360px) {
   }
 
@@ -33,11 +37,19 @@ export const Nav = styled.nav`
   }
 
   @media screen and (max-width: 540px) {
-    width: 110% !important;
+    width: 100%;
   }
 
   @media screen and (max-width: 412px) {
     width: 100% !important;
+  }
+
+  @media screen and (max-width: 414px) {
+    width: 100% !important;
+  }
+
+  @media screen and (max-width: 1366px) {
+    max-width: 1293px;
   }
 `;
 
@@ -49,10 +61,13 @@ export const NavbarContainer = styled.div`
   width: 100%;
   padding: 0;
   max-width: 1500px;
+
+  @media screen and (max-width: 1366px) {
+    justify-content: space-around;
+  }
 `;
 
 export const NavLogo = styled(Link)`
-  justify-self: flex-start;
   cursor: pointer;
   margin: 24px 20px;
   text-decoration: none;
@@ -105,12 +120,18 @@ export const NavMenu = styled.ul`
   @media screen and (max-width: 1247px) {
     display: none;
   }
+  @media screen and (max-width: 1366px) {
+  }
 `;
 
 export const NavItem = styled.li`
   height: 80px;
   margin: 0 30px;
   margin-top: 8px;
+
+  @media screen and (max-width: 1366px) {
+    margin: 0;
+  }
 `;
 export const NavLinks = styled(NavLink)`
   color: #fff;
@@ -154,45 +175,25 @@ export const NavLinksKontakt = styled(ScrollLink)`
   }
 `;
 
-export const NavLogoFax = styled(LinkRouter)`
-  display: flex;
-  cursor: pointer;
-  align-items: center;
-  text-decoration: none;
-  background: url(${logoFaxZeleni}) no-repeat center center;
-  background-size: cover;
+//Nek ostane za sada mozda se bude dodalo
 
-  margin: 10px 30px;
-
-  width: 50px;
-  height: 20px;
-  min-width: 90px;
-  min-height: 75px;
-  transition: all 0.2 ease-in-out;
-
-  @media screen and (max-width: 1247px) {
-    display: none;
-  }
-`;
-
-// export const NavBtn = styled.nav`
-//   dispay: flex;
-//   align-items: center;
-
-//   @media screen and (max-width: 1087px) {
-//     display: none;
-//   }
-// `;
-// export const NavBtnLink = styled(LinkRouter)`
-//   border-radius: 50px;
-//   background: #fff;
-//   white-space: nowrap;
-//   padding: 10px 22px;
-//   color: black;
-//   font-size: 16px;
-//   outline: none;
-//   border: none;
+// export const NavLogoFax = styled(LinkRouter)`
+//   display: flex;
 //   cursor: pointer;
-//   transition: all 0.2 ease-in-out;
+//   align-items: center;
 //   text-decoration: none;
+//   background: url(${logoFaxZeleni}) no-repeat center center;
+//   background-size: cover;
+
+//   margin: 10px 30px;
+
+//   width: 50px;
+//   height: 20px;
+//   min-width: 90px;
+//   min-height: 75px;
+//   transition: all 0.2 ease-in-out;
+
+//   @media screen and (max-width: 1247px) {
+//     display: none;
+// //   }
 // `;
